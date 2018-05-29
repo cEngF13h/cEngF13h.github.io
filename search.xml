@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title><![CDATA[Learing process-python basic 1]]></title>
-    <url>%2F2018%2F05%2F29%2Fpost2%2F</url>
+    <url>%2F2018%2F05%2F29%2FLearing%20process-python%20basic%201%2F</url>
     <content type="text"><![CDATA[python大小写敏感 注释符 # 在Python中有4种类型的数——整数、长整数、浮点数和复数。 (-5+4j)和(2.3-4.6j)是复数的例子 注意py里是a±bj 数学公式里是a±bi在py中 ‘ ’ ===“ ” 所有的空白，即空格和制表符都照原样保留 在一个字符串中，行末的单独一个反斜杠表示字符串在下一行继续，而不是开始一个新的行 自然字符串如果你想要指示某些不需要如转义符那样的特别处理的字符串，那么你需要指定一个自然字符串。自然字符串通过给字符串加上前缀r或R来指定。例如r”Newlines are indicated by \n”。 字符串是不可变的 变量不用声明数据类型 ** 表示x^y按位： 与 或 异或 翻转 not 布尔非 if…elif…else 无switch语句 布尔类型 True False 注意大小写 函数range（onenum，twonum，count）序列从onenum到twonum不包括num 当有count时count为步数 for循环 for…in 例如for i in range（1，3） DocStrings 文档字符串即函数体中有字符串 可以用 函数名.doc 单独提取文档字符串 文档字符串的惯例是一个多行字符串，它的首行以大写字母开始，句号结尾。第二行是空行，从第三行开始是详细的描述。 强烈建议 你在你的函数中使用文档字符串时遵循这个惯例。 随机敲了一点代码： def func(x,y): &apos;&apos;&apos;The first def py. I konw it&apos;s a very nice day. so let&apos;s enjoy it .&apos;&apos;&apos; return x*y print &apos;x*y=&apos;,func(21,22) print func.__doc__ #Write by cEngF13h 运行结果： x*y= 462 The first def py. I konw it&apos;s a very nice day. so let&apos;s enjoy it . ——————————今晚学习到这—————————————]]></content>
       <categories>
         <category>Learning</category>
@@ -14,7 +14,14 @@
   </entry>
   <entry>
     <title><![CDATA[F1rst b1og（MarkdownPad 2 入门)]]></title>
-    <url>%2F2018%2F05%2F24%2Fpost1-1%2F</url>
+    <url>%2F2018%2F05%2F24%2FF1rst%20b1og%2F</url>
     <content type="text"><![CDATA[#表示标题大小===html的\&lt;h>标签;‘ - ‘ + 空格 + ‘ - ‘ or ‘ * ‘ 表示无序列表‘ > ‘ +一个字符的空格表示引用 插入图片方法 ![]()我发现其实完整写法是![Alt text](picture-href “optional title”)Alt text为图片丢失时爆出的信息 据说还有为SEO提供搜索 optional title为鼠标悬置于图片时爆出的信息例:![](https://i.imgur.com/TpB1UcB.jpg) 图片的链接为 https://i.imgur.com/TpB1UcB.jpg插入链接方法[www.baidu.com](www.baidu.com）此处应该是半角方括号里面写链接的名字 括号里面写链接粗体 斜体粗体 粗体 斜体 斜体 **包裹粗体* 包裹斜体表格这个貌似有点鸡肋 要用表格再说把~ Tables Are Cool col 3 is right-aligned $1600 col 2 is centered $12 zebra stripes are neat $1 最后就是MarkdownPad 2支持内嵌html因为MarkdownPad 2不支持修改图片尺寸 字体颜色风格之类的 还有吧啦吧啦很多 所以html还是很重要的插入图片不说太多 此处用相对路径不好因为容易造成网页丢失图 还是上传图床后使用绝对路径吧图床推荐:七牛https://portal.qiniu.com 不过我注册的时候邮箱一直接受不到验证码…在用贴图库http://www.tietuku.com 自动生成图片外链 html代码 markdown代码 之后有更好的可以share！ 我这里用html标签插入了一张图片 修改了它的宽为200px&lt;img src=&quot;http://i2.bvimg.com/647010/adb7621f338b88c8.jpg&quot; width=200&gt; 还可以用html标签 修改字体颜色 字体风格代码块实现 在代码前加Tab即可function addEvent(obj,type,fn){ if(obj.addEventListener){ return obj.addEventListener(type,fn); }else if(obj.attachEvent){ return obj.attachEvent(&apos;on&apos;+type,fn); } } function addEvent(obj,type,fn){ if(obj.addEventListener){ return obj.addEventListener(type,fn); }else if(obj.attachEvent){ return obj.attachEvent(&apos;on&apos;+type,fn); } } function addEvent(obj,type,fn){ if(obj.addEventListener){ return obj.addEventListener(type,fn); }else if(obj.attachEvent){ return obj.attachEvent(&apos;on&apos;+type,fn); } } 撒花！！花了一个晚自习时间学习MarkdownPad 2 基础操作 今天就这样到此为止吧 当然还要优化tag：1：更换theme 这个theme实在太ugly了2：学习如何实现标题为超链接点进去是内容 而不是内容就占一大版 Write by cEngF13h资料均出自知乎 简书 csdn 2018/5/24 20:34:37]]></content>
+      <categories>
+        <category>Learning</category>
+        <category>MarkdownPad 2</category>
+      </categories>
+      <tags>
+        <tag>MarkdownPad 2</tag>
+      </tags>
   </entry>
 </search>
