@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[post2]]></title>
+    <url>%2F2018%2F05%2F29%2Fpost2%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>Learning</category>
+      </categories>
+      <tags>
+        <tag>test</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[F1rst b1og（MarkdownPad 2 入门)]]></title>
+    <url>%2F2018%2F05%2F24%2Fpost1-1%2F</url>
+    <content type="text"><![CDATA[#表示标题大小===html的\&lt;h>标签;‘ - ‘ + 空格 + ‘ - ‘ or ‘ * ‘ 表示无序列表‘ > ‘ +一个字符的空格表示引用 插入图片方法 ![]()我发现其实完整写法是![Alt text](picture-href “optional title”)Alt text为图片丢失时爆出的信息 据说还有为SEO提供搜索 optional title为鼠标悬置于图片时爆出的信息例:![](https://i.imgur.com/TpB1UcB.jpg) 图片的链接为 https://i.imgur.com/TpB1UcB.jpg插入链接方法[www.baidu.com](www.baidu.com）此处应该是半角方括号里面写链接的名字 括号里面写链接粗体 斜体粗体 粗体 斜体 斜体 **包裹粗体* 包裹斜体表格这个貌似有点鸡肋 要用表格再说把~ Tables Are Cool col 3 is right-aligned $1600 col 2 is centered $12 zebra stripes are neat $1 最后就是MarkdownPad 2支持内嵌html因为MarkdownPad 2不支持修改图片尺寸 字体颜色风格之类的 还有吧啦吧啦很多 所以html还是很重要的插入图片不说太多 此处用相对路径不好因为容易造成网页丢失图 还是上传图床后使用绝对路径吧图床推荐:七牛https://portal.qiniu.com 不过我注册的时候邮箱一直接受不到验证码…在用贴图库http://www.tietuku.com 自动生成图片外链 html代码 markdown代码 之后有更好的可以share！ 我这里用html标签插入了一张图片 修改了它的宽为200px&lt;img src=&quot;http://i2.bvimg.com/647010/adb7621f338b88c8.jpg&quot; width=200&gt; 还可以用html标签 修改字体颜色 字体风格代码块实现 在代码前加Tab即可function addEvent(obj,type,fn){ if(obj.addEventListener){ return obj.addEventListener(type,fn); }else if(obj.attachEvent){ return obj.attachEvent(&apos;on&apos;+type,fn); } } function addEvent(obj,type,fn){ if(obj.addEventListener){ return obj.addEventListener(type,fn); }else if(obj.attachEvent){ return obj.attachEvent(&apos;on&apos;+type,fn); } } function addEvent(obj,type,fn){ if(obj.addEventListener){ return obj.addEventListener(type,fn); }else if(obj.attachEvent){ return obj.attachEvent(&apos;on&apos;+type,fn); } } 撒花！！花了一个晚自习时间学习MarkdownPad 2 基础操作 今天就这样到此为止吧 当然还要优化tag：1：更换theme 这个theme实在太ugly了2：学习如何实现标题为超链接点进去是内容 而不是内容就占一大版 Write by cEngF13h资料均出自知乎 简书 csdn 2018/5/24 20:34:37]]></content>
+  </entry>
+</search>
