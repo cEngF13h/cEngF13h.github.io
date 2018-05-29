@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[post2]]></title>
+    <title><![CDATA[Learing process-python basic 1]]></title>
     <url>%2F2018%2F05%2F29%2Fpost2%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[python大小写敏感 注释符 # 在Python中有4种类型的数——整数、长整数、浮点数和复数。 (-5+4j)和(2.3-4.6j)是复数的例子 注意py里是a±bj 数学公式里是a±bi在py中 ‘ ’ ===“ ” 所有的空白，即空格和制表符都照原样保留 在一个字符串中，行末的单独一个反斜杠表示字符串在下一行继续，而不是开始一个新的行 自然字符串如果你想要指示某些不需要如转义符那样的特别处理的字符串，那么你需要指定一个自然字符串。自然字符串通过给字符串加上前缀r或R来指定。例如r”Newlines are indicated by \n”。 字符串是不可变的 变量不用声明数据类型 ** 表示x^y按位： 与 或 异或 翻转 not 布尔非 if…elif…else 无switch语句 布尔类型 True False 注意大小写 函数range（onenum，twonum，count）序列从onenum到twonum不包括num 当有count时count为步数 for循环 for…in 例如for i in range（1，3） DocStrings 文档字符串即函数体中有字符串 可以用 函数名.doc 单独提取文档字符串 文档字符串的惯例是一个多行字符串，它的首行以大写字母开始，句号结尾。第二行是空行，从第三行开始是详细的描述。 强烈建议 你在你的函数中使用文档字符串时遵循这个惯例。 随机敲了一点代码： def func(x,y): &apos;&apos;&apos;The first def py. I konw it&apos;s a very nice day. so let&apos;s enjoy it .&apos;&apos;&apos; return x*y print &apos;x*y=&apos;,func(21,22) print func.__doc__ #Write by cEngF13h 运行结果： x*y= 462 The first def py. I konw it&apos;s a very nice day. so let&apos;s enjoy it . ——————————今晚学习到这—————————————]]></content>
       <categories>
         <category>Learning</category>
+        <category>python</category>
       </categories>
       <tags>
-        <tag>test</tag>
+        <tag>python</tag>
       </tags>
   </entry>
   <entry>

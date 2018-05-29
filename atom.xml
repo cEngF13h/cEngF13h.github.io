@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-05-29T03:12:05.624Z</updated>
+  <updated>2018-05-29T13:03:03.329Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,20 +17,29 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>post2</title>
+    <title>Learing process-python basic 1</title>
     <link href="http://yoursite.com/2018/05/29/post2/"/>
     <id>http://yoursite.com/2018/05/29/post2/</id>
     <published>2018-05-29T02:58:31.000Z</published>
-    <updated>2018-05-29T03:12:05.624Z</updated>
+    <updated>2018-05-29T13:03:03.329Z</updated>
+    
+    <content type="html"><![CDATA[<p>python大小写敏感</p><p>注释符 #</p><p>在Python中有4种类型的数——整数、长整数、浮点数和复数。</p><p>(-5+4j)和(2.3-4.6j)是复数的例子 注意py里是a±bj 数学公式里是a±bi<br><a id="more"></a><br>在py中 ‘ ’ ===“ ” 所有的空白，即空格和制表符都照原样保留</p><p>在一个字符串中，行末的单独一个反斜杠表示字符串在下一行继续，而不是开始一个新的行</p><p>自然字符串<br>如果你想要指示某些不需要如转义符那样的特别处理的字符串，那么你需要指定一个自然字符串。自然字符串通过给字符串加上前缀r或R来指定。例如r”Newlines are indicated by \n”。</p><p>字符串是不可变的</p><p>变量不用声明数据类型</p><p>** 表示x^y<br>按位： 与 或 异或 翻转</p><p>not 布尔非</p><p>if…elif…else 无switch语句</p><p>布尔类型 True False 注意大小写</p><p>函数range（onenum，twonum，count）序列<br>从onenum到twonum不包括num 当有count时count为步数</p><p>for循环 for…in 例如for i in range（1，3）</p><p>DocStrings 文档字符串<br>即函数体中有字符串 可以用 函数名.<strong>doc</strong> 单独提取文档字符串</p><p>文档字符串的惯例是一个多行字符串，它的首行以大写字母开始，句号结尾。第二行是空行，从第三行开始是详细的描述。 强烈建议 你在你的函数中使用文档字符串时遵循这个惯例。</p><p>随机敲了一点代码：</p><pre><code>def func(x,y):&apos;&apos;&apos;The first def py.I konw it&apos;s a very nice day.so let&apos;s enjoy it .&apos;&apos;&apos;return x*yprint &apos;x*y=&apos;,func(21,22)print func.__doc__ #Write by cEngF13h </code></pre><p>运行结果：</p><pre><code>x*y= 462The first def py.    I konw it&apos;s a very nice day.    so let&apos;s enjoy it .</code></pre><p>——————————今晚学习到这—————————————</p>]]></content>
     
     <summary type="html">
+    
+      &lt;p&gt;python大小写敏感&lt;/p&gt;
+&lt;p&gt;注释符 #&lt;/p&gt;
+&lt;p&gt;在Python中有4种类型的数——整数、长整数、浮点数和复数。&lt;/p&gt;
+&lt;p&gt;(-5+4j)和(2.3-4.6j)是复数的例子 注意py里是a±bj 数学公式里是a±bi&lt;br&gt;
     
     </summary>
     
       <category term="Learning" scheme="http://yoursite.com/categories/Learning/"/>
     
+      <category term="python" scheme="http://yoursite.com/categories/Learning/python/"/>
     
-      <category term="test" scheme="http://yoursite.com/tags/test/"/>
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
     
   </entry>
   
