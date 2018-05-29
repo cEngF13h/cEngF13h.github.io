@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>cEngF13h&#39;s b1og</title>
+  
+  <subtitle>Recording learing process</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-05-29T02:59:30.593Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>cEngF13h</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>post2</title>
+    <link href="http://yoursite.com/2018/05/29/post2/"/>
+    <id>http://yoursite.com/2018/05/29/post2/</id>
+    <published>2018-05-29T02:58:31.000Z</published>
+    <updated>2018-05-29T02:59:30.593Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="Learning" scheme="http://yoursite.com/categories/Learning/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>F1rst b1og（MarkdownPad 2 入门)</title>
+    <link href="http://yoursite.com/2018/05/24/post1-1/"/>
+    <id>http://yoursite.com/2018/05/24/post1-1/</id>
+    <published>2018-05-24T04:30:43.000Z</published>
+    <updated>2018-05-27T07:50:00.747Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="表示标题大小-html的-lt-h-标签"><a href="#表示标题大小-html的-lt-h-标签" class="headerlink" title="#表示标题大小===html的\&lt;h>标签;"></a>#表示标题大小===html的\&lt;h>标签;</h2><h2 id="‘-‘-空格-‘-‘-or-‘-‘-表示无序列表"><a href="#‘-‘-空格-‘-‘-or-‘-‘-表示无序列表" class="headerlink" title="‘  -  ‘ + 空格   +  ‘ - ‘ or ‘ * ‘ 表示无序列表"></a>‘  -  ‘ + 空格   +  ‘ - ‘ or ‘ * ‘ 表示无序列表</h2><h2 id="‘-‘-一个字符的空格表示引用"><a href="#‘-‘-一个字符的空格表示引用" class="headerlink" title="‘ > ‘ +一个字符的空格表示引用"></a>‘ > ‘ +一个字符的空格表示引用</h2><a id="more"></a><h2 id="插入图片方法"><a href="#插入图片方法" class="headerlink" title="插入图片方法 ![]()"></a>插入图片方法 ![]()</h2><h4 id="我发现其实完整写法是-Alt-text-picture-href-“optional-title”"><a href="#我发现其实完整写法是-Alt-text-picture-href-“optional-title”" class="headerlink" title="我发现其实完整写法是![Alt text](picture-href “optional title”)"></a>我发现其实完整写法是![Alt text](picture-href “optional title”)</h4><h6 id="Alt-text为图片丢失时爆出的信息-据说还有为SEO提供搜索-optional-title为鼠标悬置于图片时爆出的信息"><a href="#Alt-text为图片丢失时爆出的信息-据说还有为SEO提供搜索-optional-title为鼠标悬置于图片时爆出的信息" class="headerlink" title="Alt text为图片丢失时爆出的信息 据说还有为SEO提供搜索 optional title为鼠标悬置于图片时爆出的信息"></a>Alt text为图片丢失时爆出的信息 据说还有为SEO提供搜索 optional title为鼠标悬置于图片时爆出的信息</h6><h3 id="例-https-i-imgur-com-TpB1UcB-jpg"><a href="#例-https-i-imgur-com-TpB1UcB-jpg" class="headerlink" title="例:![](https://i.imgur.com/TpB1UcB.jpg)"></a>例:![](<a href="https://i.imgur.com/TpB1UcB.jpg" target="_blank" rel="noopener">https://i.imgur.com/TpB1UcB.jpg</a>)</h3><p><img src="https://i.imgur.com/TpB1UcB.jpg" alt=""></p><h3 id="图片的链接为-https-i-imgur-com-TpB1UcB-jpg"><a href="#图片的链接为-https-i-imgur-com-TpB1UcB-jpg" class="headerlink" title="图片的链接为 https://i.imgur.com/TpB1UcB.jpg"></a>图片的链接为 <a href="https://i.imgur.com/TpB1UcB.jpg" target="_blank" rel="noopener">https://i.imgur.com/TpB1UcB.jpg</a></h3><h2 id="插入链接方法"><a href="#插入链接方法" class="headerlink" title="插入链接方法"></a>插入链接方法</h2><h3 id="www-baidu-com-www-baidu-com）此处应该是半角"><a href="#www-baidu-com-www-baidu-com）此处应该是半角" class="headerlink" title="[www.baidu.com](www.baidu.com）此处应该是半角"></a>[<a href="http://www.baidu.com]" target="_blank" rel="noopener">www.baidu.com]</a>(<a href="http://www.baidu.com）此处应该是半角" target="_blank" rel="noopener">www.baidu.com）此处应该是半角</a></h3><h4 id="方括号里面写链接的名字-括号里面写链接"><a href="#方括号里面写链接的名字-括号里面写链接" class="headerlink" title="方括号里面写链接的名字 括号里面写链接"></a>方括号里面写链接的名字 括号里面写链接</h4><h2 id="粗体-斜体"><a href="#粗体-斜体" class="headerlink" title="粗体 斜体"></a>粗体 斜体</h2><p>粗体 <strong>粗体</strong> 斜体 <em>斜体</em></p><h4 id="包裹粗体"><a href="#包裹粗体" class="headerlink" title="**包裹粗体"></a>**包裹粗体</h4><h4 id="包裹斜体"><a href="#包裹斜体" class="headerlink" title="* 包裹斜体"></a>* 包裹斜体</h4><h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><h4 id="这个貌似有点鸡肋-要用表格再说把"><a href="#这个貌似有点鸡肋-要用表格再说把" class="headerlink" title="这个貌似有点鸡肋 要用表格再说把~"></a>这个貌似有点鸡肋 要用表格再说把~</h4><table><thead><tr><th>Tables</th><th style="text-align:center">Are</th><th style="text-align:right">Cool</th></tr></thead><tbody><tr><td>col 3 is</td><td style="text-align:center">right-aligned</td><td style="text-align:right">$1600</td></tr><tr><td>col 2 is</td><td style="text-align:center">centered</td><td style="text-align:right">$12</td></tr><tr><td>zebra stripes</td><td style="text-align:center">are neat</td><td style="text-align:right">$1</td></tr></tbody></table><h2 id="最后就是MarkdownPad-2支持内嵌html"><a href="#最后就是MarkdownPad-2支持内嵌html" class="headerlink" title="最后就是MarkdownPad 2支持内嵌html"></a>最后就是MarkdownPad 2支持内嵌html</h2><h4 id="因为MarkdownPad-2不支持修改图片尺寸-字体颜色风格之类的-还有吧啦吧啦很多-所以html还是很重要的"><a href="#因为MarkdownPad-2不支持修改图片尺寸-字体颜色风格之类的-还有吧啦吧啦很多-所以html还是很重要的" class="headerlink" title="因为MarkdownPad 2不支持修改图片尺寸 字体颜色风格之类的 还有吧啦吧啦很多 所以html还是很重要的"></a>因为MarkdownPad 2不支持修改图片尺寸 字体颜色风格之类的 还有吧啦吧啦很多 所以html还是很重要的</h4><h4 id="插入图片不说太多-此处用相对路径不好因为容易造成网页丢失图-还是上传图床后使用绝对路径吧"><a href="#插入图片不说太多-此处用相对路径不好因为容易造成网页丢失图-还是上传图床后使用绝对路径吧" class="headerlink" title="插入图片不说太多 此处用相对路径不好因为容易造成网页丢失图 还是上传图床后使用绝对路径吧"></a>插入图片不说太多 此处用相对路径不好因为容易造成网页丢失图 还是上传图床后使用绝对路径吧</h4><h5 id="图床推荐"><a href="#图床推荐" class="headerlink" title="图床推荐:"></a>图床推荐:</h5><h5 id="七牛https-portal-qiniu-com-不过我注册的时候邮箱一直接受不到验证码…"><a href="#七牛https-portal-qiniu-com-不过我注册的时候邮箱一直接受不到验证码…" class="headerlink" title="七牛https://portal.qiniu.com 不过我注册的时候邮箱一直接受不到验证码…"></a>七牛<a href="https://portal.qiniu.com" target="_blank" rel="noopener">https://portal.qiniu.com</a> 不过我注册的时候邮箱一直接受不到验证码…</h5><h5 id="在用贴图库http-www-tietuku-com-自动生成图片外链-html代码-markdown代码-之后有更好的可以share！"><a href="#在用贴图库http-www-tietuku-com-自动生成图片外链-html代码-markdown代码-之后有更好的可以share！" class="headerlink" title="在用贴图库http://www.tietuku.com 自动生成图片外链 html代码 markdown代码 之后有更好的可以share！"></a>在用贴图库<a href="http://www.tietuku.com" target="_blank" rel="noopener">http://www.tietuku.com</a> 自动生成图片外链 html代码 markdown代码 之后有更好的可以share！</h5><p><img src="http://i2.bvimg.com/647010/adb7621f338b88c8.jpg" width="200"></p><h6 id="我这里用html标签插入了一张图片-修改了它的宽为200px"><a href="#我这里用html标签插入了一张图片-修改了它的宽为200px" class="headerlink" title="我这里用html标签插入了一张图片 修改了它的宽为200px"></a>我这里用html标签插入了一张图片 修改了它的宽为200px</h6><pre><code>&lt;img src=&quot;http://i2.bvimg.com/647010/adb7621f338b88c8.jpg&quot; width=200&gt;</code></pre><h2 id="还可以用html标签-修改字体颜色-字体风格"><a href="#还可以用html标签-修改字体颜色-字体风格" class="headerlink" title="还可以用html标签 修改字体颜色 字体风格"></a>还可以用html标签 修改字体<font face="微软雅黑" color="red">颜色</font> 字体<font face="楷体" color="red">风格</font></h2><h2 id="代码块实现-在代码前加Tab即可"><a href="#代码块实现-在代码前加Tab即可" class="headerlink" title="代码块实现 在代码前加Tab即可"></a>代码块实现 在代码前加Tab即可</h2><pre><code>function addEvent(obj,type,fn){        if(obj.addEventListener){            return obj.addEventListener(type,fn);        }else if(obj.attachEvent){            return obj.attachEvent(&apos;on&apos;+type,fn);        }    }function addEvent(obj,type,fn){        if(obj.addEventListener){            return obj.addEventListener(type,fn);        }else if(obj.attachEvent){            return obj.attachEvent(&apos;on&apos;+type,fn);        }    }function addEvent(obj,type,fn){        if(obj.addEventListener){            return obj.addEventListener(type,fn);        }else if(obj.attachEvent){            return obj.attachEvent(&apos;on&apos;+type,fn);        }    }</code></pre><h3 id="撒花！！花了一个晚自习时间学习MarkdownPad-2-基础操作-今天就这样到此为止吧-当然还要优化"><a href="#撒花！！花了一个晚自习时间学习MarkdownPad-2-基础操作-今天就这样到此为止吧-当然还要优化" class="headerlink" title="撒花！！花了一个晚自习时间学习MarkdownPad 2 基础操作 今天就这样到此为止吧 当然还要优化"></a>撒花！！花了一个晚自习时间学习MarkdownPad 2 基础操作 今天就这样到此为止吧 当然还要优化</h3><h3 id="tag："><a href="#tag：" class="headerlink" title="tag："></a>tag：</h3><p>1：更换theme 这个theme实在太ugly了<br>2：学习如何实现标题为超链接点进去是内容 而不是内容就占一大版 </p><h4 id="Write-by-cEngF13h"><a href="#Write-by-cEngF13h" class="headerlink" title="Write by cEngF13h"></a>Write by cEngF13h</h4><p>资料均出自知乎 简书 csdn </p><p>2018/5/24 20:34:37 </p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;表示标题大小-html的-lt-h-标签&quot;&gt;&lt;a href=&quot;#表示标题大小-html的-lt-h-标签&quot; class=&quot;headerlink&quot; title=&quot;#表示标题大小===html的\&amp;lt;h&gt;标签;&quot;&gt;&lt;/a&gt;#表示标题大小===html的\&amp;lt;h&gt;标签;&lt;/h2&gt;&lt;h2 id=&quot;‘-‘-空格-‘-‘-or-‘-‘-表示无序列表&quot;&gt;&lt;a href=&quot;#‘-‘-空格-‘-‘-or-‘-‘-表示无序列表&quot; class=&quot;headerlink&quot; title=&quot;‘  -  ‘ + 空格   +  ‘ - ‘ or ‘ * ‘ 表示无序列表&quot;&gt;&lt;/a&gt;‘  -  ‘ + 空格   +  ‘ - ‘ or ‘ * ‘ 表示无序列表&lt;/h2&gt;&lt;h2 id=&quot;‘-‘-一个字符的空格表示引用&quot;&gt;&lt;a href=&quot;#‘-‘-一个字符的空格表示引用&quot; class=&quot;headerlink&quot; title=&quot;‘ &gt; ‘ +一个字符的空格表示引用&quot;&gt;&lt;/a&gt;‘ &gt; ‘ +一个字符的空格表示引用&lt;/h2&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
