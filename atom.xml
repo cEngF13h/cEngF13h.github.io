@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-05-29T13:03:03.329Z</updated>
+  <updated>2018-05-30T13:11:29.710Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,67 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Learing process-python basic 1</title>
+    <title>sql injection 1</title>
+    <link href="http://yoursite.com/2018/05/30/post4/"/>
+    <id>http://yoursite.com/2018/05/30/post4/</id>
+    <published>2018-05-30T11:15:26.000Z</published>
+    <updated>2018-05-30T13:11:29.710Z</updated>
+    
+    <content type="html"><![CDATA[<p>False注入<br> 以xxxxx=0为主题<br><img src="https://p3.ssl.qhimg.com/t01aff368d1f78f00ff.jpg" alt=""><br><img src="https://p2.ssl.qhimg.com/t01384c749fc9052787.jpg" alt=""></p><p>两张图中 用 username=0 passwd=0 分别爆出数据库 但数据个数不同<br><a id="more"></a><br>首先为什么会爆出数据库？涉及到MYSQL隐式类型转化</p><pre><code>关于官方文档中是这么说的The following rules describe how conversion occurs for comparison operations:If one or both arguments are NULL, the result of the comparison is NULL, except for the NULL-safe &lt;=&gt; equality comparison operator. For NULL &lt;=&gt; NULL, the result is true. No conversion is needed.If both arguments in a comparison operation are strings, they are compared as strings.If both arguments are integers, they are compared as integers.Hexadecimal values are treated as binary strings if not compared to a number.If one of the arguments is a TIMESTAMP or DATETIME column and the other argument is a constant, the constant is converted to a timestamp before the comparison is performed. This is done to be more ODBC-friendly. Note that this is not done for the arguments to IN()! To be safe, always use complete datetime, date, or time strings when doing comparisons. For example, to achieve best results when using BETWEEN with date or time values, use CAST() to explicitly convert the values to the desired data type.If one of the arguments is a decimal value, comparison depends on the other argument. The arguments are compared as decimal values if the other argument is a decimal or integer value, or as floating-point values if the other argument is a floating-point value.In all other cases, the arguments are compared as floating-point (real) numbers.其中大致是：如果两个参数比较，有至少一个NULL，结果就是NULL，除了是用NULL&lt;=&gt;NULL 会返回1。不做类型转换两个参数都是字符串，按照字符串比较。不做类型转换两个参数都是整数，按照整数比较。不做类型转换如果不与数字进行比较，则将十六进制值视为二进制字符串。有一个参数是 TIMESTAMP 或 DATETIME，并且另外一个参数是常量，常量会被转换为时间戳有一个参数是 decimal 类型，如果另外一个参数是 decimal 或者整数，会将整数转换为 decimal 后进行比较，如果另外一个参数是浮点数，则会把 decimal 转换为浮点数进行比较所有其他情况下，两个参数都会被转换为浮点数再进行比较</code></pre><p>注意最后一句话就行: 有其他情况下，两个参数都会被转换为浮点数再进行比较<br>这里=之前的username 和pwd都是字符串 =之后的0是数字</p><p>所以这里当字符串转换为浮点数 username中admin test leej都是以字母开头 passwd以数字开头</p><p>当字符串转换为浮点数时 如果数字开头 则会从数字后截断 </p><p>所以这里才会存在username爆出三段数据 passwd爆出两端数据</p><p>除此之外还可以通过比较运算符来构造xxxxx=0<br>这里就举几个例子</p><pre><code>where username=&apos;&apos;=0&lt;=&gt;1#&apos;</code></pre><p>‘’=0&lt;=&gt;1#’ 首先最后的’被#截断 整体变为’’=0&lt;=&gt;1</p><p>‘’=0 结果为0 整体变为 0&lt;==&gt;1 结果为 0<br>所以最后转化成为 username=0</p><p>到这里想起之前注入的几个函数再复习下</p><p>1.left()/right()</p><pre><code>left/right(str,length)eg: SELECT LEFT(NAME,2),RIGHT(NAME,2) FROM T1   </code></pre><p>返回结果为 ‘NA’ 、’ME’   *从字符串左边开始截取长度为2的字符串   从字符串右边开始截取长度为2的字符串</p><p>2.substr()</p><pre><code>substr(str,begin-location,length(可选))</code></pre><p>规定在字符串的何处开始。</p><p>length：<br>正数 - 在字符串的指定位置开始</p><p>负数 - 在从字符串结尾开始的指定位置开始</p><p>0 - 在字符串中的第一个字符处开始</p><p>3.mid()</p><pre><code>mid(str,begin-location,length(可选))</code></pre><p>与substr唯一区别在于mid必须规定开始位置 且起始值为1</p><p>4.rand()</p><pre><code>rand(begin,end)</code></pre><p>即begin-end之间取随机数</p><p>5.if()</p><pre><code>if(a,b,c)</code></pre><p>如果a=ture 则返回b 如果a=false 则返回c</p><p>——————————今晚结束————————————<br>总结一个字：太菜！！！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;False注入&lt;br&gt; 以xxxxx=0为主题&lt;br&gt;&lt;img src=&quot;https://p3.ssl.qhimg.com/t01aff368d1f78f00ff.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://p2.ssl.qhimg.com/t01384c749fc9052787.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;两张图中 用 username=0 passwd=0 分别爆出数据库 但数据个数不同&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Learning" scheme="http://yoursite.com/categories/Learning/"/>
+    
+      <category term="sql injection" scheme="http://yoursite.com/categories/Learning/sql-injection/"/>
+    
+    
+      <category term="sql injection" scheme="http://yoursite.com/tags/sql-injection/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python basic 2</title>
+    <link href="http://yoursite.com/2018/05/30/post3/"/>
+    <id>http://yoursite.com/2018/05/30/post3/</id>
+    <published>2018-05-30T06:43:43.000Z</published>
+    <updated>2018-05-30T11:17:27.928Z</updated>
+    
+    <content type="html"><![CDATA[<p>块注释: 三个单引号或者双引号开始结束</p><p>查看关键字方法 import keyword –&gt;keyword.kwlist</p><p> //去试试换行输出</p><p>标准数据 六种</p><p>数字类型 Number<br>字符串类型 str<br>列表 list<br>元组 tuple<br>字典 Dictionary<br>集合 set</p><p>-数字类型：无大小限制<br>二进制：以0b开头<br>八进制：以为0o开头 包含0-7的数字<br>十六进制：每四位二进制表示一位十六进制数 包含0-9 a-f 以0x开头<br>//百度算法</p><p>单引号双引号只能表示一行 </p><p>字符串的格式化</p><p>-利用百分号% </p><p>例如 </p><p>单个 print(“I love %s” % “dsadas”)<br>双个 print(“I love %s ,she are %d” % (“asdas”,12))</p><p>format函数格式化</p><p>-利用format函数 推荐<br>以{} 和： 代替 分号 后面用format带参数完成</p><p>python无自增自减</p><p>逻辑运算符 转为数学运算 我觉得这个太巧妙了！！！<br><img src="https://i.imgur.com/vSbrcsM.png" alt=""><br>短路问题 一旦能够确定整个式子值 后面都不运算 精辟！！！</p><p>成员运算符号<br>in not in</p><p>身份运算 is is not</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;块注释: 三个单引号或者双引号开始结束&lt;/p&gt;
+&lt;p&gt;查看关键字方法 import keyword –&amp;gt;keyword.kwlist&lt;/p&gt;
+&lt;p&gt; //去试试换行输出&lt;/p&gt;
+&lt;p&gt;标准数据 六种&lt;/p&gt;
+&lt;p&gt;数字类型 Number&lt;br&gt;字符串类型 str&lt;br
+      
+    
+    </summary>
+    
+      <category term="Learning" scheme="http://yoursite.com/categories/Learning/"/>
+    
+      <category term="python" scheme="http://yoursite.com/categories/Learning/python/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python basic 1</title>
     <link href="http://yoursite.com/2018/05/29/Learing%20process-python%20basic%201/"/>
     <id>http://yoursite.com/2018/05/29/Learing process-python basic 1/</id>
     <published>2018-05-29T02:58:31.000Z</published>
-    <updated>2018-05-29T13:03:03.329Z</updated>
+    <updated>2018-05-30T11:17:09.744Z</updated>
     
     <content type="html"><![CDATA[<p>python大小写敏感</p><p>注释符 #</p><p>在Python中有4种类型的数——整数、长整数、浮点数和复数。</p><p>(-5+4j)和(2.3-4.6j)是复数的例子 注意py里是a±bj 数学公式里是a±bi<br><a id="more"></a><br>在py中 ‘ ’ ===“ ” 所有的空白，即空格和制表符都照原样保留</p><p>在一个字符串中，行末的单独一个反斜杠表示字符串在下一行继续，而不是开始一个新的行</p><p>自然字符串<br>如果你想要指示某些不需要如转义符那样的特别处理的字符串，那么你需要指定一个自然字符串。自然字符串通过给字符串加上前缀r或R来指定。例如r”Newlines are indicated by \n”。</p><p>字符串是不可变的</p><p>变量不用声明数据类型</p><p>** 表示x^y<br>按位： 与 或 异或 翻转</p><p>not 布尔非</p><p>if…elif…else 无switch语句</p><p>布尔类型 True False 注意大小写</p><p>函数range（onenum，twonum，count）序列<br>从onenum到twonum不包括num 当有count时count为步数</p><p>for循环 for…in 例如for i in range（1，3）</p><p>DocStrings 文档字符串<br>即函数体中有字符串 可以用 函数名.<strong>doc</strong> 单独提取文档字符串</p><p>文档字符串的惯例是一个多行字符串，它的首行以大写字母开始，句号结尾。第二行是空行，从第三行开始是详细的描述。 强烈建议 你在你的函数中使用文档字符串时遵循这个惯例。</p><p>随机敲了一点代码：</p><pre><code>def func(x,y):&apos;&apos;&apos;The first def py.I konw it&apos;s a very nice day.so let&apos;s enjoy it .&apos;&apos;&apos;return x*yprint &apos;x*y=&apos;,func(21,22)print func.__doc__ #Write by cEngF13h </code></pre><p>运行结果：</p><pre><code>x*y= 462The first def py.    I konw it&apos;s a very nice day.    so let&apos;s enjoy it .</code></pre><p>——————————今晚学习到这—————————————</p>]]></content>
     
