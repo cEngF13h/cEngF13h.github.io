@@ -46,20 +46,19 @@
     <link href="http://yoursite.com/2018/05/30/post3/"/>
     <id>http://yoursite.com/2018/05/30/post3/</id>
     <published>2018-05-30T06:43:43.000Z</published>
-    <updated>2018-05-30T11:17:27.928Z</updated>
+    <updated>2018-05-30T13:15:29.583Z</updated>
     
-    <content type="html"><![CDATA[<p>块注释: 三个单引号或者双引号开始结束</p><p>查看关键字方法 import keyword –&gt;keyword.kwlist</p><p> //去试试换行输出</p><p>标准数据 六种</p><p>数字类型 Number<br>字符串类型 str<br>列表 list<br>元组 tuple<br>字典 Dictionary<br>集合 set</p><p>-数字类型：无大小限制<br>二进制：以0b开头<br>八进制：以为0o开头 包含0-7的数字<br>十六进制：每四位二进制表示一位十六进制数 包含0-9 a-f 以0x开头<br>//百度算法</p><p>单引号双引号只能表示一行 </p><p>字符串的格式化</p><p>-利用百分号% </p><p>例如 </p><p>单个 print(“I love %s” % “dsadas”)<br>双个 print(“I love %s ,she are %d” % (“asdas”,12))</p><p>format函数格式化</p><p>-利用format函数 推荐<br>以{} 和： 代替 分号 后面用format带参数完成</p><p>python无自增自减</p><p>逻辑运算符 转为数学运算 我觉得这个太巧妙了！！！<br><img src="https://i.imgur.com/vSbrcsM.png" alt=""><br>短路问题 一旦能够确定整个式子值 后面都不运算 精辟！！！</p><p>成员运算符号<br>in not in</p><p>身份运算 is is not</p>]]></content>
+    <content type="html"><![CDATA[<p>块注释: 三个单引号或者双引号开始结束</p><p>查看关键字方法 import keyword –&gt;keyword.kwlist</p><p> //去试试换行输出</p><p>标准数据 六种</p><p>数字类型 Number<br>字符串类型 str<br>列表 list<br>元组 tuple<br>字典 Dictionary<br>集合 set</p><p>-数字类型：无大小限制<br>二进制：以0b开头<br>八进制：以为0o开头 包含0-7的数字<br>十六进制：每四位二进制表示一位十六进制数 包含0-9 a-f 以0x开头<br>//百度算法</p><p>单引号双引号只能表示一行<br><a id="more"></a><br>字符串的格式化</p><p>-利用百分号% </p><p>例如 </p><p>单个 print(“I love %s” % “dsadas”)<br>双个 print(“I love %s ,she are %d” % (“asdas”,12))</p><p>format函数格式化</p><p>-利用format函数 推荐<br>以{} 和： 代替 分号 后面用format带参数完成</p><p>python无自增自减</p><p>逻辑运算符 转为数学运算 我觉得这个太巧妙了！！！<br><img src="https://i.imgur.com/vSbrcsM.png" alt=""><br>短路问题 一旦能够确定整个式子值 后面都不运算 精辟！！！</p><p>成员运算符号<br>in not in</p><p>身份运算 is is not</p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;块注释: 三个单引号或者双引号开始结束&lt;/p&gt;
+      &lt;p&gt;块注释: 三个单引号或者双引号开始结束&lt;/p&gt;
 &lt;p&gt;查看关键字方法 import keyword –&amp;gt;keyword.kwlist&lt;/p&gt;
 &lt;p&gt; //去试试换行输出&lt;/p&gt;
 &lt;p&gt;标准数据 六种&lt;/p&gt;
-&lt;p&gt;数字类型 Number&lt;br&gt;字符串类型 str&lt;br
-      
+&lt;p&gt;数字类型 Number&lt;br&gt;字符串类型 str&lt;br&gt;列表 list&lt;br&gt;元组 tuple&lt;br&gt;字典 Dictionary&lt;br&gt;集合 set&lt;/p&gt;
+&lt;p&gt;-数字类型：无大小限制&lt;br&gt;二进制：以0b开头&lt;br&gt;八进制：以为0o开头 包含0-7的数字&lt;br&gt;十六进制：每四位二进制表示一位十六进制数 包含0-9 a-f 以0x开头&lt;br&gt;//百度算法&lt;/p&gt;
+&lt;p&gt;单引号双引号只能表示一行&lt;br&gt;
     
     </summary>
     
