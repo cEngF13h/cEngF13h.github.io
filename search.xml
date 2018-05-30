@@ -15,7 +15,7 @@
   <entry>
     <title><![CDATA[python basic 2]]></title>
     <url>%2F2018%2F05%2F30%2Fpost3%2F</url>
-    <content type="text"><![CDATA[块注释: 三个单引号或者双引号开始结束 查看关键字方法 import keyword –&gt;keyword.kwlist //去试试换行输出 标准数据 六种 数字类型 Number字符串类型 str列表 list元组 tuple字典 Dictionary集合 set -数字类型：无大小限制二进制：以0b开头八进制：以为0o开头 包含0-7的数字十六进制：每四位二进制表示一位十六进制数 包含0-9 a-f 以0x开头//百度算法 单引号双引号只能表示一行字符串的格式化 -利用百分号% 例如 单个 print(“I love %s” % “dsadas”)双个 print(“I love %s ,she are %d” % (“asdas”,12)) format函数格式化 -利用format函数 推荐以{} 和： 代替 分号 后面用format带参数完成 python无自增自减 逻辑运算符 转为数学运算 我觉得这个太巧妙了！！！短路问题 一旦能够确定整个式子值 后面都不运算 精辟！！！ 成员运算符号in not in 身份运算 is is not]]></content>
+    <content type="text"><![CDATA[块注释: 三个单引号或者双引号开始结束 查看关键字方法 import keyword –&gt;keyword.kwlist //去试试换行输出 标准数据 六种 数字类型 Number字符串类型 str列表 list元组 tuple字典 Dictionary集合 set-数字类型：无大小限制二进制：以0b开头八进制：以为0o开头 包含0-7的数字十六进制：每四位二进制表示一位十六进制数 包含0-9 a-f 以0x开头//百度算法 单引号双引号只能表示一行 字符串的格式化 -利用百分号% 例如 单个 print(“I love %s” % “dsadas”)双个 print(“I love %s ,she are %d” % (“asdas”,12)) format函数格式化 -利用format函数 推荐以{} 和： 代替 分号 后面用format带参数完成 python无自增自减 逻辑运算符 转为数学运算 我觉得这个太巧妙了！！！短路问题 一旦能够确定整个式子值 后面都不运算 精辟！！！ 成员运算符号in not in 身份运算 is is not]]></content>
       <categories>
         <category>Learning</category>
         <category>python</category>
