@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-05-30T13:20:08.497Z</updated>
+  <updated>2018-06-05T14:02:38.921Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,69 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python basic 3</title>
+    <link href="http://yoursite.com/2018/06/05/post5/"/>
+    <id>http://yoursite.com/2018/06/05/post5/</id>
+    <published>2018-06-05T12:15:41.000Z</published>
+    <updated>2018-06-05T14:02:38.921Z</updated>
+    
+    <content type="html"><![CDATA[<p> 这几天持续颓废… 真想找个队友一起监督..无奈 等下学期再说吧！</p><p>补充上周学的笔记：</p><p>主要就是函数的两个知识 其他的类比没啥新知识</p><p>收集参数</p><pre><code>1. def func(*args):  func_body按照list使用方式访问args得到传入的参数调用：  func(p1, p2, p3, .....)</code></pre><a id="more"></a><p>代码实例：</p><pre><code>收集参数代码函数模拟一个学生进行自我介绍，但具体内容不清楚args把他看做一个listdef stu( *args):print(&quot;Hello 大家好，我自我介绍以下，简答说两句：&quot;)type函数作用是检测变量的类型print(type(args))for item in args:print(item)stu(&quot;liuying&quot;, 18, &quot;北京大通州区&quot;, &quot;wangxiaojing&quot;, &quot;single&quot;)//用循环用遍历了args</code></pre><p>收集参数之关键字收集参数</p><pre><code>def func( **kwargs):   func_body    调用：    func(p1=v1, p2=v2, p3=v3........)  kwargs一般约定俗成  调用的时候，把多余的关键字参数放入kwargs  访问kwargs需要按字典格式访问</code></pre><p>代码实例：</p><pre><code>调用的时候需要使用关键字参数调用def stu( **kwargs):在函数体内对于kwargs的使用不用带星号print(&quot;Hello 大家好，我先自我介绍一下：&quot;)print(type(kwargs))对于字典的访问，python2 和python3有区别for k,v in kwargs.items():print(k, &quot;---&quot;, v)stu(name=&quot;liuying&quot;,  age=19, addr=&quot;北京大通州区&quot;, lover=&quot;王晓静&quot;, work=&quot;Teacher&quot;)print(&quot;*&quot; * 50)stu(name=&quot;周大神&quot;)</code></pre><p>收集参数的解包问题</p><pre><code>def stu(*args):print(&quot;哈哈哈哈哈&quot;)n 用来表示循环次数主要用来调试n = 0for i in args:    print(type(i))    print(n)    n += 1    print(i)    l = [&quot;liuying&quot;, 19, 23, &quot;wangxiaojing&quot;]     stu(l)    此时，args的表示形式是字典内一个list类型的元素，即 arg = ([&quot;liuying&quot;, 19, 23, &quot;wangxiaojing&quot;],)    很显然跟我们最初的想法违背    此时的调用，我们就需要解包符号，即调用的时候前面加一个星号    stu(*l)</code></pre><p>同理用**kwargs 得用两个**解包</p><p>Globals与Locals 内嵌函数</p><p>locals 是只读的,不可修改， 而globals可以修改，</p><p>原因是：</p><p>locals（）实际上没有返回局部名字空间，它返回的是一个拷贝。所以对它进行修改，修改的是拷贝，而对实际的局部名字空间中的变量值并无影响。</p><p>globals（）返回的是实际的全局名字空间，而不是一个拷贝: 与 locals 的行为完全相反。<br>所以对 globals 所返回的 dictionary 的任何的改动都会直接影响到全局变量的取值。</p><p>参考见 <a href="https://blog.csdn.net/sxingming/article/details/52061630" target="_blank" rel="noopener">Globals与Locals 内嵌函数</a></p><p>eval()函数</p><p>把一个字符串当成一个表达式来执行， 返回表达式执行后的结果</p><p>语法：</p><p>eval(string_code, globals=None, locals=None)<br>exec()函数</p><p>跟eval功能类似， 但是，不返回结果</p><p>语法：</p><p>  exec(string_code, globals=None, locals=None)</p><p>type是内置函数，负责打印出变量的类型</p><p>list列表常用操作</p><p>-使用下标操作 从0开始</p><p>如列表l=[2,3,4,2,21,4,2]</p><p>分片操作访问 包含左边下标值 不包含右边下标值</p><p>print(l[1:4])==&gt; [3,4,2]</p><p>print(l[:])==&gt;整个列表</p><p>print(l[2:])==&gt;[4,2,21,4,2]</p><p>print(l[:4])==&gt;[2,3,4,2]</p><p>分片操作可以控制增长幅度 默认为1</p><p>print(l[1:6:2])==&gt;[3,2,4]</p><p>下标可以超出范围，超出后不在考虑多余下标内容</p><p>分片之负数下标</p><p>如列表l=[2,3,4,2,21,4,2]</p><p>print(l[-4:-2])==&gt; NULL</p><p>分片左边的值默认小于右边的值 且负数下标从-1开始</p><p>如果一定要左边的值大于右边的值 那么增长幅度得变为负数</p><p>内置函数id 负责显示一个变量或者数据的唯一确定编号<br>疑问 详细了解id内置函数</p><p>分片操作是生成一个新的list 地址不同 不同份数据 可用内置函数id检测</p><p>而赋值操作是同一个list 地址相同 相同数据</p><p>—–Ending—–</p><p>总结:Bad day,studying makes me happy!!!</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt; 这几天持续颓废… 真想找个队友一起监督..无奈 等下学期再说吧！&lt;/p&gt;
+&lt;p&gt;补充上周学的笔记：&lt;/p&gt;
+&lt;p&gt;主要就是函数的两个知识 其他的类比没啥新知识&lt;/p&gt;
+&lt;p&gt;收集参数&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1. def func(*args):
+  func_body
+按照list使用方式访问args得到传入的参数
+调用：
+  func(p1, p2, p3, .....)
+&lt;/code&gt;&lt;/pre&gt;
+    
+    </summary>
+    
+      <category term="Learning" scheme="http://yoursite.com/categories/Learning/"/>
+    
+      <category term="python" scheme="http://yoursite.com/categories/Learning/python/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>3</title>
+    <link href="http://yoursite.com/2018/06/01/3/"/>
+    <id>http://yoursite.com/2018/06/01/3/</id>
+    <published>2018-06-01T07:29:41.000Z</published>
+    <updated>2018-06-01T10:02:22.658Z</updated>
+    
+    <content type="html"><![CDATA[<p>input() 返回类型是字符串 需要用int( )转换<br>range(1,10)打印[1-10)</p><p>range()函数 python 2 3区别很大<br>randint是特例  左右都包含</p><p>pass用于占位</p><p>print函数默认打印一行 结尾自动换行</p><p>end()函数可以使输出不换行</p><p>收集参数 fuc(*args)</p><p>收集参数之关键字收集参数</p><pre><code>fuc(**kwargs)for k,v in kwargs.items()print(k,&quot;----&quot;,v)</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;input() 返回类型是字符串 需要用int( )转换&lt;br&gt;range(1,10)打印[1-10)&lt;/p&gt;
+&lt;p&gt;range()函数 python 2 3区别很大&lt;br&gt;randint是特例  左右都包含&lt;/p&gt;
+&lt;p&gt;pass用于占位&lt;/p&gt;
+&lt;p&gt;print函数默认
+      
+    
+    </summary>
+    
+      <category term="Learning" scheme="http://yoursite.com/categories/Learning/"/>
+    
+      <category term="python" scheme="http://yoursite.com/categories/Learning/python/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>sql injection 1</title>
@@ -45,9 +108,9 @@
     <link href="http://yoursite.com/2018/05/30/post3/"/>
     <id>http://yoursite.com/2018/05/30/post3/</id>
     <published>2018-05-30T06:43:43.000Z</published>
-    <updated>2018-05-30T13:19:59.300Z</updated>
+    <updated>2018-06-01T07:45:49.740Z</updated>
     
-    <content type="html"><![CDATA[<p>块注释: 三个单引号或者双引号开始结束</p><p>查看关键字方法 import keyword –&gt;keyword.kwlist</p><p> //去试试换行输出</p><p>标准数据 六种<br><a id="more"></a><br>数字类型 Number<br>字符串类型 str<br>列表 list<br>元组 tuple<br>字典 Dictionary<br>集合 set</p><p>-数字类型：无大小限制<br>二进制：以0b开头<br>八进制：以为0o开头 包含0-7的数字<br>十六进制：每四位二进制表示一位十六进制数 包含0-9 a-f 以0x开头<br>//百度算法</p><p>单引号双引号只能表示一行 </p><p>字符串的格式化</p><p>-利用百分号% </p><p>例如 </p><p>单个 print(“I love %s” % “dsadas”)<br>双个 print(“I love %s ,she are %d” % (“asdas”,12))</p><p>format函数格式化</p><p>-利用format函数 推荐<br>以{} 和： 代替 分号 后面用format带参数完成</p><p>python无自增自减</p><p>逻辑运算符 转为数学运算 我觉得这个太巧妙了！！！<br><img src="https://i.imgur.com/vSbrcsM.png" alt=""><br>短路问题 一旦能够确定整个式子值 后面都不运算 精辟！！！</p><p>成员运算符号<br>in not in</p><p>身份运算 is is not</p>]]></content>
+    <content type="html"><![CDATA[<p>块注释: 三个单引号或者双引号开始结束</p><p>查看关键字方法 import keyword –&gt;keyword.kwlist</p><p> //去试试换行输出</p><p>标准数据 六种<br><a id="more"></a><br>数字类型 Number<br>字符串类型 str<br>列表 list<br>元组 tuple<br>字典 Dictionary<br>集合 set</p><p>-数字类型：无大小限制<br>二进制：以0b开头<br>八进制：以为0o开头 包含0-7的数字<br>十六进制：每四位二进制表示一位十六进制数 包含0-9 a-f 以0x开头<br>//百度算法</p><p>单引号双引号只能表示一行 </p><p>字符串的格式化</p><p>-利用百分号% </p><p>例如 </p><p>单个 print(“I love %s” % “dsadas”)<br>双个 print(“I love %s ,she are %d” % (“asdas”,12))</p><p>format函数格式化</p><p>-利用format函数 推荐<br>以{} 和： 代替 百分号 后面用.连接后+format带参数完成</p><p>例如:print(“你输入的性别是:{0}”.format(gender))</p><p>python无自增自减</p><p>逻辑运算符 转为数学运算 我觉得这个太巧妙了！！！<br><img src="https://i.imgur.com/vSbrcsM.png" alt=""><br>短路问题 一旦能够确定整个式子值 后面都不运算 精辟！！！</p><p>成员运算符号<br>in not in</p><p>身份运算 is is not</p>]]></content>
     
     <summary type="html">
     

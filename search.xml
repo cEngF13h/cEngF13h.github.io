@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[python basic 3]]></title>
+    <url>%2F2018%2F06%2F05%2Fpost5%2F</url>
+    <content type="text"><![CDATA[这几天持续颓废… 真想找个队友一起监督..无奈 等下学期再说吧！ 补充上周学的笔记： 主要就是函数的两个知识 其他的类比没啥新知识 收集参数 1. def func(*args): func_body 按照list使用方式访问args得到传入的参数 调用： func(p1, p2, p3, .....) 代码实例： 收集参数代码 函数模拟一个学生进行自我介绍，但具体内容不清楚 args把他看做一个list def stu( *args): print(&quot;Hello 大家好，我自我介绍以下，简答说两句：&quot;) type函数作用是检测变量的类型 print(type(args)) for item in args: print(item) stu(&quot;liuying&quot;, 18, &quot;北京大通州区&quot;, &quot;wangxiaojing&quot;, &quot;single&quot;) //用循环用遍历了args 收集参数之关键字收集参数 def func( **kwargs): func_body 调用： func(p1=v1, p2=v2, p3=v3........) kwargs一般约定俗成 调用的时候，把多余的关键字参数放入kwargs 访问kwargs需要按字典格式访问 代码实例： 调用的时候需要使用关键字参数调用 def stu( **kwargs): 在函数体内对于kwargs的使用不用带星号 print(&quot;Hello 大家好，我先自我介绍一下：&quot;) print(type(kwargs)) 对于字典的访问，python2 和python3有区别 for k,v in kwargs.items(): print(k, &quot;---&quot;, v) stu(name=&quot;liuying&quot;, age=19, addr=&quot;北京大通州区&quot;, lover=&quot;王晓静&quot;, work=&quot;Teacher&quot;) print(&quot;*&quot; * 50) stu(name=&quot;周大神&quot;) 收集参数的解包问题 def stu(*args): print(&quot;哈哈哈哈哈&quot;) n 用来表示循环次数 主要用来调试 n = 0 for i in args: print(type(i)) print(n) n += 1 print(i) l = [&quot;liuying&quot;, 19, 23, &quot;wangxiaojing&quot;] stu(l) 此时，args的表示形式是字典内一个list类型的元素，即 arg = ([&quot;liuying&quot;, 19, 23, &quot;wangxiaojing&quot;],) 很显然跟我们最初的想法违背 此时的调用，我们就需要解包符号，即调用的时候前面加一个星号 stu(*l) 同理用**kwargs 得用两个**解包 Globals与Locals 内嵌函数 locals 是只读的,不可修改， 而globals可以修改， 原因是： locals（）实际上没有返回局部名字空间，它返回的是一个拷贝。所以对它进行修改，修改的是拷贝，而对实际的局部名字空间中的变量值并无影响。 globals（）返回的是实际的全局名字空间，而不是一个拷贝: 与 locals 的行为完全相反。所以对 globals 所返回的 dictionary 的任何的改动都会直接影响到全局变量的取值。 参考见 Globals与Locals 内嵌函数 eval()函数 把一个字符串当成一个表达式来执行， 返回表达式执行后的结果 语法： eval(string_code, globals=None, locals=None)exec()函数 跟eval功能类似， 但是，不返回结果 语法： exec(string_code, globals=None, locals=None) type是内置函数，负责打印出变量的类型 list列表常用操作 -使用下标操作 从0开始 如列表l=[2,3,4,2,21,4,2] 分片操作访问 包含左边下标值 不包含右边下标值 print(l[1:4])==&gt; [3,4,2] print(l[:])==&gt;整个列表 print(l[2:])==&gt;[4,2,21,4,2] print(l[:4])==&gt;[2,3,4,2] 分片操作可以控制增长幅度 默认为1 print(l[1:6:2])==&gt;[3,2,4] 下标可以超出范围，超出后不在考虑多余下标内容 分片之负数下标 如列表l=[2,3,4,2,21,4,2] print(l[-4:-2])==&gt; NULL 分片左边的值默认小于右边的值 且负数下标从-1开始 如果一定要左边的值大于右边的值 那么增长幅度得变为负数 内置函数id 负责显示一个变量或者数据的唯一确定编号疑问 详细了解id内置函数 分片操作是生成一个新的list 地址不同 不同份数据 可用内置函数id检测 而赋值操作是同一个list 地址相同 相同数据 —–Ending—– 总结:Bad day,studying makes me happy!!!]]></content>
+      <categories>
+        <category>Learning</category>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[3]]></title>
+    <url>%2F2018%2F06%2F01%2F3%2F</url>
+    <content type="text"><![CDATA[input() 返回类型是字符串 需要用int( )转换range(1,10)打印[1-10) range()函数 python 2 3区别很大randint是特例 左右都包含 pass用于占位 print函数默认打印一行 结尾自动换行 end()函数可以使输出不换行 收集参数 fuc(*args) 收集参数之关键字收集参数 fuc(**kwargs) for k,v in kwargs.items() print(k,&quot;----&quot;,v)]]></content>
+      <categories>
+        <category>Learning</category>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[sql injection 1]]></title>
     <url>%2F2018%2F05%2F30%2Fpost4%2F</url>
     <content type="text"><![CDATA[False注入 以xxxxx=0为主题 两张图中 用 username=0 passwd=0 分别爆出数据库 但数据个数不同 首先为什么会爆出数据库？涉及到MYSQL隐式类型转化 关于官方文档中是这么说的 The following rules describe how conversion occurs for comparison operations: If one or both arguments are NULL, the result of the comparison is NULL, except for the NULL-safe &lt;=&gt; equality comparison operator. For NULL &lt;=&gt; NULL, the result is true. No conversion is needed. If both arguments in a comparison operation are strings, they are compared as strings. If both arguments are integers, they are compared as integers. Hexadecimal values are treated as binary strings if not compared to a number. If one of the arguments is a TIMESTAMP or DATETIME column and the other argument is a constant, the constant is converted to a timestamp before the comparison is performed. This is done to be more ODBC-friendly. Note that this is not done for the arguments to IN()! To be safe, always use complete datetime, date, or time strings when doing comparisons. For example, to achieve best results when using BETWEEN with date or time values, use CAST() to explicitly convert the values to the desired data type. If one of the arguments is a decimal value, comparison depends on the other argument. The arguments are compared as decimal values if the other argument is a decimal or integer value, or as floating-point values if the other argument is a floating-point value. In all other cases, the arguments are compared as floating-point (real) numbers. 其中大致是： 如果两个参数比较，有至少一个NULL，结果就是NULL，除了是用NULL&lt;=&gt;NULL 会返回1。不做类型转换 两个参数都是字符串，按照字符串比较。不做类型转换 两个参数都是整数，按照整数比较。不做类型转换 如果不与数字进行比较，则将十六进制值视为二进制字符串。 有一个参数是 TIMESTAMP 或 DATETIME，并且另外一个参数是常量，常量会被转换为时间戳 有一个参数是 decimal 类型，如果另外一个参数是 decimal 或者整数，会将整数转换为 decimal 后进行比较，如果另外一个参数是浮点数，则会把 decimal 转换为浮点数进行比较 所有其他情况下，两个参数都会被转换为浮点数再进行比较 注意最后一句话就行: 有其他情况下，两个参数都会被转换为浮点数再进行比较这里=之前的username 和pwd都是字符串 =之后的0是数字 所以这里当字符串转换为浮点数 username中admin test leej都是以字母开头 passwd以数字开头 当字符串转换为浮点数时 如果数字开头 则会从数字后截断 所以这里才会存在username爆出三段数据 passwd爆出两端数据 除此之外还可以通过比较运算符来构造xxxxx=0这里就举几个例子 where username=&apos;&apos;=0&lt;=&gt;1#&apos; ‘’=0&lt;=&gt;1#’ 首先最后的’被#截断 整体变为’’=0&lt;=&gt;1 ‘’=0 结果为0 整体变为 0&lt;==&gt;1 结果为 0所以最后转化成为 username=0 到这里想起之前注入的几个函数再复习下 1.left()/right() left/right(str,length) eg: SELECT LEFT(NAME,2),RIGHT(NAME,2) FROM T1 返回结果为 ‘NA’ 、’ME’ *从字符串左边开始截取长度为2的字符串 从字符串右边开始截取长度为2的字符串 2.substr() substr(str,begin-location,length(可选)) 规定在字符串的何处开始。 length：正数 - 在字符串的指定位置开始 负数 - 在从字符串结尾开始的指定位置开始 0 - 在字符串中的第一个字符处开始 3.mid() mid(str,begin-location,length(可选)) 与substr唯一区别在于mid必须规定开始位置 且起始值为1 4.rand() rand(begin,end) 即begin-end之间取随机数 5.if() if(a,b,c) 如果a=ture 则返回b 如果a=false 则返回c ——————————今晚结束————————————总结一个字：太菜！！！]]></content>
@@ -15,7 +39,7 @@
   <entry>
     <title><![CDATA[python basic 2]]></title>
     <url>%2F2018%2F05%2F30%2Fpost3%2F</url>
-    <content type="text"><![CDATA[块注释: 三个单引号或者双引号开始结束 查看关键字方法 import keyword –&gt;keyword.kwlist //去试试换行输出 标准数据 六种数字类型 Number字符串类型 str列表 list元组 tuple字典 Dictionary集合 set -数字类型：无大小限制二进制：以0b开头八进制：以为0o开头 包含0-7的数字十六进制：每四位二进制表示一位十六进制数 包含0-9 a-f 以0x开头//百度算法 单引号双引号只能表示一行 字符串的格式化 -利用百分号% 例如 单个 print(“I love %s” % “dsadas”)双个 print(“I love %s ,she are %d” % (“asdas”,12)) format函数格式化 -利用format函数 推荐以{} 和： 代替 分号 后面用format带参数完成 python无自增自减 逻辑运算符 转为数学运算 我觉得这个太巧妙了！！！短路问题 一旦能够确定整个式子值 后面都不运算 精辟！！！ 成员运算符号in not in 身份运算 is is not]]></content>
+    <content type="text"><![CDATA[块注释: 三个单引号或者双引号开始结束 查看关键字方法 import keyword –&gt;keyword.kwlist //去试试换行输出 标准数据 六种数字类型 Number字符串类型 str列表 list元组 tuple字典 Dictionary集合 set -数字类型：无大小限制二进制：以0b开头八进制：以为0o开头 包含0-7的数字十六进制：每四位二进制表示一位十六进制数 包含0-9 a-f 以0x开头//百度算法 单引号双引号只能表示一行 字符串的格式化 -利用百分号% 例如 单个 print(“I love %s” % “dsadas”)双个 print(“I love %s ,she are %d” % (“asdas”,12)) format函数格式化 -利用format函数 推荐以{} 和： 代替 百分号 后面用.连接后+format带参数完成 例如:print(“你输入的性别是:{0}”.format(gender)) python无自增自减 逻辑运算符 转为数学运算 我觉得这个太巧妙了！！！短路问题 一旦能够确定整个式子值 后面都不运算 精辟！！！ 成员运算符号in not in 身份运算 is is not]]></content>
       <categories>
         <category>Learning</category>
         <category>python</category>
