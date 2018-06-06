@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-06-05T14:02:38.921Z</updated>
+  <updated>2018-06-06T10:59:16.719Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python basic 4</title>
+    <link href="http://yoursite.com/2018/06/06/post6/"/>
+    <id>http://yoursite.com/2018/06/06/post6/</id>
+    <published>2018-06-06T07:39:21.000Z</published>
+    <updated>2018-06-06T10:59:16.719Z</updated>
+    
+    <content type="html"><![CDATA[<p>昨天关于那个id()内置函数 百度了下 开了眼界</p><p>id() 函数 配合 is 使用</p><p>当一个数据是较小的整数时<br>如 a=1 b=1 a is b==&gt;True is比较的是a与b分配的内存地址</p><p>为了提高内存利用效率对于一些简单的对象，如一些数值较小的int对象，python采取重用对象内存的办法，如指向a=2，b=2时，由于2作为简单的int类型且数值小，python不会两次为其分配内存，而是只分配一次，然后将a与b同时指向已分配的对象</p><p>而一个数据是较大的整数或浮点数<br>如a=2.0 b=2.0 a is b==&gt;False 则分配不同的内存地址</p><p>汉诺塔递归问题 啊啊啊算法是真的辣鸡 - -!</p><p>List列表</p><p>del 删除命令</p><p>如a=[2,4,21,2]<br>del a[2] ==&gt; [2,4,2]<br>只是在原列表改 未生成新的列表<br>del一个变量后不能再使用此变量</p><p>不同列表相连 用加法 相同列表相 连用乘法</p><p>列表内涵 </p><p>此方法主要针对于用for循环打印时不能生成列表</p><p>用for来创建列表<br>a=[1,2,3,4,5]<br>b=[i for i in a] ==&gt; [1,2,3,4,5] </p><p>第一个i是生成b列表中的数</p><p>列表也可循环嵌套<br>c=[m+n for m in a for n in b]</p><p>常用列表函数 len max min</p><p>list() 将其他格式的数据转换为list<br>例如 s=”Hello World”<br>list(s)==&gt; [‘H’,’e’……]</p><p>把range产生的内容转换成list<br>list(range(12,19))</p><p>传值和传地址的区别</p><p>简单数字 采用传值操作 </p><p>复杂变量 采用传址操作</p><p>append() 在列表末尾插入一个内容</p><p>insert(index,data) 指定位置插入</p><p>在index前插入data</p><p>pop 把最后一个元素取出来</p><p>remove 在列表中删除指定值元素</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;昨天关于那个id()内置函数 百度了下 开了眼界&lt;/p&gt;
+&lt;p&gt;id() 函数 配合 is 使用&lt;/p&gt;
+&lt;p&gt;当一个数据是较小的整数时&lt;br&gt;如 a=1 b=1 a is b==&amp;gt;True is比较的是a与b分配的内存地址&lt;/p&gt;
+&lt;p&gt;为了提高内存利用效率对于一些
+      
+    
+    </summary>
+    
+      <category term="Learning" scheme="http://yoursite.com/categories/Learning/"/>
+    
+      <category term="python" scheme="http://yoursite.com/categories/Learning/python/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>python basic 3</title>
