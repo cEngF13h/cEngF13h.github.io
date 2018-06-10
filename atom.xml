@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-06-06T10:59:16.719Z</updated>
+  <updated>2018-06-10T07:52:10.317Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -18,12 +18,12 @@
   
   <entry>
     <title>python basic 4</title>
-    <link href="http://yoursite.com/2018/06/06/post6/"/>
-    <id>http://yoursite.com/2018/06/06/post6/</id>
+    <link href="http://yoursite.com/2018/06/06/python%20basic%204/"/>
+    <id>http://yoursite.com/2018/06/06/python basic 4/</id>
     <published>2018-06-06T07:39:21.000Z</published>
-    <updated>2018-06-06T10:59:16.719Z</updated>
+    <updated>2018-06-10T07:52:10.317Z</updated>
     
-    <content type="html"><![CDATA[<p>昨天关于那个id()内置函数 百度了下 开了眼界</p><p>id() 函数 配合 is 使用</p><p>当一个数据是较小的整数时<br>如 a=1 b=1 a is b==&gt;True is比较的是a与b分配的内存地址</p><p>为了提高内存利用效率对于一些简单的对象，如一些数值较小的int对象，python采取重用对象内存的办法，如指向a=2，b=2时，由于2作为简单的int类型且数值小，python不会两次为其分配内存，而是只分配一次，然后将a与b同时指向已分配的对象</p><p>而一个数据是较大的整数或浮点数<br>如a=2.0 b=2.0 a is b==&gt;False 则分配不同的内存地址</p><p>汉诺塔递归问题 啊啊啊算法是真的辣鸡 - -!</p><p>List列表</p><p>del 删除命令</p><p>如a=[2,4,21,2]<br>del a[2] ==&gt; [2,4,2]<br>只是在原列表改 未生成新的列表<br>del一个变量后不能再使用此变量</p><p>不同列表相连 用加法 相同列表相 连用乘法</p><p>列表内涵 </p><p>此方法主要针对于用for循环打印时不能生成列表</p><p>用for来创建列表<br>a=[1,2,3,4,5]<br>b=[i for i in a] ==&gt; [1,2,3,4,5] </p><p>第一个i是生成b列表中的数</p><p>列表也可循环嵌套<br>c=[m+n for m in a for n in b]</p><p>常用列表函数 len max min</p><p>list() 将其他格式的数据转换为list<br>例如 s=”Hello World”<br>list(s)==&gt; [‘H’,’e’……]</p><p>把range产生的内容转换成list<br>list(range(12,19))</p><p>传值和传地址的区别</p><p>简单数字 采用传值操作 </p><p>复杂变量 采用传址操作</p><p>append() 在列表末尾插入一个内容</p><p>insert(index,data) 指定位置插入</p><p>在index前插入data</p><p>pop 把最后一个元素取出来</p><p>remove 在列表中删除指定值元素</p>]]></content>
+    <content type="html"><![CDATA[<p>昨天关于那个id()内置函数 百度了下 开了眼界</p><p>id() 函数 配合 is 使用</p><p>当一个数据是较小的整数时<br>如 a=1 b=1 a is b==&gt;True is比较的是a与b分配的内存地址</p><p>为了提高内存利用效率对于一些简单的对象，如一些数值较小的int对象，python采取重用对象内存的办法，如指向a=2，b=2时，由于2作为简单的int类型且数值小，python不会两次为其分配内存，而是只分配一次，然后将a与b同时指向已分配的对象</p><p>而一个数据是较大的整数或浮点数<br>如a=2.0 b=2.0 a is b==&gt;False 则分配不同的内存地址</p><p>汉诺塔递归问题 啊啊啊算法是真的辣鸡 - -!</p><h4 id="List列表"><a href="#List列表" class="headerlink" title="List列表"></a>List列表</h4><p>del 删除命令</p><p>如a=[2,4,21,2]<br>del a[2] ==&gt; [2,4,2]<br>只是在原列表改 未生成新的列表<br>del一个变量后不能再使用此变量</p><p>不同列表相连 用加法 相同列表相 连用乘法</p><h4 id="列表内涵"><a href="#列表内涵" class="headerlink" title="列表内涵"></a>列表内涵</h4><p>此方法主要针对于用for循环打印时不能生成列表</p><p>用for来创建列表<br>a=[1,2,3,4,5]<br>b=[i for i in a] ==&gt; [1,2,3,4,5] </p><p>第一个i是生成b列表中的数</p><p>列表也可循环嵌套<br>c=[m+n for m in a for n in b]</p><h4 id="常用列表函数-len-max-min"><a href="#常用列表函数-len-max-min" class="headerlink" title="常用列表函数 len max min"></a>常用列表函数 len max min</h4><p>list() 将其他格式的数据转换为list<br>例如 s=”Hello World”<br>list(s)==&gt; [‘H’,’e’……]</p><p>把range产生的内容转换成list<br>list(range(12,19))</p><h4 id="传值和传地址的区别"><a href="#传值和传地址的区别" class="headerlink" title="传值和传地址的区别"></a>传值和传地址的区别</h4><p>简单数字 采用传值操作 </p><p>复杂变量 采用传址操作</p><p>append() 在列表末尾插入一个内容</p><p>insert(index,data) 指定位置插入</p><p>在index前插入data</p><p>pop 把最后一个元素取出来</p><p>remove 在列表中删除指定值元素</p>]]></content>
     
     <summary type="html">
     
@@ -48,55 +48,22 @@
   
   <entry>
     <title>python basic 3</title>
-    <link href="http://yoursite.com/2018/06/05/post5/"/>
-    <id>http://yoursite.com/2018/06/05/post5/</id>
+    <link href="http://yoursite.com/2018/06/05/python%20basic%203/"/>
+    <id>http://yoursite.com/2018/06/05/python basic 3/</id>
     <published>2018-06-05T12:15:41.000Z</published>
-    <updated>2018-06-05T14:02:38.921Z</updated>
+    <updated>2018-06-10T07:51:17.007Z</updated>
     
-    <content type="html"><![CDATA[<p> 这几天持续颓废… 真想找个队友一起监督..无奈 等下学期再说吧！</p><p>补充上周学的笔记：</p><p>主要就是函数的两个知识 其他的类比没啥新知识</p><p>收集参数</p><pre><code>1. def func(*args):  func_body按照list使用方式访问args得到传入的参数调用：  func(p1, p2, p3, .....)</code></pre><a id="more"></a><p>代码实例：</p><pre><code>收集参数代码函数模拟一个学生进行自我介绍，但具体内容不清楚args把他看做一个listdef stu( *args):print(&quot;Hello 大家好，我自我介绍以下，简答说两句：&quot;)type函数作用是检测变量的类型print(type(args))for item in args:print(item)stu(&quot;liuying&quot;, 18, &quot;北京大通州区&quot;, &quot;wangxiaojing&quot;, &quot;single&quot;)//用循环用遍历了args</code></pre><p>收集参数之关键字收集参数</p><pre><code>def func( **kwargs):   func_body    调用：    func(p1=v1, p2=v2, p3=v3........)  kwargs一般约定俗成  调用的时候，把多余的关键字参数放入kwargs  访问kwargs需要按字典格式访问</code></pre><p>代码实例：</p><pre><code>调用的时候需要使用关键字参数调用def stu( **kwargs):在函数体内对于kwargs的使用不用带星号print(&quot;Hello 大家好，我先自我介绍一下：&quot;)print(type(kwargs))对于字典的访问，python2 和python3有区别for k,v in kwargs.items():print(k, &quot;---&quot;, v)stu(name=&quot;liuying&quot;,  age=19, addr=&quot;北京大通州区&quot;, lover=&quot;王晓静&quot;, work=&quot;Teacher&quot;)print(&quot;*&quot; * 50)stu(name=&quot;周大神&quot;)</code></pre><p>收集参数的解包问题</p><pre><code>def stu(*args):print(&quot;哈哈哈哈哈&quot;)n 用来表示循环次数主要用来调试n = 0for i in args:    print(type(i))    print(n)    n += 1    print(i)    l = [&quot;liuying&quot;, 19, 23, &quot;wangxiaojing&quot;]     stu(l)    此时，args的表示形式是字典内一个list类型的元素，即 arg = ([&quot;liuying&quot;, 19, 23, &quot;wangxiaojing&quot;],)    很显然跟我们最初的想法违背    此时的调用，我们就需要解包符号，即调用的时候前面加一个星号    stu(*l)</code></pre><p>同理用**kwargs 得用两个**解包</p><p>Globals与Locals 内嵌函数</p><p>locals 是只读的,不可修改， 而globals可以修改，</p><p>原因是：</p><p>locals（）实际上没有返回局部名字空间，它返回的是一个拷贝。所以对它进行修改，修改的是拷贝，而对实际的局部名字空间中的变量值并无影响。</p><p>globals（）返回的是实际的全局名字空间，而不是一个拷贝: 与 locals 的行为完全相反。<br>所以对 globals 所返回的 dictionary 的任何的改动都会直接影响到全局变量的取值。</p><p>参考见 <a href="https://blog.csdn.net/sxingming/article/details/52061630" target="_blank" rel="noopener">Globals与Locals 内嵌函数</a></p><p>eval()函数</p><p>把一个字符串当成一个表达式来执行， 返回表达式执行后的结果</p><p>语法：</p><p>eval(string_code, globals=None, locals=None)<br>exec()函数</p><p>跟eval功能类似， 但是，不返回结果</p><p>语法：</p><p>  exec(string_code, globals=None, locals=None)</p><p>type是内置函数，负责打印出变量的类型</p><p>list列表常用操作</p><p>-使用下标操作 从0开始</p><p>如列表l=[2,3,4,2,21,4,2]</p><p>分片操作访问 包含左边下标值 不包含右边下标值</p><p>print(l[1:4])==&gt; [3,4,2]</p><p>print(l[:])==&gt;整个列表</p><p>print(l[2:])==&gt;[4,2,21,4,2]</p><p>print(l[:4])==&gt;[2,3,4,2]</p><p>分片操作可以控制增长幅度 默认为1</p><p>print(l[1:6:2])==&gt;[3,2,4]</p><p>下标可以超出范围，超出后不在考虑多余下标内容</p><p>分片之负数下标</p><p>如列表l=[2,3,4,2,21,4,2]</p><p>print(l[-4:-2])==&gt; NULL</p><p>分片左边的值默认小于右边的值 且负数下标从-1开始</p><p>如果一定要左边的值大于右边的值 那么增长幅度得变为负数</p><p>内置函数id 负责显示一个变量或者数据的唯一确定编号<br>疑问 详细了解id内置函数</p><p>分片操作是生成一个新的list 地址不同 不同份数据 可用内置函数id检测</p><p>而赋值操作是同一个list 地址相同 相同数据</p><p>—–Ending—–</p><p>总结:Bad day,studying makes me happy!!!</p>]]></content>
+    <content type="html"><![CDATA[<p> 这几天持续颓废… 真想找个队友一起监督..无奈 等下学期再说吧！</p><p>补充上周学的笔记：</p><p>input() 返回类型是字符串 需要用int( )转换<br>range(1,10)打印[1-10)</p><p>range()函数 python 2 3区别很大<br>randint是特例  左右都包含</p><p>pass用于占位</p><p>print函数默认打印一行 结尾自动换行</p><p>end()函数可以使输出不换行<br><a id="more"></a></p><h3 id="收集参数"><a href="#收集参数" class="headerlink" title="收集参数"></a>收集参数</h3><pre><code>1. def func(*args):  func_body按照list使用方式访问args得到传入的参数调用：  func(p1, p2, p3, .....)</code></pre><!--more--><p>代码实例：</p><pre><code>收集参数代码函数模拟一个学生进行自我介绍，但具体内容不清楚args把他看做一个listdef stu( *args):print(&quot;Hello 大家好，我自我介绍以下，简答说两句：&quot;)type函数作用是检测变量的类型print(type(args))for item in args:print(item)stu(&quot;liuying&quot;, 18, &quot;北京大通州区&quot;, &quot;wangxiaojing&quot;, &quot;single&quot;)//用循环用遍历了args</code></pre><h3 id="收集参数之关键字收集参数"><a href="#收集参数之关键字收集参数" class="headerlink" title="收集参数之关键字收集参数"></a>收集参数之关键字收集参数</h3><pre><code>def func( **kwargs):   func_body    调用：    func(p1=v1, p2=v2, p3=v3........)  kwargs一般约定俗成  调用的时候，把多余的关键字参数放入kwargs  访问kwargs需要按字典格式访问</code></pre><p>代码实例：</p><pre><code>调用的时候需要使用关键字参数调用def stu( **kwargs):在函数体内对于kwargs的使用不用带星号print(&quot;Hello 大家好，我先自我介绍一下：&quot;)print(type(kwargs))对于字典的访问，python2 和python3有区别for k,v in kwargs.items():print(k, &quot;---&quot;, v)stu(name=&quot;liuying&quot;,  age=19, addr=&quot;北京大通州区&quot;, lover=&quot;王晓静&quot;, work=&quot;Teacher&quot;)print(&quot;*&quot; * 50)stu(name=&quot;周大神&quot;)</code></pre><h3 id="收集参数的解包问题"><a href="#收集参数的解包问题" class="headerlink" title="收集参数的解包问题"></a>收集参数的解包问题</h3><pre><code>def stu(*args):print(&quot;哈哈哈哈哈&quot;)n 用来表示循环次数主要用来调试n = 0for i in args:    print(type(i))    print(n)    n += 1    print(i)    l = [&quot;liuying&quot;, 19, 23, &quot;wangxiaojing&quot;]     stu(l)    此时，args的表示形式是字典内一个list类型的元素，即 arg = ([&quot;liuying&quot;, 19, 23, &quot;wangxiaojing&quot;],)    很显然跟我们最初的想法违背    此时的调用，我们就需要解包符号，即调用的时候前面加一个星号    stu(*l)</code></pre><p>同理用**kwargs 得用两个**解包</p><p>Globals与Locals 内嵌函数</p><p>locals 是只读的,不可修改， 而globals可以修改，</p><p>原因是：</p><p>locals（）实际上没有返回局部名字空间，它返回的是一个拷贝。所以对它进行修改，修改的是拷贝，而对实际的局部名字空间中的变量值并无影响。</p><p>globals（）返回的是实际的全局名字空间，而不是一个拷贝: 与 locals 的行为完全相反。<br>所以对 globals 所返回的 dictionary 的任何的改动都会直接影响到全局变量的取值。</p><p>参考见 <a href="https://blog.csdn.net/sxingming/article/details/52061630" target="_blank" rel="noopener">Globals与Locals 内嵌函数</a></p><h3 id="eval-函数"><a href="#eval-函数" class="headerlink" title="eval()函数"></a>eval()函数</h3><p>把一个字符串当成一个表达式来执行， 返回表达式执行后的结果</p><p>语法：</p><p>eval(string_code, globals=None, locals=None)</p><h3 id="exec-函数"><a href="#exec-函数" class="headerlink" title="exec()函数"></a>exec()函数</h3><p>跟eval功能类似， 但是，不返回结果</p><p>语法：</p><p>  exec(string_code, globals=None, locals=None)</p><p>type是内置函数，负责打印出变量的类型</p><h3 id="list列表常用操作"><a href="#list列表常用操作" class="headerlink" title="list列表常用操作"></a>list列表常用操作</h3><p>-使用下标操作 从0开始</p><p>如列表l=[2,3,4,2,21,4,2]</p><h4 id="分片操作访问-包含左边下标值-不包含右边下标值"><a href="#分片操作访问-包含左边下标值-不包含右边下标值" class="headerlink" title="分片操作访问 包含左边下标值 不包含右边下标值"></a>分片操作访问 包含左边下标值 不包含右边下标值</h4><p>print(l[1:4])==&gt; [3,4,2]</p><p>print(l[:])==&gt;整个列表</p><p>print(l[2:])==&gt;[4,2,21,4,2]</p><p>print(l[:4])==&gt;[2,3,4,2]</p><p>分片操作可以控制增长幅度 默认为1</p><p>print(l[1:6:2])==&gt;[3,2,4]</p><p>下标可以超出范围，超出后不在考虑多余下标内容</p><p>分片之负数下标</p><p>如列表l=[2,3,4,2,21,4,2]</p><p>print(l[-4:-2])==&gt; NULL</p><p>分片左边的值默认小于右边的值 且负数下标从-1开始</p><p>如果一定要左边的值大于右边的值 那么增长幅度得变为负数</p><p>内置函数id 负责显示一个变量或者数据的唯一确定编号<br>疑问 详细了解id内置函数</p><p>分片操作是生成一个新的list 地址不同 不同份数据 可用内置函数id检测</p><p>而赋值操作是同一个list 地址相同 相同数据</p><p>—–Ending—–</p><p>总结:Bad day,studying makes me happy!!!</p>]]></content>
     
     <summary type="html">
     
       &lt;p&gt; 这几天持续颓废… 真想找个队友一起监督..无奈 等下学期再说吧！&lt;/p&gt;
 &lt;p&gt;补充上周学的笔记：&lt;/p&gt;
-&lt;p&gt;主要就是函数的两个知识 其他的类比没啥新知识&lt;/p&gt;
-&lt;p&gt;收集参数&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;1. def func(*args):
-  func_body
-按照list使用方式访问args得到传入的参数
-调用：
-  func(p1, p2, p3, .....)
-&lt;/code&gt;&lt;/pre&gt;
-    
-    </summary>
-    
-      <category term="Learning" scheme="http://yoursite.com/categories/Learning/"/>
-    
-      <category term="python" scheme="http://yoursite.com/categories/Learning/python/"/>
-    
-    
-      <category term="python" scheme="http://yoursite.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>3</title>
-    <link href="http://yoursite.com/2018/06/01/3/"/>
-    <id>http://yoursite.com/2018/06/01/3/</id>
-    <published>2018-06-01T07:29:41.000Z</published>
-    <updated>2018-06-01T10:02:22.658Z</updated>
-    
-    <content type="html"><![CDATA[<p>input() 返回类型是字符串 需要用int( )转换<br>range(1,10)打印[1-10)</p><p>range()函数 python 2 3区别很大<br>randint是特例  左右都包含</p><p>pass用于占位</p><p>print函数默认打印一行 结尾自动换行</p><p>end()函数可以使输出不换行</p><p>收集参数 fuc(*args)</p><p>收集参数之关键字收集参数</p><pre><code>fuc(**kwargs)for k,v in kwargs.items()print(k,&quot;----&quot;,v)</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;input() 返回类型是字符串 需要用int( )转换&lt;br&gt;range(1,10)打印[1-10)&lt;/p&gt;
+&lt;p&gt;input() 返回类型是字符串 需要用int( )转换&lt;br&gt;range(1,10)打印[1-10)&lt;/p&gt;
 &lt;p&gt;range()函数 python 2 3区别很大&lt;br&gt;randint是特例  左右都包含&lt;/p&gt;
 &lt;p&gt;pass用于占位&lt;/p&gt;
-&lt;p&gt;print函数默认
-      
+&lt;p&gt;print函数默认打印一行 结尾自动换行&lt;/p&gt;
+&lt;p&gt;end()函数可以使输出不换行&lt;br&gt;
     
     </summary>
     
@@ -111,16 +78,16 @@
   
   <entry>
     <title>sql injection 1</title>
-    <link href="http://yoursite.com/2018/05/30/post4/"/>
-    <id>http://yoursite.com/2018/05/30/post4/</id>
+    <link href="http://yoursite.com/2018/05/30/sql%20injection%201/"/>
+    <id>http://yoursite.com/2018/05/30/sql injection 1/</id>
     <published>2018-05-30T11:15:26.000Z</published>
-    <updated>2018-05-30T13:20:08.497Z</updated>
+    <updated>2018-06-10T07:53:19.546Z</updated>
     
-    <content type="html"><![CDATA[<p>False注入<br> 以xxxxx=0为主题<br><img src="https://p3.ssl.qhimg.com/t01aff368d1f78f00ff.jpg" alt=""><br><a id="more"></a><br><img src="https://p2.ssl.qhimg.com/t01384c749fc9052787.jpg" alt=""></p><p>两张图中 用 username=0 passwd=0 分别爆出数据库 但数据个数不同</p><p>首先为什么会爆出数据库？涉及到MYSQL隐式类型转化</p><pre><code>关于官方文档中是这么说的The following rules describe how conversion occurs for comparison operations:If one or both arguments are NULL, the result of the comparison is NULL, except for the NULL-safe &lt;=&gt; equality comparison operator. For NULL &lt;=&gt; NULL, the result is true. No conversion is needed.If both arguments in a comparison operation are strings, they are compared as strings.If both arguments are integers, they are compared as integers.Hexadecimal values are treated as binary strings if not compared to a number.If one of the arguments is a TIMESTAMP or DATETIME column and the other argument is a constant, the constant is converted to a timestamp before the comparison is performed. This is done to be more ODBC-friendly. Note that this is not done for the arguments to IN()! To be safe, always use complete datetime, date, or time strings when doing comparisons. For example, to achieve best results when using BETWEEN with date or time values, use CAST() to explicitly convert the values to the desired data type.If one of the arguments is a decimal value, comparison depends on the other argument. The arguments are compared as decimal values if the other argument is a decimal or integer value, or as floating-point values if the other argument is a floating-point value.In all other cases, the arguments are compared as floating-point (real) numbers.其中大致是：如果两个参数比较，有至少一个NULL，结果就是NULL，除了是用NULL&lt;=&gt;NULL 会返回1。不做类型转换两个参数都是字符串，按照字符串比较。不做类型转换两个参数都是整数，按照整数比较。不做类型转换如果不与数字进行比较，则将十六进制值视为二进制字符串。有一个参数是 TIMESTAMP 或 DATETIME，并且另外一个参数是常量，常量会被转换为时间戳有一个参数是 decimal 类型，如果另外一个参数是 decimal 或者整数，会将整数转换为 decimal 后进行比较，如果另外一个参数是浮点数，则会把 decimal 转换为浮点数进行比较所有其他情况下，两个参数都会被转换为浮点数再进行比较</code></pre><p>注意最后一句话就行: 有其他情况下，两个参数都会被转换为浮点数再进行比较<br>这里=之前的username 和pwd都是字符串 =之后的0是数字</p><p>所以这里当字符串转换为浮点数 username中admin test leej都是以字母开头 passwd以数字开头</p><p>当字符串转换为浮点数时 如果数字开头 则会从数字后截断 </p><p>所以这里才会存在username爆出三段数据 passwd爆出两端数据</p><p>除此之外还可以通过比较运算符来构造xxxxx=0<br>这里就举几个例子</p><pre><code>where username=&apos;&apos;=0&lt;=&gt;1#&apos;</code></pre><p>‘’=0&lt;=&gt;1#’ 首先最后的’被#截断 整体变为’’=0&lt;=&gt;1</p><p>‘’=0 结果为0 整体变为 0&lt;==&gt;1 结果为 0<br>所以最后转化成为 username=0</p><p>到这里想起之前注入的几个函数再复习下</p><p>1.left()/right()</p><pre><code>left/right(str,length)eg: SELECT LEFT(NAME,2),RIGHT(NAME,2) FROM T1   </code></pre><p>返回结果为 ‘NA’ 、’ME’   *从字符串左边开始截取长度为2的字符串   从字符串右边开始截取长度为2的字符串</p><p>2.substr()</p><pre><code>substr(str,begin-location,length(可选))</code></pre><p>规定在字符串的何处开始。</p><p>length：<br>正数 - 在字符串的指定位置开始</p><p>负数 - 在从字符串结尾开始的指定位置开始</p><p>0 - 在字符串中的第一个字符处开始</p><p>3.mid()</p><pre><code>mid(str,begin-location,length(可选))</code></pre><p>与substr唯一区别在于mid必须规定开始位置 且起始值为1</p><p>4.rand()</p><pre><code>rand(begin,end)</code></pre><p>即begin-end之间取随机数</p><p>5.if()</p><pre><code>if(a,b,c)</code></pre><p>如果a=ture 则返回b 如果a=false 则返回c</p><p>——————————今晚结束————————————<br>总结一个字：太菜！！！</p>]]></content>
+    <content type="html"><![CDATA[<p>##False注入<br> 以xxxxx=0为主题<br><img src="https://p3.ssl.qhimg.com/t01aff368d1f78f00ff.jpg" alt=""><br><a id="more"></a><br><img src="https://p2.ssl.qhimg.com/t01384c749fc9052787.jpg" alt=""></p><p>两张图中 用 username=0 passwd=0 分别爆出数据库 但数据个数不同</p><p>首先为什么会爆出数据库？涉及到MYSQL隐式类型转化</p><pre><code>关于官方文档中是这么说的The following rules describe how conversion occurs for comparison operations:If one or both arguments are NULL, the result of the comparison is NULL, except for the NULL-safe &lt;=&gt; equality comparison operator. For NULL &lt;=&gt; NULL, the result is true. No conversion is needed.If both arguments in a comparison operation are strings, they are compared as strings.If both arguments are integers, they are compared as integers.Hexadecimal values are treated as binary strings if not compared to a number.If one of the arguments is a TIMESTAMP or DATETIME column and the other argument is a constant, the constant is converted to a timestamp before the comparison is performed. This is done to be more ODBC-friendly. Note that this is not done for the arguments to IN()! To be safe, always use complete datetime, date, or time strings when doing comparisons. For example, to achieve best results when using BETWEEN with date or time values, use CAST() to explicitly convert the values to the desired data type.If one of the arguments is a decimal value, comparison depends on the other argument. The arguments are compared as decimal values if the other argument is a decimal or integer value, or as floating-point values if the other argument is a floating-point value.In all other cases, the arguments are compared as floating-point (real) numbers.其中大致是：如果两个参数比较，有至少一个NULL，结果就是NULL，除了是用NULL&lt;=&gt;NULL 会返回1。不做类型转换两个参数都是字符串，按照字符串比较。不做类型转换两个参数都是整数，按照整数比较。不做类型转换如果不与数字进行比较，则将十六进制值视为二进制字符串。有一个参数是 TIMESTAMP 或 DATETIME，并且另外一个参数是常量，常量会被转换为时间戳有一个参数是 decimal 类型，如果另外一个参数是 decimal 或者整数，会将整数转换为 decimal 后进行比较，如果另外一个参数是浮点数，则会把 decimal 转换为浮点数进行比较所有其他情况下，两个参数都会被转换为浮点数再进行比较</code></pre><p>注意最后一句话就行: 有其他情况下，两个参数都会被转换为浮点数再进行比较<br>这里=之前的username 和pwd都是字符串 =之后的0是数字</p><p>所以这里当字符串转换为浮点数 username中admin test leej都是以字母开头 passwd以数字开头</p><p>当字符串转换为浮点数时 如果数字开头 则会从数字后截断 </p><p>所以这里才会存在username爆出三段数据 passwd爆出两端数据</p><p>除此之外还可以通过比较运算符来构造xxxxx=0<br>这里就举几个例子</p><pre><code>where username=&apos;&apos;=0&lt;=&gt;1#&apos;</code></pre><p>‘’=0&lt;=&gt;1#’ 首先最后的’被#截断 整体变为’’=0&lt;=&gt;1</p><p>‘’=0 结果为0 整体变为 0&lt;==&gt;1 结果为 0<br>所以最后转化成为 username=0</p><h4 id="到这里想起之前注入的几个函数再复习下"><a href="#到这里想起之前注入的几个函数再复习下" class="headerlink" title="到这里想起之前注入的几个函数再复习下"></a>到这里想起之前注入的几个函数再复习下</h4><h4 id="1-left-right"><a href="#1-left-right" class="headerlink" title="1.left()/right()"></a>1.left()/right()</h4><pre><code>left/right(str,length)eg: SELECT LEFT(NAME,2),RIGHT(NAME,2) FROM T1   </code></pre><p>返回结果为 ‘NA’ 、’ME’   *从字符串左边开始截取长度为2的字符串   从字符串右边开始截取长度为2的字符串</p><h4 id="2-substr"><a href="#2-substr" class="headerlink" title="2.substr()"></a>2.substr()</h4><pre><code>substr(str,begin-location,length(可选))</code></pre><p>规定在字符串的何处开始。</p><p>length：<br>正数 - 在字符串的指定位置开始</p><p>负数 - 在从字符串结尾开始的指定位置开始</p><p>0 - 在字符串中的第一个字符处开始</p><h4 id="3-mid"><a href="#3-mid" class="headerlink" title="3.mid()"></a>3.mid()</h4><pre><code>mid(str,begin-location,length(可选))</code></pre><p>与substr唯一区别在于mid必须规定开始位置 且起始值为1</p><h4 id="4-rand"><a href="#4-rand" class="headerlink" title="4.rand()"></a>4.rand()</h4><pre><code>rand(begin,end)</code></pre><p>即begin-end之间取随机数</p><h4 id="5-if"><a href="#5-if" class="headerlink" title="5.if()"></a>5.if()</h4><pre><code>if(a,b,c)</code></pre><p>如果a=ture 则返回b 如果a=false 则返回c</p><p>——————————今晚结束————————————</p><p>总结一个字：太菜！！！</p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;False注入&lt;br&gt; 以xxxxx=0为主题&lt;br&gt;&lt;img src=&quot;https://p3.ssl.qhimg.com/t01aff368d1f78f00ff.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+      &lt;p&gt;##False注入&lt;br&gt; 以xxxxx=0为主题&lt;br&gt;&lt;img src=&quot;https://p3.ssl.qhimg.com/t01aff368d1f78f00ff.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
     
     </summary>
     
@@ -135,19 +102,19 @@
   
   <entry>
     <title>python basic 2</title>
-    <link href="http://yoursite.com/2018/05/30/post3/"/>
-    <id>http://yoursite.com/2018/05/30/post3/</id>
+    <link href="http://yoursite.com/2018/05/30/python%20basic%202/"/>
+    <id>http://yoursite.com/2018/05/30/python basic 2/</id>
     <published>2018-05-30T06:43:43.000Z</published>
-    <updated>2018-06-01T07:45:49.740Z</updated>
+    <updated>2018-06-10T07:54:06.476Z</updated>
     
-    <content type="html"><![CDATA[<p>块注释: 三个单引号或者双引号开始结束</p><p>查看关键字方法 import keyword –&gt;keyword.kwlist</p><p> //去试试换行输出</p><p>标准数据 六种<br><a id="more"></a><br>数字类型 Number<br>字符串类型 str<br>列表 list<br>元组 tuple<br>字典 Dictionary<br>集合 set</p><p>-数字类型：无大小限制<br>二进制：以0b开头<br>八进制：以为0o开头 包含0-7的数字<br>十六进制：每四位二进制表示一位十六进制数 包含0-9 a-f 以0x开头<br>//百度算法</p><p>单引号双引号只能表示一行 </p><p>字符串的格式化</p><p>-利用百分号% </p><p>例如 </p><p>单个 print(“I love %s” % “dsadas”)<br>双个 print(“I love %s ,she are %d” % (“asdas”,12))</p><p>format函数格式化</p><p>-利用format函数 推荐<br>以{} 和： 代替 百分号 后面用.连接后+format带参数完成</p><p>例如:print(“你输入的性别是:{0}”.format(gender))</p><p>python无自增自减</p><p>逻辑运算符 转为数学运算 我觉得这个太巧妙了！！！<br><img src="https://i.imgur.com/vSbrcsM.png" alt=""><br>短路问题 一旦能够确定整个式子值 后面都不运算 精辟！！！</p><p>成员运算符号<br>in not in</p><p>身份运算 is is not</p>]]></content>
+    <content type="html"><![CDATA[<p>块注释: 三个单引号或者双引号开始结束</p><p>查看关键字方法 import keyword –&gt;keyword.kwlist</p><p> //去试试换行输出</p><h4 id="标准数据-六种"><a href="#标准数据-六种" class="headerlink" title="标准数据 六种"></a>标准数据 六种</h4><a id="more"></a><p>数字类型 Number<br>字符串类型 str<br>列表 list<br>元组 tuple<br>字典 Dictionary<br>集合 set</p><p>-数字类型：无大小限制<br>二进制：以0b开头<br>八进制：以为0o开头 包含0-7的数字<br>十六进制：每四位二进制表示一位十六进制数 包含0-9 a-f 以0x开头<br>//百度算法</p><p>单引号双引号只能表示一行 </p><h4 id="字符串的格式化"><a href="#字符串的格式化" class="headerlink" title="字符串的格式化"></a>字符串的格式化</h4><p>-利用百分号% </p><p>例如 </p><p>单个 print(“I love %s” % “dsadas”)<br>双个 print(“I love %s ,she are %d” % (“asdas”,12))</p><h4 id="format函数格式化"><a href="#format函数格式化" class="headerlink" title="format函数格式化"></a>format函数格式化</h4><p>-利用format函数 推荐<br>以{} 和： 代替 百分号 后面用.连接后+format带参数完成</p><p>例如:print(“你输入的性别是:{0}”.format(gender))</p><p>python无自增自减</p><p>逻辑运算符 转为数学运算 我觉得这个太巧妙了！！！<br><img src="https://i.imgur.com/vSbrcsM.png" alt=""><br>短路问题 一旦能够确定整个式子值 后面都不运算 精辟！！！</p><p>成员运算符号<br>in not in</p><p>身份运算 is is not</p>]]></content>
     
     <summary type="html">
     
       &lt;p&gt;块注释: 三个单引号或者双引号开始结束&lt;/p&gt;
 &lt;p&gt;查看关键字方法 import keyword –&amp;gt;keyword.kwlist&lt;/p&gt;
 &lt;p&gt; //去试试换行输出&lt;/p&gt;
-&lt;p&gt;标准数据 六种&lt;br&gt;
+&lt;h4 id=&quot;标准数据-六种&quot;&gt;&lt;a href=&quot;#标准数据-六种&quot; class=&quot;headerlink&quot; title=&quot;标准数据 六种&quot;&gt;&lt;/a&gt;标准数据 六种&lt;/h4&gt;
     
     </summary>
     
@@ -162,8 +129,8 @@
   
   <entry>
     <title>python basic 1</title>
-    <link href="http://yoursite.com/2018/05/29/Learing%20process-python%20basic%201/"/>
-    <id>http://yoursite.com/2018/05/29/Learing process-python basic 1/</id>
+    <link href="http://yoursite.com/2018/05/29/python%20basic%201/"/>
+    <id>http://yoursite.com/2018/05/29/python basic 1/</id>
     <published>2018-05-29T02:58:31.000Z</published>
     <updated>2018-05-30T11:17:09.744Z</updated>
     

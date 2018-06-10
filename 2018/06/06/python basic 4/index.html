@@ -79,20 +79,18 @@
 
 
 
-<meta name="description" content="块注释: 三个单引号或者双引号开始结束 查看关键字方法 import keyword –&amp;gt;keyword.kwlist  //去试试换行输出 标准数据 六种">
+<meta name="description" content="昨天关于那个id()内置函数 百度了下 开了眼界 id() 函数 配合 is 使用 当一个数据是较小的整数时如 a=1 b=1 a is b==&amp;gt;True is比较的是a与b分配的内存地址 为了提高内存利用效率对于一些简单的对象，如一些数值较小的int对象，python采取重用对象内存的办法，如指向a=2，b=2时，由于2作为简单的int类型且数值小，python不会两次为其分配内存，而是只">
 <meta name="keywords" content="python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python basic 2">
-<meta property="og:url" content="http://yoursite.com/2018/05/30/post3/index.html">
+<meta property="og:title" content="python basic 4">
+<meta property="og:url" content="http://yoursite.com/2018/06/06/python basic 4/index.html">
 <meta property="og:site_name" content="cEngF13h&#39;s b1og">
-<meta property="og:description" content="块注释: 三个单引号或者双引号开始结束 查看关键字方法 import keyword –&amp;gt;keyword.kwlist  //去试试换行输出 标准数据 六种">
+<meta property="og:description" content="昨天关于那个id()内置函数 百度了下 开了眼界 id() 函数 配合 is 使用 当一个数据是较小的整数时如 a=1 b=1 a is b==&amp;gt;True is比较的是a与b分配的内存地址 为了提高内存利用效率对于一些简单的对象，如一些数值较小的int对象，python采取重用对象内存的办法，如指向a=2，b=2时，由于2作为简单的int类型且数值小，python不会两次为其分配内存，而是只">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://i.imgur.com/vSbrcsM.png">
-<meta property="og:updated_time" content="2018-06-01T07:45:49.740Z">
+<meta property="og:updated_time" content="2018-06-10T07:52:10.317Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="python basic 2">
-<meta name="twitter:description" content="块注释: 三个单引号或者双引号开始结束 查看关键字方法 import keyword –&amp;gt;keyword.kwlist  //去试试换行输出 标准数据 六种">
-<meta name="twitter:image" content="https://i.imgur.com/vSbrcsM.png">
+<meta name="twitter:title" content="python basic 4">
+<meta name="twitter:description" content="昨天关于那个id()内置函数 百度了下 开了眼界 id() 函数 配合 is 使用 当一个数据是较小的整数时如 a=1 b=1 a is b==&amp;gt;True is比较的是a与b分配的内存地址 为了提高内存利用效率对于一些简单的对象，如一些数值较小的int对象，python采取重用对象内存的办法，如指向a=2，b=2时，由于2作为简单的int类型且数值小，python不会两次为其分配内存，而是只">
 
 
 
@@ -122,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/05/30/post3/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/06/python basic 4/"/>
 
 
 
 
 
-  <title>python basic 2 | cEngF13h's b1og</title>
+  <title>python basic 4 | cEngF13h's b1og</title>
   
 
 
@@ -299,7 +297,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/30/post3/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/06/python basic 4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="cEngF13h">
@@ -316,7 +314,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">python basic 2</h1>
+          <h1 class="post-title" itemprop="name headline">python basic 4</h1>
         
 
         <div class="post-meta">
@@ -328,8 +326,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-30T14:43:43+08:00">
-                2018-05-30
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-06-06T15:39:21+08:00">
+                2018-06-06
               </time>
             
 
@@ -399,23 +397,28 @@
       
 
       
-        <p>块注释: 三个单引号或者双引号开始结束</p>
-<p>查看关键字方法 import keyword –&gt;keyword.kwlist</p>
-<p> //去试试换行输出</p>
-<p>标准数据 六种<br><a id="more"></a><br>数字类型 Number<br>字符串类型 str<br>列表 list<br>元组 tuple<br>字典 Dictionary<br>集合 set</p>
-<p>-数字类型：无大小限制<br>二进制：以0b开头<br>八进制：以为0o开头 包含0-7的数字<br>十六进制：每四位二进制表示一位十六进制数 包含0-9 a-f 以0x开头<br>//百度算法</p>
-<p>单引号双引号只能表示一行 </p>
-<p>字符串的格式化</p>
-<p>-利用百分号% </p>
-<p>例如 </p>
-<p>单个 print(“I love %s” % “dsadas”)<br>双个 print(“I love %s ,she are %d” % (“asdas”,12))</p>
-<p>format函数格式化</p>
-<p>-利用format函数 推荐<br>以{} 和： 代替 百分号 后面用.连接后+format带参数完成</p>
-<p>例如:print(“你输入的性别是:{0}”.format(gender))</p>
-<p>python无自增自减</p>
-<p>逻辑运算符 转为数学运算 我觉得这个太巧妙了！！！<br><img src="https://i.imgur.com/vSbrcsM.png" alt=""><br>短路问题 一旦能够确定整个式子值 后面都不运算 精辟！！！</p>
-<p>成员运算符号<br>in not in</p>
-<p>身份运算 is is not</p>
+        <p>昨天关于那个id()内置函数 百度了下 开了眼界</p>
+<p>id() 函数 配合 is 使用</p>
+<p>当一个数据是较小的整数时<br>如 a=1 b=1 a is b==&gt;True is比较的是a与b分配的内存地址</p>
+<p>为了提高内存利用效率对于一些简单的对象，如一些数值较小的int对象，python采取重用对象内存的办法，如指向a=2，b=2时，由于2作为简单的int类型且数值小，python不会两次为其分配内存，而是只分配一次，然后将a与b同时指向已分配的对象</p>
+<p>而一个数据是较大的整数或浮点数<br>如a=2.0 b=2.0 a is b==&gt;False 则分配不同的内存地址</p>
+<p>汉诺塔递归问题 啊啊啊算法是真的辣鸡 - -!</p>
+<h4 id="List列表"><a href="#List列表" class="headerlink" title="List列表"></a>List列表</h4><p>del 删除命令</p>
+<p>如a=[2,4,21,2]<br>del a[2] ==&gt; [2,4,2]<br>只是在原列表改 未生成新的列表<br>del一个变量后不能再使用此变量</p>
+<p>不同列表相连 用加法 相同列表相 连用乘法</p>
+<h4 id="列表内涵"><a href="#列表内涵" class="headerlink" title="列表内涵"></a>列表内涵</h4><p>此方法主要针对于用for循环打印时不能生成列表</p>
+<p>用for来创建列表<br>a=[1,2,3,4,5]<br>b=[i for i in a] ==&gt; [1,2,3,4,5] </p>
+<p>第一个i是生成b列表中的数</p>
+<p>列表也可循环嵌套<br>c=[m+n for m in a for n in b]</p>
+<h4 id="常用列表函数-len-max-min"><a href="#常用列表函数-len-max-min" class="headerlink" title="常用列表函数 len max min"></a>常用列表函数 len max min</h4><p>list() 将其他格式的数据转换为list<br>例如 s=”Hello World”<br>list(s)==&gt; [‘H’,’e’……]</p>
+<p>把range产生的内容转换成list<br>list(range(12,19))</p>
+<h4 id="传值和传地址的区别"><a href="#传值和传地址的区别" class="headerlink" title="传值和传地址的区别"></a>传值和传地址的区别</h4><p>简单数字 采用传值操作 </p>
+<p>复杂变量 采用传址操作</p>
+<p>append() 在列表末尾插入一个内容</p>
+<p>insert(index,data) 指定位置插入</p>
+<p>在index前插入data</p>
+<p>pop 把最后一个元素取出来</p>
+<p>remove 在列表中删除指定值元素</p>
 
       
     </div>
@@ -446,8 +449,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/29/Learing process-python basic 1/" rel="next" title="python basic 1">
-                <i class="fa fa-chevron-left"></i> python basic 1
+              <a href="/2018/06/05/python basic 3/" rel="next" title="python basic 3">
+                <i class="fa fa-chevron-left"></i> python basic 3
               </a>
             
           </div>
@@ -455,10 +458,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/05/30/post4/" rel="prev" title="sql injection 1">
-                sql injection 1 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -510,8 +509,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -530,7 +538,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -582,6 +590,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#List列表"><span class="nav-number">1.</span> <span class="nav-text">List列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#列表内涵"><span class="nav-number">2.</span> <span class="nav-text">列表内涵</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常用列表函数-len-max-min"><span class="nav-number">3.</span> <span class="nav-text">常用列表函数 len max min</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#传值和传地址的区别"><span class="nav-number">4.</span> <span class="nav-text">传值和传地址的区别</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
