@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-08-04T09:49:34.517Z</updated>
+  <updated>2018-08-04T09:52:52.745Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,20 +21,26 @@
     <link href="http://yoursite.com/2018/08/04/postx-1/"/>
     <id>http://yoursite.com/2018/08/04/postx-1/</id>
     <published>2018-08-04T08:21:23.588Z</published>
-    <updated>2018-08-04T09:49:34.517Z</updated>
+    <updated>2018-08-04T09:52:52.745Z</updated>
     
-    <content type="html"><![CDATA[<hr><p>title: python oop1<br>date: 2018-08-04 16:21:23<br>tags: “python”<br>categories:</p><ul><li>“Learning”</li><li>“python”<br>##类与对象</li></ul><p>定义一个空对象</p><pre><code>class classx():    pass    name=None</code></pre><p>用None给不确定的值赋值</p><p>实例化一个obj</p><pre><code>obj=classx()</code></pre><p>可以通过默认内置变量检查类和对象的所有成员</p><p>对象所有成员检查 obj.<strong>dict</strong></p><p>类所有的成员    class_name.<strong>dict</strong></p><p>创建对象时，类中的成员不会放入对象当中，而是得到一个空对象，没有成员。通过对象对类中成员重新赋值或则通过对象添加成员时，对应成员会保存在对象中，而不会修改类成员。</p><pre><code>例如class A():    age=16    name=&quot;ltl&quot;print(A.age,&quot;---&quot;,A.name)a=A()print(id(A.name),id(a.name))a.name=&quot;lyp&quot;a.age=18print(a.age,&quot;---&quot;,a.name)print(id(A.name),id(a.name))输出结果：16 --- ltl20235456 2023545618 --- lyp20235456 49571360</code></pre><p>关于self的用法</p><p><img src="https://i.imgur.com/sq9IrNE.png" alt=""></p><p>###封装</p><p>私有成员在前面加两下划线 如__a </p><p>私有在类外如何访问？a._类名__成员</p>]]></content>
+    <content type="html"><![CDATA[<hr><p>title: python oop1<br>date: 2018-08-04 16:21:23<br>tags: “python”<br>categories:</p><ul><li>“Learning”</li><li>“python”<br>##类与对象</li></ul><p>定义一个空对象</p><pre><code>class classx():    pass    name=None</code></pre><p>用None给不确定的值赋值</p><p>实例化一个obj</p><pre><code>obj=classx()</code></pre><a id="more"></a><p>可以通过默认内置变量检查类和对象的所有成员</p><p>对象所有成员检查 obj.<strong>dict</strong></p><p>类所有的成员    class_name.<strong>dict</strong></p><p>创建对象时，类中的成员不会放入对象当中，而是得到一个空对象，没有成员。通过对象对类中成员重新赋值或则通过对象添加成员时，对应成员会保存在对象中，而不会修改类成员。</p><pre><code>例如class A():    age=16    name=&quot;ltl&quot;print(A.age,&quot;---&quot;,A.name)a=A()print(id(A.name),id(a.name))a.name=&quot;lyp&quot;a.age=18print(a.age,&quot;---&quot;,a.name)print(id(A.name),id(a.name))输出结果：16 --- ltl20235456 2023545618 --- lyp20235456 49571360</code></pre><p>关于self的用法</p><p><img src="https://i.imgur.com/sq9IrNE.png" alt=""></p><p>###封装</p><p>私有成员在前面加两下划线 如__a </p><p>私有在类外如何访问？a._类名__成员</p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;hr&gt;
+      &lt;hr&gt;
 &lt;p&gt;title: python oop1&lt;br&gt;date: 2018-08-04 16:21:23&lt;br&gt;tags: “python”&lt;br&gt;categories:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;“Learning”&lt;/li&gt;
-&lt;li&gt;“python”&lt;br&gt;##类与对象
-      
+&lt;li&gt;“python”&lt;br&gt;##类与对象&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;定义一个空对象&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;class classx():
+    pass
+    name=None
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;用None给不确定的值赋值&lt;/p&gt;
+&lt;p&gt;实例化一个obj&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;obj=classx()
+&lt;/code&gt;&lt;/pre&gt;
     
     </summary>
     
@@ -46,20 +52,18 @@
     <link href="http://yoursite.com/2018/07/28/postx/"/>
     <id>http://yoursite.com/2018/07/28/postx/</id>
     <published>2018-07-28T01:31:49.000Z</published>
-    <updated>2018-08-04T08:20:07.981Z</updated>
+    <updated>2018-08-04T09:52:26.251Z</updated>
     
-    <content type="html"><![CDATA[<p>要弄清关于元组的函数与元组的函数 父与子</p><p>index 求元组的索引值</p><p>变量交换值 a,b=b,a</p><p>###集合-set<br>集合内数据无序，即无法使用索引和分片</p><p>集合内部数据元素具有唯一性，可以用来排除重复数据<br>定义集合方式 </p><p>集合内的数据只能是可哈希数据，就是不可更改的数据类型，如字符串，元组，对象</p><p>1.s=set() 空集合 2.s={1，1，1，1} 大括号内要有值 否则定义的是dict</p><p>discard 移除集合中指定的值，跟remove一样，但是要删除的值不存在时，不报错，remove要报错</p><p>集合函数</p><p>intersection：交集 difference：差集 union：并集<br>issubset：检查一个集合是否为另一个子集（返回bool值） issuperset：检查一个集合是否为另一个超集</p><p>###frozen set：冰冻集合</p><p>顾名思义为不可进行修改的集合</p><p>s=frozenset()</p><p>###字典</p><p>字典是一种组合数据，没顺序的组合数据，数据以键值对形式出现</p><p>创建空字典 1.d={} 2.d=dict()</p><p>方式一：创建有值字典<br>d={“one”:1,”two”:2,”three”:3}</p><p>方式二：用dict创建有内容字典<br>d=dict({“one”:1,”two”:2,”three”:3})</p><p>方式三：利用关键字参数创建有内容字典<br>d=dict(one=1,two=2,three=3)</p><p>嵌套元组 d=dict([(“one”,1),(“two,2”),(“three,3”)])</p><p>####字典的成员检测 </p><p><img src="https://i.imgur.com/5S2T30e.png" alt=""></p><p>####字典的遍历</p><p><img src="https://i.imgur.com/TCUeeX5.png" alt=""></p><p>####特殊用法</p><p><img src="https://i.imgur.com/wy3FFHt.png" alt=""></p><p>其中items 返回字典的键值对组成的元组格式，keys返回字典的键组成的一个结构，values返回字典的值组成的一个结构。</p><p>#####get</p><p><img src="https://i.imgur.com/q6itIuF.png" alt=""></p><p>#####from keys</p><p><img src="https://i.imgur.com/Orj0weI.png" alt=""></p>]]></content>
+    <content type="html"><![CDATA[<p>要弄清关于元组的函数与元组的函数 父与子</p><p>index 求元组的索引值</p><p>变量交换值 a,b=b,a</p><p>###集合-set<br>集合内数据无序，即无法使用索引和分片</p><p>集合内部数据元素具有唯一性，可以用来排除重复数据<br>定义集合方式 </p><p>集合内的数据只能是可哈希数据，就是不可更改的数据类型，如字符串，元组，对象<br><a id="more"></a><br>1.s=set() 空集合 2.s={1，1，1，1} 大括号内要有值 否则定义的是dict</p><p>discard 移除集合中指定的值，跟remove一样，但是要删除的值不存在时，不报错，remove要报错</p><p>集合函数</p><p>intersection：交集 difference：差集 union：并集<br>issubset：检查一个集合是否为另一个子集（返回bool值） issuperset：检查一个集合是否为另一个超集</p><p>###frozen set：冰冻集合</p><p>顾名思义为不可进行修改的集合</p><p>s=frozenset()</p><p>###字典</p><p>字典是一种组合数据，没顺序的组合数据，数据以键值对形式出现</p><p>创建空字典 1.d={} 2.d=dict()</p><p>方式一：创建有值字典<br>d={“one”:1,”two”:2,”three”:3}</p><p>方式二：用dict创建有内容字典<br>d=dict({“one”:1,”two”:2,”three”:3})</p><p>方式三：利用关键字参数创建有内容字典<br>d=dict(one=1,two=2,three=3)</p><p>嵌套元组 d=dict([(“one”,1),(“two,2”),(“three,3”)])</p><p>####字典的成员检测 </p><p><img src="https://i.imgur.com/5S2T30e.png" alt=""></p><p>####字典的遍历</p><p><img src="https://i.imgur.com/TCUeeX5.png" alt=""></p><p>####特殊用法</p><p><img src="https://i.imgur.com/wy3FFHt.png" alt=""></p><p>其中items 返回字典的键值对组成的元组格式，keys返回字典的键组成的一个结构，values返回字典的值组成的一个结构。</p><p>#####get</p><p><img src="https://i.imgur.com/q6itIuF.png" alt=""></p><p>#####from keys</p><p><img src="https://i.imgur.com/Orj0weI.png" alt=""></p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;要弄清关于元组的函数与元组的函数 父与子&lt;/p&gt;
+      &lt;p&gt;要弄清关于元组的函数与元组的函数 父与子&lt;/p&gt;
 &lt;p&gt;index 求元组的索引值&lt;/p&gt;
 &lt;p&gt;变量交换值 a,b=b,a&lt;/p&gt;
 &lt;p&gt;###集合-set&lt;br&gt;集合内数据无序，即无法使用索引和分片&lt;/p&gt;
-&lt;p&gt;集合内部数据元素具有唯一性，可以用来排除重复数据&lt;br&gt;
-      
+&lt;p&gt;集合内部数据元素具有唯一性，可以用来排除重复数据&lt;br&gt;定义集合方式 &lt;/p&gt;
+&lt;p&gt;集合内的数据只能是可哈希数据，就是不可更改的数据类型，如字符串，元组，对象&lt;br&gt;
     
     </summary>
     
@@ -77,9 +81,9 @@
     <link href="http://yoursite.com/2018/06/06/python%20basic%204/"/>
     <id>http://yoursite.com/2018/06/06/python basic 4/</id>
     <published>2018-06-06T07:39:21.000Z</published>
-    <updated>2018-06-11T13:30:32.040Z</updated>
+    <updated>2018-08-04T09:52:53.861Z</updated>
     
-    <content type="html"><![CDATA[<p>昨天关于那个id()内置函数 百度了下 开了眼界</p><p>id() 函数 配合 is 使用</p><p>当一个数据是较小的整数时<br>如 a=1 b=1 a is b==&gt;True is比较的是a与b分配的内存地址</p><p>为了提高内存利用效率对于一些简单的对象，如一些数值较小的int对象，python采取重用对象内存的办法，如指向a=2，b=2时，由于2作为简单的int类型且数值小，python不会两次为其分配内存，而是只分配一次，然后将a与b同时指向已分配的对象<br><a id="more"></a><br>而一个数据是较大的整数或浮点数<br>如a=2.0 b=2.0 a is b==&gt;False 则分配不同的内存地址</p><p>汉诺塔递归问题 啊啊啊算法是真的辣鸡 - -!<br><!--more--></p><h3 id="List列表"><a href="#List列表" class="headerlink" title="List列表"></a>List列表</h3><p>del 删除命令</p><p>如a=[2,4,21,2]<br>del a[2] ==&gt; [2,4,2]<br>只是在原列表改 未生成新的列表<br>del一个变量后不能再使用此变量</p><p>不同列表相连 用加法 相同列表相 连用乘法</p><h4 id="列表内涵"><a href="#列表内涵" class="headerlink" title="列表内涵"></a>列表内涵</h4><p>此方法主要针对于用for循环打印时不能生成列表</p><p>用for来创建列表<br>a=[1,2,3,4,5]<br>b=[i for i in a] ==&gt; [1,2,3,4,5] </p><p>第一个i是生成b列表中的数</p><p>列表也可循环嵌套<br>c=[m+n for m in a for n in b]</p><h4 id="常用列表函数-len-max-min"><a href="#常用列表函数-len-max-min" class="headerlink" title="常用列表函数 len max min"></a>常用列表函数 len max min</h4><p>list() 将其他格式的数据转换为list<br>例如 s=”Hello World”<br>list(s)==&gt; [‘H’,’e’……]</p><p>把range产生的内容转换成list<br>list(range(12,19))</p><h4 id="传值和传地址的区别"><a href="#传值和传地址的区别" class="headerlink" title="传值和传地址的区别"></a>传值和传地址的区别</h4><h5 id="针对函数"><a href="#针对函数" class="headerlink" title="针对函数"></a>针对函数</h5><p>简单数字 采用传值操作 </p><p>复杂变量 采用传址操作</p><p>append() 在列表末尾插入一个内容 </p><p>insert(index,data) 在index指定位置后插入data</p><p>pop() 函数用于移除列表中的一个元素（默认最后一个元素），并且返回该元素的值 列表更新 </p><p>remove 在列表中删除指定值元素 无返回值 列表更新 </p><p>clear 清空 列表仍然存在 如果不需要列表地址保持不变</p><p>则用a=list() a=[] 用空list覆盖</p><p>reverse() 翻转 </p><p>extend() 扩展列表 </p><p>count() 查找列表中指定值或元素的个数</p><p>copy() 浅拷贝深拷贝 copy.copy() copy.deepcopy()</p><p>copy是传值操作 赋值后id不一样</p><p>总结下 思路稍微有点混乱</p><p>在python中的传址和传值是怎样的呢？</p><p>Python是不允许程序员选择采用传值还是传址的。Python参数传递采用的肯定是“传对象引用”的方式。实际上，这种方式相当于传值和传址的一种综合。如果函数收到的是一个可变对象（比如字典或者列表）的引用，就能修改对象的原始值——相当于传址。如果函数收到的是一个不可变对象（比如数字、字符或者元组）的引用，就不能直接修改原始对象——相当于传值。</p><p>所以python的传值和传址是根据传入参数的类型来选择的</p><p>传值的参数类型：数字，字符串，元组</p><p>传址的参数类型：列表，字典</p><p>###元组<br>创建空元组 t=()   创建一个值的元组 t=(1,)   创建多个值的元组t=（1，2，3，45，3）</p><p>使用其他结构创建 </p><p>l=[12,3,45,1]<br>t=tuple(l)</p><p>元组特性 可以访问不能修改 其他与list类似</p><p>元组相加 相乘 相当于新创建了个元组 与分片一样 id不同</p>]]></content>
+    <content type="html"><![CDATA[<p>昨天关于那个id()内置函数 百度了下 开了眼界</p><p>id() 函数 配合 is 使用</p><p>当一个数据是较小的整数时<br>如 a=1 b=1 a is b==&gt;True is比较的是a与b分配的内存地址</p><p>为了提高内存利用效率对于一些简单的对象，如一些数值较小的int对象，python采取重用对象内存的办法，如指向a=2，b=2时，由于2作为简单的int类型且数值小，python不会两次为其分配内存，而是只分配一次，然后将a与b同时指向已分配的对象<br><a id="more"></a><br>而一个数据是较大的整数或浮点数<br>如a=2.0 b=2.0 a is b==&gt;False 则分配不同的内存地址</p><p>汉诺塔递归问题 啊啊啊算法是真的辣鸡 - -!</p><h3 id="List列表"><a href="#List列表" class="headerlink" title="List列表"></a>List列表</h3><p>del 删除命令</p><p>如a=[2,4,21,2]<br>del a[2] ==&gt; [2,4,2]<br>只是在原列表改 未生成新的列表<br>del一个变量后不能再使用此变量<br>例如del a 输出a后会报错</p><p>不同列表相连 用加法 相同列表相 连用乘法</p><h4 id="列表内涵"><a href="#列表内涵" class="headerlink" title="列表内涵"></a>列表内涵</h4><p>此方法主要针对于用for循环打印时不能生成列表</p><p>用for来创建列表<br>a=[1,2,3,4,5]<br>b=[i for i in a] ==&gt; [1,2,3,4,5] </p><p>第一个i是生成b列表中的数</p><p>列表也可循环嵌套<br>c=[m+n for m in a for n in b]</p><h4 id="常用列表函数-len-max-min"><a href="#常用列表函数-len-max-min" class="headerlink" title="常用列表函数 len max min"></a>常用列表函数 len max min</h4><p>list() 将其他格式的数据转换为list<br>例如 s=”Hello World”<br>list(s)==&gt; [‘H’,’e’……]</p><p>把range产生的内容转换成list<br>list(range(12,19))</p><h4 id="传值和传地址的区别"><a href="#传值和传地址的区别" class="headerlink" title="传值和传地址的区别"></a>传值和传地址的区别</h4><h5 id="针对函数"><a href="#针对函数" class="headerlink" title="针对函数"></a>针对函数</h5><p>简单数字 采用传值操作 </p><p>复杂变量 采用传址操作</p><p>append() 在列表末尾插入一个内容 </p><p>insert(index,data) 在index指定位置后插入data</p><p>pop() 函数用于移除列表中的一个元素（默认最后一个元素），并且返回该元素的值 列表更新 </p><p>remove 在列表中删除指定值元素 无返回值 列表更新 </p><p>clear 清空 列表仍然存在 如果不需要列表地址保持不变</p><p>则用a=list() a=[] 用空list覆盖</p><p>reverse() 翻转 </p><p>extend() 扩展列表 </p><p>count() 查找列表中指定值或元素的个数</p><p>copy() 浅拷贝深拷贝 copy.copy() copy.deepcopy()</p><p>copy是传值操作 赋值后id不一样</p><p>总结下 思路稍微有点混乱</p><p>在python中的传址和传值是怎样的呢？</p><p>Python是不允许程序员选择采用传值还是传址的。Python参数传递采用的肯定是“传对象引用”的方式。实际上，这种方式相当于传值和传址的一种综合。如果函数收到的是一个可变对象（比如字典或者列表）的引用，就能修改对象的原始值——相当于传址。如果函数收到的是一个不可变对象（比如数字、字符或者元组）的引用，就不能直接修改原始对象——相当于传值。</p><p>所以python的传值和传址是根据传入参数的类型来选择的</p><p>传值的参数类型：数字，字符串，元组</p><p>传址的参数类型：列表，字典</p><p>###元组<br>创建空元组 t=()   创建一个值的元组 t=(1,)   创建多个值的元组t=（1，2，3，45，3）</p><p>使用其他结构创建 </p><p>l=[12,3,45,1]<br>t=tuple(l)</p><p>元组特性 可以访问不能修改 其他与list类似</p><p>元组相加 相乘 相当于新创建了个元组 与分片一样 id不同</p>]]></content>
     
     <summary type="html">
     

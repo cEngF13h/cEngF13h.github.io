@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="cEngF13h&#39;s b1og">
 <meta property="og:description" content="昨天关于那个id()内置函数 百度了下 开了眼界 id() 函数 配合 is 使用 当一个数据是较小的整数时如 a=1 b=1 a is b==&amp;gt;True is比较的是a与b分配的内存地址 为了提高内存利用效率对于一些简单的对象，如一些数值较小的int对象，python采取重用对象内存的办法，如指向a=2，b=2时，由于2作为简单的int类型且数值小，python不会两次为其分配内存，而是只">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-06-11T13:30:32.040Z">
+<meta property="og:updated_time" content="2018-08-04T09:52:53.861Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python basic 4">
 <meta name="twitter:description" content="昨天关于那个id()内置函数 百度了下 开了眼界 id() 函数 配合 is 使用 当一个数据是较小的整数时如 a=1 b=1 a is b==&amp;gt;True is比较的是a与b分配的内存地址 为了提高内存利用效率对于一些简单的对象，如一些数值较小的int对象，python采取重用对象内存的办法，如指向a=2，b=2时，由于2作为简单的int类型且数值小，python不会两次为其分配内存，而是只">
@@ -401,9 +401,9 @@
 <p>id() 函数 配合 is 使用</p>
 <p>当一个数据是较小的整数时<br>如 a=1 b=1 a is b==&gt;True is比较的是a与b分配的内存地址</p>
 <p>为了提高内存利用效率对于一些简单的对象，如一些数值较小的int对象，python采取重用对象内存的办法，如指向a=2，b=2时，由于2作为简单的int类型且数值小，python不会两次为其分配内存，而是只分配一次，然后将a与b同时指向已分配的对象<br><a id="more"></a><br>而一个数据是较大的整数或浮点数<br>如a=2.0 b=2.0 a is b==&gt;False 则分配不同的内存地址</p>
-<p>汉诺塔递归问题 啊啊啊算法是真的辣鸡 - -!<br><!--more--></p>
+<p>汉诺塔递归问题 啊啊啊算法是真的辣鸡 - -!</p>
 <h3 id="List列表"><a href="#List列表" class="headerlink" title="List列表"></a>List列表</h3><p>del 删除命令</p>
-<p>如a=[2,4,21,2]<br>del a[2] ==&gt; [2,4,2]<br>只是在原列表改 未生成新的列表<br>del一个变量后不能再使用此变量</p>
+<p>如a=[2,4,21,2]<br>del a[2] ==&gt; [2,4,2]<br>只是在原列表改 未生成新的列表<br>del一个变量后不能再使用此变量<br>例如del a 输出a后会报错</p>
 <p>不同列表相连 用加法 相同列表相 连用乘法</p>
 <h4 id="列表内涵"><a href="#列表内涵" class="headerlink" title="列表内涵"></a>列表内涵</h4><p>此方法主要针对于用for循环打印时不能生成列表</p>
 <p>用for来创建列表<br>a=[1,2,3,4,5]<br>b=[i for i in a] ==&gt; [1,2,3,4,5] </p>
