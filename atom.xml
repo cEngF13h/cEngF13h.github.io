@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-08-04T09:52:52.745Z</updated>
+  <updated>2018-08-04T09:57:51.100Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,22 +17,17 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://yoursite.com/2018/08/04/postx-1/"/>
-    <id>http://yoursite.com/2018/08/04/postx-1/</id>
-    <published>2018-08-04T08:21:23.588Z</published>
-    <updated>2018-08-04T09:52:52.745Z</updated>
+    <title>python oop1</title>
+    <link href="http://yoursite.com/2018/08/04/python%20opp1/"/>
+    <id>http://yoursite.com/2018/08/04/python opp1/</id>
+    <published>2018-08-04T08:21:23.000Z</published>
+    <updated>2018-08-04T09:57:51.100Z</updated>
     
-    <content type="html"><![CDATA[<hr><p>title: python oop1<br>date: 2018-08-04 16:21:23<br>tags: “python”<br>categories:</p><ul><li>“Learning”</li><li>“python”<br>##类与对象</li></ul><p>定义一个空对象</p><pre><code>class classx():    pass    name=None</code></pre><p>用None给不确定的值赋值</p><p>实例化一个obj</p><pre><code>obj=classx()</code></pre><a id="more"></a><p>可以通过默认内置变量检查类和对象的所有成员</p><p>对象所有成员检查 obj.<strong>dict</strong></p><p>类所有的成员    class_name.<strong>dict</strong></p><p>创建对象时，类中的成员不会放入对象当中，而是得到一个空对象，没有成员。通过对象对类中成员重新赋值或则通过对象添加成员时，对应成员会保存在对象中，而不会修改类成员。</p><pre><code>例如class A():    age=16    name=&quot;ltl&quot;print(A.age,&quot;---&quot;,A.name)a=A()print(id(A.name),id(a.name))a.name=&quot;lyp&quot;a.age=18print(a.age,&quot;---&quot;,a.name)print(id(A.name),id(a.name))输出结果：16 --- ltl20235456 2023545618 --- lyp20235456 49571360</code></pre><p>关于self的用法</p><p><img src="https://i.imgur.com/sq9IrNE.png" alt=""></p><p>###封装</p><p>私有成员在前面加两下划线 如__a </p><p>私有在类外如何访问？a._类名__成员</p>]]></content>
+    <content type="html"><![CDATA[<p>##类与对象</p><p>定义一个空对象</p><pre><code>class classx():    pass    name=None</code></pre><p>用None给不确定的值赋值</p><p>实例化一个obj</p><pre><code>obj=classx()</code></pre><a id="more"></a><p>可以通过默认内置变量检查类和对象的所有成员</p><p>对象所有成员检查 obj.<strong>dict</strong></p><p>类所有的成员    class_name.<strong>dict</strong></p><p>创建对象时，类中的成员不会放入对象当中，而是得到一个空对象，没有成员。通过对象对类中成员重新赋值或则通过对象添加成员时，对应成员会保存在对象中，而不会修改类成员。</p><pre><code>例如class A():    age=16    name=&quot;ltl&quot;print(A.age,&quot;---&quot;,A.name)a=A()print(id(A.name),id(a.name))a.name=&quot;lyp&quot;a.age=18print(a.age,&quot;---&quot;,a.name)print(id(A.name),id(a.name))输出结果：16 --- ltl20235456 2023545618 --- lyp20235456 49571360</code></pre><p>关于self的用法</p><p><img src="https://i.imgur.com/sq9IrNE.png" alt=""></p><p>###封装</p><p>私有成员在前面加两下划线 如__a </p><p>私有在类外如何访问？a._类名__成员</p>]]></content>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;title: python oop1&lt;br&gt;date: 2018-08-04 16:21:23&lt;br&gt;tags: “python”&lt;br&gt;categories:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;“Learning”&lt;/li&gt;
-&lt;li&gt;“python”&lt;br&gt;##类与对象&lt;/li&gt;
-&lt;/ul&gt;
+      &lt;p&gt;##类与对象&lt;/p&gt;
 &lt;p&gt;定义一个空对象&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;class classx():
     pass
@@ -44,13 +39,19 @@
     
     </summary>
     
+      <category term="Learning" scheme="http://yoursite.com/categories/Learning/"/>
+    
+      <category term="python" scheme="http://yoursite.com/categories/Learning/python/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
     
   </entry>
   
   <entry>
     <title>python basic 5</title>
-    <link href="http://yoursite.com/2018/07/28/postx/"/>
-    <id>http://yoursite.com/2018/07/28/postx/</id>
+    <link href="http://yoursite.com/2018/07/28/python%20basic%205/"/>
+    <id>http://yoursite.com/2018/07/28/python basic 5/</id>
     <published>2018-07-28T01:31:49.000Z</published>
     <updated>2018-08-04T09:52:26.251Z</updated>
     
