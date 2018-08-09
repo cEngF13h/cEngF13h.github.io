@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-08-04T11:50:54.522Z</updated>
+  <updated>2018-08-09T01:45:33.696Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,13 +17,42 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>postx</title>
+    <link href="http://yoursite.com/2018/08/05/python%20opp2/"/>
+    <id>http://yoursite.com/2018/08/05/python opp2/</id>
+    <published>2018-08-05T02:07:02.000Z</published>
+    <updated>2018-08-09T01:45:33.696Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h3><p>私有成员在前面加两下划线 如__a </p><p>只能在当前类或对象中访问。，外部不行</p><p>私有在类外如何访问？对象._类名__成员名</p><p>保护成员在前面加一下划线 如_a</p><p>只能在类中或子类中访问，外部不行</p><p>公有成员任何地方都可以访问<br><a id="more"></a></p><h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><p>被继承的类叫父类，基类，超类</p><p>用于继承的类，叫子类，派生类</p><p>继承与被继承一定存在一个is-a关系</p><p>所有的类都继承来自object类，即所有的类都是object类的子类<br>子类一旦继承父类，可以使用父类除私有成员所有的成员</p><p>子类继承父类是引用关系</p><p>子类中定义的成员和父类成员如果相同，则优先使用子类成员</p><p>子类如果想扩充父类的方法，顾名思义就是当子类与父类都有这个方法的时候，子类默认调用子类的方法，但是如果要扩充父类的方法，可以在定义新方法的同时访问父类成员来进行代码重用，可以使用父类名.父类成员<br>或者使用super().父类成员 进行调用</p><p>继承变量函数的查找顺序问题</p><p>1.优先查找自己的变量，没有则查找父类</p><p>2.构造函数如果本类没定义，则自动查找调用父类构造函数</p><p>3.如果本类有定义，则不继续向上查找</p><p>构造函数 def__init__(self)</p><h4 id="super"><a href="#super" class="headerlink" title="super"></a>super</h4><p>super不是关键字，而是一个类</p><p>super的作用是获取MRO(MethodResolutionOrder)列表中的第一个类，与父类无关，但可以用super调用到父类</p><h4 id="单继承与多继承"><a href="#单继承与多继承" class="headerlink" title="单继承与多继承"></a>单继承与多继承</h4><p>单继承：每个类只能继承一个类语法简单隐患少但功能无法无限扩展，只能唯一继承</p><p>多继承：每个类允许继承多个类，类的功能扩展方便，继承关系混乱</p><p>问题：如果一个类有多个父类，则根据继承语法中括号内的参数顺序来决定</p><h4 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h4><p>在python中不是语法，是设计思想。</p><p>issubclass(A,B) A是不是B的子类</p><p>isinstance(a,A) a是不是A的对象</p><p>hasattr（a,”name”）a里面是否有name成员</p><p>如果忘记具体用法，可以用help(hasattr)</p><p>dir：获取对象的成员列表</p><p><strong>dict</strong> 字典</p><p><strong>doc</strong>  文档</p><p><strong>name</strong> 类名</p><p><strong>bases</strong> 父类 用元组返回</p><h4 id="魔法函数"><a href="#魔法函数" class="headerlink" title="魔法函数"></a>魔法函数</h4><p>操作类：</p><p><strong>init</strong> 构造函数</p><p><strong>call</strong> 对象当成函数使用时触发</p><p><strong>str</strong>  对象当做字符串使用时触发 如print</p><p><a href="https://blog.csdn.net/u013961718/article/details/51100464" target="_blank" rel="noopener">str与repr区别</a></p><p>str出来的值是给人看的字符串，repr出来的值是给机器看的，括号中的任何内容出来后都是在它之上再加上一层引号。</p><p>属性操作相关</p><p><strong>getattr</strong> 当没找到成员属性时，自动调用</p><p>关于<strong>setattr</strong></p><p><img src="https://i.imgur.com/z2oB164.png" alt=""></p><p>运算类</p><p><strong>gt</strong></p><p>函数名可以当变量使用</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;封装&quot;&gt;&lt;a href=&quot;#封装&quot; class=&quot;headerlink&quot; title=&quot;封装&quot;&gt;&lt;/a&gt;封装&lt;/h3&gt;&lt;p&gt;私有成员在前面加两下划线 如__a &lt;/p&gt;
+&lt;p&gt;只能在当前类或对象中访问。，外部不行&lt;/p&gt;
+&lt;p&gt;私有在类外如何访问？对象._类名__成员名&lt;/p&gt;
+&lt;p&gt;保护成员在前面加一下划线 如_a&lt;/p&gt;
+&lt;p&gt;只能在类中或子类中访问，外部不行&lt;/p&gt;
+&lt;p&gt;公有成员任何地方都可以访问&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Learning" scheme="http://yoursite.com/categories/Learning/"/>
+    
+      <category term="python" scheme="http://yoursite.com/categories/Learning/python/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>python oop1</title>
     <link href="http://yoursite.com/2018/08/04/python%20opp1/"/>
     <id>http://yoursite.com/2018/08/04/python opp1/</id>
     <published>2018-08-04T08:21:23.000Z</published>
-    <updated>2018-08-04T11:50:54.522Z</updated>
+    <updated>2018-08-05T02:26:01.717Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="类与对象"><a href="#类与对象" class="headerlink" title="类与对象"></a>类与对象</h2><p>定义一个空对象</p><pre><code>class classx():    pass    name=None</code></pre><p>用None给不确定的值赋值</p><p>实例化一个obj</p><pre><code>obj=classx()</code></pre><a id="more"></a><p>可以通过默认内置变量检查类和对象的所有成员</p><p>对象所有成员检查 obj.<strong>dict</strong></p><p>类所有的成员    class_name.<strong>dict</strong></p><p>创建对象时，类中的成员不会放入对象当中，而是得到一个空对象，没有成员。通过对象对类中成员重新赋值或则通过对象添加成员时，对应成员会保存在对象中，而不会修改类成员。</p><pre><code>例如class A():    age=16    name=&quot;ltl&quot;print(A.age,&quot;---&quot;,A.name)a=A()print(id(A.name),id(a.name))a.name=&quot;lyp&quot;a.age=18print(a.age,&quot;---&quot;,a.name)print(id(A.name),id(a.name))输出结果：16 --- ltl20235456 2023545618 --- lyp20235456 49571360</code></pre><p>关于self的用法</p><p><img src="https://i.imgur.com/sq9IrNE.png" alt=""></p><h3 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h3><p>私有成员在前面加两下划线 如__a </p><p>私有在类外如何访问？a._类名__成员</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="类与对象"><a href="#类与对象" class="headerlink" title="类与对象"></a>类与对象</h2><p>定义一个空对象</p><pre><code>class classx():    pass    name=None</code></pre><p>用None给不确定的值赋值</p><p>实例化一个obj</p><pre><code>obj=classx()</code></pre><a id="more"></a><p>可以通过默认内置变量检查类和对象的所有成员</p><p>对象所有成员检查 obj.<strong>dict</strong></p><p>类所有的成员    class_name.<strong>dict</strong></p><p>创建对象时，类中的成员不会放入对象当中，而是得到一个空对象，没有成员。通过对象对类中成员重新赋值或则通过对象添加成员时，对应成员会保存在对象中，而不会修改类成员。</p><pre><code>例如class A():    age=16    name=&quot;ltl&quot;print(A.age,&quot;---&quot;,A.name)a=A()print(id(A.name),id(a.name))a.name=&quot;lyp&quot;a.age=18print(a.age,&quot;---&quot;,a.name)print(id(A.name),id(a.name))输出结果：16 --- ltl20235456 2023545618 --- lyp20235456 49571360</code></pre><p>关于self的用法</p><p><img src="https://i.imgur.com/sq9IrNE.png" alt=""></p>]]></content>
     
     <summary type="html">
     
