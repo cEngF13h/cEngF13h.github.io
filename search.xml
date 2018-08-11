@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[python top 2]]></title>
+    <url>%2F2018%2F08%2F10%2Fpython-top-2%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[python top 1]]></title>
+    <url>%2F2018%2F08%2F09%2Fpython-top-1%2F</url>
+    <content type="text"><![CDATA[模块模块维护方便，增加代码重复利用，当做命名空间使用，避免命名冲突 如何使用模块？ 模块直接导入 语法： import module_name module_name.fun_name module_name.class_name 当module_name 开头为数字时，可以借助importlib 语法： import importlibt ex=importlib.import_module(&quot;01&quot;) #01.py为文件 stu=tuling.Student() 模块名可以用别名代替：import 模块 as 别名 用模块中的部分小块：(没有前缀) from module_name import func_name,class_name ex=class_name() func_name() 导入模块所有内容from module_name import * （没有前缀） 这与import module_name 导入内容一样，但有区别。 if name = “main“ 程序入口可以有效避免模块代码被导入的时候被动执行的问题 模块的搜索路径和存储系统默认的模块搜索路径 import sys sys.path 属性可以获取路径列表 添加搜索路径: sys.path.append(dir) 模块加载顺序1.上搜索内存中已经加载好的模块2.搜索python的内置模块3.搜索sys.path路径 包包是一种组织管理代码的方式，包里面存放的就是模块文件 包的结构： __init__.py module1.py module2.py ... 导入包中init.py的内容：import package_name 导入包中的模块：import package_name.module_name 导入指定init.py内容：from package_name import * 导入包中指定的模块的所有内容：from package_name.module_name import * all的用法在使用from package import * ,导入的实际上是init.py里面的内容。 但是当有all的时候，则按照all指定的子包或者模块进行。 例如：all=[‘module1’,’module2’,’package1’,….] 命名空间用于区分不同位置不同功能但相同名称的函数或者变量的一个特定前缀，防止命名冲突 例如 setName() Dog.setName() Person.setName() 异常try except finally 手动抛出异常 raise 自定义异常必须是系统异常的子类 常用模块1.calendar：获取一年的日历字符串 cal=calendar.calendar(2018) 参数 w=每个日期之间的间隔字符数 l=每周所占用的行数 c=每个月之间的间隔字符数 cal=calendar.calendar(2018,l=0,c=5) isleap:判断某一年是否为闰年 calendar.isleap(2018) leapdays：获取指定年份之间的闰年的个数 calendar.leapdays(2000,2018) month() 获取某个月的日历字符串 m=calendar.month(2018,7) monthrange()获取一个月从周几开始和总天数 返回元组(周几，总天数) 周几（0~6） w,t=calendar.monthrange(2017,3) print(w) print(t) --- 2 31 calendar.prcal() calendar.prmonth() weekday(年，月，日) time模块时间戳time.time() 一个时间表示，从1970，01，01，0h，0min,0s到现在经历的秒数 32位操作系统能够支持到2038年 UTC时间-世界协调世界中国时间是UTC+8 东八区 夏令时#####时间元组一个包含时间内容的普通元组 #####时间模块属性timezone：当前时区和UTC时间相差的秒数 localtime：得到当前时间的时间结构 asctime()：返回元组字符串化之后的时间格式 格式：time.asctime(时间元组) 例如 t=time.localtime() tt=time.asctime(t) clock：获取cpu时间（py3.0-py3.3） sleep内单位为s strftime：将时间元组转化为自定义字符串格式]]></content>
+      <categories>
+        <category>Learning</category>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[postx]]></title>
     <url>%2F2018%2F08%2F05%2Fpython%20opp2%2F</url>
     <content type="text"><![CDATA[封装私有成员在前面加两下划线 如__a 只能在当前类或对象中访问。，外部不行 私有在类外如何访问？对象._类名__成员名 保护成员在前面加一下划线 如_a 只能在类中或子类中访问，外部不行 公有成员任何地方都可以访问 继承被继承的类叫父类，基类，超类 用于继承的类，叫子类，派生类 继承与被继承一定存在一个is-a关系 所有的类都继承来自object类，即所有的类都是object类的子类子类一旦继承父类，可以使用父类除私有成员所有的成员 子类继承父类是引用关系 子类中定义的成员和父类成员如果相同，则优先使用子类成员 子类如果想扩充父类的方法，顾名思义就是当子类与父类都有这个方法的时候，子类默认调用子类的方法，但是如果要扩充父类的方法，可以在定义新方法的同时访问父类成员来进行代码重用，可以使用父类名.父类成员或者使用super().父类成员 进行调用 继承变量函数的查找顺序问题 1.优先查找自己的变量，没有则查找父类 2.构造函数如果本类没定义，则自动查找调用父类构造函数 3.如果本类有定义，则不继续向上查找 构造函数 def__init__(self) supersuper不是关键字，而是一个类 super的作用是获取MRO(MethodResolutionOrder)列表中的第一个类，与父类无关，但可以用super调用到父类 单继承与多继承单继承：每个类只能继承一个类语法简单隐患少但功能无法无限扩展，只能唯一继承 多继承：每个类允许继承多个类，类的功能扩展方便，继承关系混乱 问题：如果一个类有多个父类，则根据继承语法中括号内的参数顺序来决定 多态在python中不是语法，是设计思想。 issubclass(A,B) A是不是B的子类 isinstance(a,A) a是不是A的对象 hasattr（a,”name”）a里面是否有name成员 如果忘记具体用法，可以用help(hasattr) dir：获取对象的成员列表 dict 字典 doc 文档 name 类名 bases 父类 用元组返回 魔法函数操作类： init 构造函数 call 对象当成函数使用时触发 str 对象当做字符串使用时触发 如print str与repr区别 str出来的值是给人看的字符串，repr出来的值是给机器看的，括号中的任何内容出来后都是在它之上再加上一层引号。 属性操作相关 getattr 当没找到成员属性时，自动调用 关于setattr 运算类 gt 函数名可以当变量使用]]></content>

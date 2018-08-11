@@ -79,18 +79,22 @@
 
 
 
-<meta name="description" content="昨天关于那个id()内置函数 百度了下 开了眼界 id() 函数 配合 is 使用 当一个数据是较小的整数时如 a=1 b=1 a is b==&amp;gt;True is比较的是a与b分配的内存地址 为了提高内存利用效率对于一些简单的对象，如一些数值较小的int对象，python采取重用对象内存的办法，如指向a=2，b=2时，由于2作为简单的int类型且数值小，python不会两次为其分配内存，而是只">
+<meta name="description" content="模块模块维护方便，增加代码重复利用，当做命名空间使用，避免命名冲突 如何使用模块？ 模块直接导入  语法： import module_name module_name.fun_name module_name.class_name">
 <meta name="keywords" content="python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python basic 4">
-<meta property="og:url" content="http://yoursite.com/2018/06/06/python basic 4/index.html">
+<meta property="og:title" content="python top 1">
+<meta property="og:url" content="http://yoursite.com/2018/08/09/python-top-1/index.html">
 <meta property="og:site_name" content="cEngF13h&#39;s b1og">
-<meta property="og:description" content="昨天关于那个id()内置函数 百度了下 开了眼界 id() 函数 配合 is 使用 当一个数据是较小的整数时如 a=1 b=1 a is b==&amp;gt;True is比较的是a与b分配的内存地址 为了提高内存利用效率对于一些简单的对象，如一些数值较小的int对象，python采取重用对象内存的办法，如指向a=2，b=2时，由于2作为简单的int类型且数值小，python不会两次为其分配内存，而是只">
+<meta property="og:description" content="模块模块维护方便，增加代码重复利用，当做命名空间使用，避免命名冲突 如何使用模块？ 模块直接导入  语法： import module_name module_name.fun_name module_name.class_name">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-08-04T09:52:53.861Z">
+<meta property="og:image" content="https://i.imgur.com/nZMZfUf.png">
+<meta property="og:image" content="https://i.imgur.com/l6Dn9Dr.png">
+<meta property="og:image" content="https://i.imgur.com/OrSd2qn.png">
+<meta property="og:updated_time" content="2018-08-10T02:43:34.400Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="python basic 4">
-<meta name="twitter:description" content="昨天关于那个id()内置函数 百度了下 开了眼界 id() 函数 配合 is 使用 当一个数据是较小的整数时如 a=1 b=1 a is b==&amp;gt;True is比较的是a与b分配的内存地址 为了提高内存利用效率对于一些简单的对象，如一些数值较小的int对象，python采取重用对象内存的办法，如指向a=2，b=2时，由于2作为简单的int类型且数值小，python不会两次为其分配内存，而是只">
+<meta name="twitter:title" content="python top 1">
+<meta name="twitter:description" content="模块模块维护方便，增加代码重复利用，当做命名空间使用，避免命名冲突 如何使用模块？ 模块直接导入  语法： import module_name module_name.fun_name module_name.class_name">
+<meta name="twitter:image" content="https://i.imgur.com/nZMZfUf.png">
 
 
 
@@ -120,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/06/06/python basic 4/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/08/09/python-top-1/"/>
 
 
 
 
 
-  <title>python basic 4 | cEngF13h's b1og</title>
+  <title>python top 1 | cEngF13h's b1og</title>
   
 
 
@@ -297,7 +301,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/06/python basic 4/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/09/python-top-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="cEngF13h">
@@ -314,7 +318,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">python basic 4</h1>
+          <h1 class="post-title" itemprop="name headline">python top 1</h1>
         
 
         <div class="post-meta">
@@ -326,8 +330,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-06-06T15:39:21+08:00">
-                2018-06-06
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-09T10:09:55+08:00">
+                2018-08-09
               </time>
             
 
@@ -397,44 +401,96 @@
       
 
       
-        <p>昨天关于那个id()内置函数 百度了下 开了眼界</p>
-<p>id() 函数 配合 is 使用</p>
-<p>当一个数据是较小的整数时<br>如 a=1 b=1 a is b==&gt;True is比较的是a与b分配的内存地址</p>
-<p>为了提高内存利用效率对于一些简单的对象，如一些数值较小的int对象，python采取重用对象内存的办法，如指向a=2，b=2时，由于2作为简单的int类型且数值小，python不会两次为其分配内存，而是只分配一次，然后将a与b同时指向已分配的对象<br><a id="more"></a><br>而一个数据是较大的整数或浮点数<br>如a=2.0 b=2.0 a is b==&gt;False 则分配不同的内存地址</p>
-<p>汉诺塔递归问题 啊啊啊算法是真的辣鸡 - -!</p>
-<h3 id="List列表"><a href="#List列表" class="headerlink" title="List列表"></a>List列表</h3><p>del 删除命令</p>
-<p>如a=[2,4,21,2]<br>del a[2] ==&gt; [2,4,2]<br>只是在原列表改 未生成新的列表<br>del一个变量后不能再使用此变量<br>例如del a 输出a后会报错</p>
-<p>不同列表相连 用加法 相同列表相 连用乘法</p>
-<h4 id="列表内涵"><a href="#列表内涵" class="headerlink" title="列表内涵"></a>列表内涵</h4><p>此方法主要针对于用for循环打印时不能生成列表</p>
-<p>用for来创建列表<br>a=[1,2,3,4,5]<br>b=[i for i in a] ==&gt; [1,2,3,4,5] </p>
-<p>第一个i是生成b列表中的数</p>
-<p>列表也可循环嵌套<br>c=[m+n for m in a for n in b]</p>
-<h4 id="常用列表函数-len-max-min"><a href="#常用列表函数-len-max-min" class="headerlink" title="常用列表函数 len max min"></a>常用列表函数 len max min</h4><p>list() 将其他格式的数据转换为list<br>例如 s=”Hello World”<br>list(s)==&gt; [‘H’,’e’……]</p>
-<p>把range产生的内容转换成list<br>list(range(12,19))</p>
-<h4 id="传值和传地址的区别"><a href="#传值和传地址的区别" class="headerlink" title="传值和传地址的区别"></a>传值和传地址的区别</h4><h5 id="针对函数"><a href="#针对函数" class="headerlink" title="针对函数"></a>针对函数</h5><p>简单数字 采用传值操作 </p>
-<p>复杂变量 采用传址操作</p>
-<p>append() 在列表末尾插入一个内容 </p>
-<p>insert(index,data) 在index指定位置后插入data</p>
-<p>pop() 函数用于移除列表中的一个元素（默认最后一个元素），并且返回该元素的值 列表更新 </p>
-<p>remove 在列表中删除指定值元素 无返回值 列表更新 </p>
-<p>clear 清空 列表仍然存在 如果不需要列表地址保持不变</p>
-<p>则用a=list() a=[] 用空list覆盖</p>
-<p>reverse() 翻转 </p>
-<p>extend() 扩展列表 </p>
-<p>count() 查找列表中指定值或元素的个数</p>
-<p>copy() 浅拷贝深拷贝 copy.copy() copy.deepcopy()</p>
-<p>copy是传值操作 赋值后id不一样</p>
-<p>总结下 思路稍微有点混乱</p>
-<p>在python中的传址和传值是怎样的呢？</p>
-<p>Python是不允许程序员选择采用传值还是传址的。Python参数传递采用的肯定是“传对象引用”的方式。实际上，这种方式相当于传值和传址的一种综合。如果函数收到的是一个可变对象（比如字典或者列表）的引用，就能修改对象的原始值——相当于传址。如果函数收到的是一个不可变对象（比如数字、字符或者元组）的引用，就不能直接修改原始对象——相当于传值。</p>
-<p>所以python的传值和传址是根据传入参数的类型来选择的</p>
-<p>传值的参数类型：数字，字符串，元组</p>
-<p>传址的参数类型：列表，字典</p>
-<p>###元组<br>创建空元组 t=()   创建一个值的元组 t=(1,)   创建多个值的元组t=（1，2，3，45，3）</p>
-<p>使用其他结构创建 </p>
-<p>l=[12,3,45,1]<br>t=tuple(l)</p>
-<p>元组特性 可以访问不能修改 其他与list类似</p>
-<p>元组相加 相乘 相当于新创建了个元组 与分片一样 id不同</p>
+        <h4 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h4><p>模块维护方便，增加代码重复利用，当做命名空间使用，避免命名冲突</p>
+<p>如何使用模块？ 模块直接导入 </p>
+<p>语法：</p>
+<pre><code>import module_name
+module_name.fun_name
+module_name.class_name
+</code></pre><a id="more"></a>
+<p>当module_name 开头为数字时，可以借助importlib</p>
+<p>语法：</p>
+<pre><code>import importlibt
+ex=importlib.import_module(&quot;01&quot;) #01.py为文件
+stu=tuling.Student()
+</code></pre><p>模块名可以用别名代替：import 模块 as 别名</p>
+<p>用模块中的部分小块：(没有前缀)</p>
+<pre><code>from module_name import func_name,class_name
+ex=class_name()
+func_name()
+</code></pre><p>导入模块所有内容from module_name import * （没有前缀）</p>
+<p>这与import module_name 导入内容一样，但有区别。</p>
+<h5 id="if-name-“main“-程序入口"><a href="#if-name-“main“-程序入口" class="headerlink" title="if name = “main“ 程序入口"></a>if <strong>name</strong> = “<strong>main</strong>“ 程序入口</h5><p>可以有效避免模块代码被导入的时候被动执行的问题</p>
+<h5 id="模块的搜索路径和存储"><a href="#模块的搜索路径和存储" class="headerlink" title="模块的搜索路径和存储"></a>模块的搜索路径和存储</h5><pre><code>系统默认的模块搜索路径
+import sys
+sys.path 属性可以获取路径列表
+</code></pre><p>添加搜索路径: sys.path.append(dir)</p>
+<p>模块加载顺序<br>1.上搜索内存中已经加载好的模块<br>2.搜索python的内置模块<br>3.搜索sys.path路径</p>
+<h4 id="包"><a href="#包" class="headerlink" title="包"></a>包</h4><p>包是一种组织管理代码的方式，包里面存放的就是模块文件</p>
+<p>包的结构：</p>
+<pre><code>__init__.py
+ module1.py
+ module2.py
+...
+</code></pre><p>导入包中<strong>init</strong>.py的内容：import package_name</p>
+<p>导入包中的模块：import package_name.module_name</p>
+<p>导入指定<strong>init</strong>.py内容：from package_name import *</p>
+<p>导入包中指定的模块的所有内容：from package_name.module_name import *  </p>
+<h5 id="all的用法"><a href="#all的用法" class="headerlink" title="all的用法"></a><strong>all</strong>的用法</h5><p>在使用from package import * ,导入的实际上是<strong>init</strong>.py里面的内容。</p>
+<p>但是当有<strong>all</strong>的时候，则按照all指定的子包或者模块进行。</p>
+<p>例如：<strong>all</strong>=[‘module1’,’module2’,’package1’,….]</p>
+<h4 id="命名空间"><a href="#命名空间" class="headerlink" title="命名空间"></a>命名空间</h4><p>用于区分不同位置不同功能但相同名称的函数或者变量的一个特定前缀，防止命名冲突</p>
+<p>例如 </p>
+<pre><code>setName()
+Dog.setName()
+Person.setName()
+</code></pre><h4 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h4><pre><code>try 
+except 
+finally
+手动抛出异常 raise
+</code></pre><p>自定义异常必须是系统异常的子类</p>
+<h4 id="常用模块"><a href="#常用模块" class="headerlink" title="常用模块"></a>常用模块</h4><p>1.calendar：获取一年的日历字符串</p>
+<pre><code>cal=calendar.calendar(2018)
+</code></pre><p>参数</p>
+<pre><code>w=每个日期之间的间隔字符数 
+l=每周所占用的行数
+c=每个月之间的间隔字符数
+cal=calendar.calendar(2018,l=0,c=5)
+</code></pre><p>isleap:判断某一年是否为闰年</p>
+<pre><code>calendar.isleap(2018)
+</code></pre><p>leapdays：获取指定年份之间的闰年的个数</p>
+<pre><code>calendar.leapdays(2000,2018)
+</code></pre><p>month() 获取某个月的日历字符串</p>
+<pre><code>m=calendar.month(2018,7)
+</code></pre><p>monthrange()获取一个月从周几开始和总天数</p>
+<p>返回元组(周几，总天数) 周几（0~6）</p>
+<pre><code>w,t=calendar.monthrange(2017,3)
+print(w)
+print(t)
+---
+2
+31
+</code></pre><p><img src="https://i.imgur.com/nZMZfUf.png" alt=""></p>
+<p>calendar.prcal()</p>
+<p>calendar.prmonth()</p>
+<p>weekday(年，月，日)</p>
+<h4 id="time模块"><a href="#time模块" class="headerlink" title="time模块"></a>time模块</h4><h5 id="时间戳"><a href="#时间戳" class="headerlink" title="时间戳"></a>时间戳</h5><p>time.time()</p>
+<p>一个时间表示，从1970，01，01，0h，0min,0s到现在经历的秒数</p>
+<p>32位操作系统能够支持到2038年</p>
+<h5 id="UTC时间-世界协调世界"><a href="#UTC时间-世界协调世界" class="headerlink" title="UTC时间-世界协调世界"></a>UTC时间-世界协调世界</h5><p>中国时间是UTC+8 东八区</p>
+<h5 id="夏令时"><a href="#夏令时" class="headerlink" title="夏令时"></a>夏令时</h5><p>#####时间元组<br>一个包含时间内容的普通元组</p>
+<p>#####时间模块属性<br>timezone：当前时区和UTC时间相差的秒数</p>
+<p>localtime：得到当前时间的时间结构</p>
+<p>asctime()：返回元组字符串化之后的时间格式</p>
+<p>格式：time.asctime(时间元组)</p>
+<p>例如 </p>
+<pre><code>t=time.localtime()
+tt=time.asctime(t)
+</code></pre><p><img src="https://i.imgur.com/l6Dn9Dr.png" alt=""></p>
+<p>clock：获取cpu时间（py3.0-py3.3）</p>
+<p><img src="https://i.imgur.com/OrSd2qn.png" alt=""></p>
+<p>sleep内单位为s</p>
+<p>strftime：将时间元组转化为自定义字符串格式</p>
 
       
     </div>
@@ -465,8 +521,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/06/05/python basic 3/" rel="next" title="python basic 3">
-                <i class="fa fa-chevron-left"></i> python basic 3
+              <a href="/2018/08/05/python opp2/" rel="next" title="postx">
+                <i class="fa fa-chevron-left"></i> postx
               </a>
             
           </div>
@@ -475,8 +531,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/07/28/python basic 5/" rel="prev" title="python basic 5">
-                python basic 5 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/08/10/python-top-2/" rel="prev" title="python top 2">
+                python top 2 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -620,7 +676,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#List列表"><span class="nav-number">1.</span> <span class="nav-text">List列表</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#列表内涵"><span class="nav-number">1.1.</span> <span class="nav-text">列表内涵</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常用列表函数-len-max-min"><span class="nav-number">1.2.</span> <span class="nav-text">常用列表函数 len max min</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#传值和传地址的区别"><span class="nav-number">1.3.</span> <span class="nav-text">传值和传地址的区别</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#针对函数"><span class="nav-number">1.3.1.</span> <span class="nav-text">针对函数</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#模块"><span class="nav-number">1.</span> <span class="nav-text">模块</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#if-name-“main“-程序入口"><span class="nav-number">1.1.</span> <span class="nav-text">if name = “main“ 程序入口</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#模块的搜索路径和存储"><span class="nav-number">1.2.</span> <span class="nav-text">模块的搜索路径和存储</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#包"><span class="nav-number">2.</span> <span class="nav-text">包</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#all的用法"><span class="nav-number">2.1.</span> <span class="nav-text">all的用法</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#命名空间"><span class="nav-number">3.</span> <span class="nav-text">命名空间</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#异常"><span class="nav-number">4.</span> <span class="nav-text">异常</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常用模块"><span class="nav-number">5.</span> <span class="nav-text">常用模块</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#time模块"><span class="nav-number">6.</span> <span class="nav-text">time模块</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#时间戳"><span class="nav-number">6.1.</span> <span class="nav-text">时间戳</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#UTC时间-世界协调世界"><span class="nav-number">6.2.</span> <span class="nav-text">UTC时间-世界协调世界</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#夏令时"><span class="nav-number">6.3.</span> <span class="nav-text">夏令时</span></a></li></ol></li></ol></div>
             
 
           </div>
