@@ -3,7 +3,14 @@
   <entry>
     <title><![CDATA[python top 2]]></title>
     <url>%2F2018%2F08%2F10%2Fpython-top-2%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[OS-操作系统相关三个模块 1.os 操作系统目录相关2.os.path 系统路径相关操作3.shutil 高级文件操作，目录树的操作，文件赋值，删除，移动 1.import os ####random 1.random() 生成一个0-1的伪随机小数 2.choice() 随机返回序列中的一个值，比如列表 3.shuffle()随机打乱列表 原列表打乱不可赋值给新列表 4.randint(0,100) 随机生成0-100的整数，包含左右]]></content>
+      <categories>
+        <category>Learning</category>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[python top 1]]></title>

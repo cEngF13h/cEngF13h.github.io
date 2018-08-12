@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-08-10T02:43:30.075Z</updated>
+  <updated>2018-08-12T02:15:24.265Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,12 +21,23 @@
     <link href="http://yoursite.com/2018/08/10/python-top-2/"/>
     <id>http://yoursite.com/2018/08/10/python-top-2/</id>
     <published>2018-08-10T02:43:30.000Z</published>
-    <updated>2018-08-10T02:43:30.075Z</updated>
+    <updated>2018-08-12T02:15:24.265Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="OS-操作系统相关"><a href="#OS-操作系统相关" class="headerlink" title="OS-操作系统相关"></a>OS-操作系统相关</h4><p>三个模块</p><p>1.os 操作系统目录相关<br>2.os.path 系统路径相关操作<br>3.shutil 高级文件操作，目录树的操作，文件赋值，删除，移动<br><a id="more"></a></p><h5 id="1-import-os"><a href="#1-import-os" class="headerlink" title="1.import os"></a>1.import os</h5><p><img src="https://i.imgur.com/qcDHJOk.png" alt=""><br><img src="https://i.imgur.com/yM0WNPF.png" alt=""><br><img src="https://i.imgur.com/Tsoz3Pf.png" alt=""><br><img src="https://i.imgur.com/fpgoHJa.png" alt=""><br><img src="https://i.imgur.com/xYwa2KZ.png" alt=""><br><img src="https://i.imgur.com/b563bjT.png" alt=""><br><img src="https://i.imgur.com/o25oe5v.png" alt=""><br><img src="https://i.imgur.com/uiJbzna.png" alt=""><br><img src="https://i.imgur.com/aoM9X15.png" alt=""><br><img src="https://i.imgur.com/tRKX3SE.png" alt=""></p><p>####random</p><p>1.random() 生成一个0-1的伪随机小数</p><p>2.choice() 随机返回序列中的一个值，比如列表</p><p>3.shuffle()随机打乱列表 原列表打乱不可赋值给新列表</p><p>4.randint(0,100) 随机生成0-100的整数，包含左右</p>]]></content>
     
     <summary type="html">
     
+      &lt;h4 id=&quot;OS-操作系统相关&quot;&gt;&lt;a href=&quot;#OS-操作系统相关&quot; class=&quot;headerlink&quot; title=&quot;OS-操作系统相关&quot;&gt;&lt;/a&gt;OS-操作系统相关&lt;/h4&gt;&lt;p&gt;三个模块&lt;/p&gt;
+&lt;p&gt;1.os 操作系统目录相关&lt;br&gt;2.os.path 系统路径相关操作&lt;br&gt;3.shutil 高级文件操作，目录树的操作，文件赋值，删除，移动&lt;br&gt;
+    
     </summary>
     
+      <category term="Learning" scheme="http://yoursite.com/categories/Learning/"/>
+    
+      <category term="python" scheme="http://yoursite.com/categories/Learning/python/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
     
   </entry>
   
