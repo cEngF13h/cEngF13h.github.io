@@ -73,8 +73,8 @@ module_name.class_name
   
   <entry>
     <title>postx</title>
-    <link href="http://yoursite.com/2018/08/05/python%20opp2/"/>
-    <id>http://yoursite.com/2018/08/05/python opp2/</id>
+    <link href="http://yoursite.com/2018/08/05/python%20opp%202/"/>
+    <id>http://yoursite.com/2018/08/05/python opp 2/</id>
     <published>2018-08-05T02:07:02.000Z</published>
     <updated>2018-08-09T01:45:33.696Z</updated>
     
@@ -102,8 +102,8 @@ module_name.class_name
   
   <entry>
     <title>python oop1</title>
-    <link href="http://yoursite.com/2018/08/04/python%20opp1/"/>
-    <id>http://yoursite.com/2018/08/04/python opp1/</id>
+    <link href="http://yoursite.com/2018/08/04/python%20opp%201/"/>
+    <id>http://yoursite.com/2018/08/04/python opp 1/</id>
     <published>2018-08-04T08:21:23.000Z</published>
     <updated>2018-08-05T02:26:01.717Z</updated>
     

@@ -26,7 +26,7 @@
   </entry>
   <entry>
     <title><![CDATA[postx]]></title>
-    <url>%2F2018%2F08%2F05%2Fpython%20opp2%2F</url>
+    <url>%2F2018%2F08%2F05%2Fpython%20opp%202%2F</url>
     <content type="text"><![CDATA[封装私有成员在前面加两下划线 如__a 只能在当前类或对象中访问。，外部不行 私有在类外如何访问？对象._类名__成员名 保护成员在前面加一下划线 如_a 只能在类中或子类中访问，外部不行 公有成员任何地方都可以访问 继承被继承的类叫父类，基类，超类 用于继承的类，叫子类，派生类 继承与被继承一定存在一个is-a关系 所有的类都继承来自object类，即所有的类都是object类的子类子类一旦继承父类，可以使用父类除私有成员所有的成员 子类继承父类是引用关系 子类中定义的成员和父类成员如果相同，则优先使用子类成员 子类如果想扩充父类的方法，顾名思义就是当子类与父类都有这个方法的时候，子类默认调用子类的方法，但是如果要扩充父类的方法，可以在定义新方法的同时访问父类成员来进行代码重用，可以使用父类名.父类成员或者使用super().父类成员 进行调用 继承变量函数的查找顺序问题 1.优先查找自己的变量，没有则查找父类 2.构造函数如果本类没定义，则自动查找调用父类构造函数 3.如果本类有定义，则不继续向上查找 构造函数 def__init__(self) supersuper不是关键字，而是一个类 super的作用是获取MRO(MethodResolutionOrder)列表中的第一个类，与父类无关，但可以用super调用到父类 单继承与多继承单继承：每个类只能继承一个类语法简单隐患少但功能无法无限扩展，只能唯一继承 多继承：每个类允许继承多个类，类的功能扩展方便，继承关系混乱 问题：如果一个类有多个父类，则根据继承语法中括号内的参数顺序来决定 多态在python中不是语法，是设计思想。 issubclass(A,B) A是不是B的子类 isinstance(a,A) a是不是A的对象 hasattr（a,”name”）a里面是否有name成员 如果忘记具体用法，可以用help(hasattr) dir：获取对象的成员列表 dict 字典 doc 文档 name 类名 bases 父类 用元组返回 魔法函数操作类： init 构造函数 call 对象当成函数使用时触发 str 对象当做字符串使用时触发 如print str与repr区别 str出来的值是给人看的字符串，repr出来的值是给机器看的，括号中的任何内容出来后都是在它之上再加上一层引号。 属性操作相关 getattr 当没找到成员属性时，自动调用 关于setattr 运算类 gt 函数名可以当变量使用]]></content>
       <categories>
         <category>Learning</category>
@@ -38,7 +38,7 @@
   </entry>
   <entry>
     <title><![CDATA[python oop1]]></title>
-    <url>%2F2018%2F08%2F04%2Fpython%20opp1%2F</url>
+    <url>%2F2018%2F08%2F04%2Fpython%20opp%201%2F</url>
     <content type="text"><![CDATA[类与对象定义一个空对象 class classx(): pass name=None 用None给不确定的值赋值 实例化一个obj obj=classx() 可以通过默认内置变量检查类和对象的所有成员 对象所有成员检查 obj.dict 类所有的成员 class_name.dict 创建对象时，类中的成员不会放入对象当中，而是得到一个空对象，没有成员。通过对象对类中成员重新赋值或则通过对象添加成员时，对应成员会保存在对象中，而不会修改类成员。 例如 class A(): age=16 name=&quot;ltl&quot; print(A.age,&quot;---&quot;,A.name) a=A() print(id(A.name),id(a.name)) a.name=&quot;lyp&quot; a.age=18 print(a.age,&quot;---&quot;,a.name) print(id(A.name),id(a.name)) 输出结果： 16 --- ltl 20235456 20235456 18 --- lyp 20235456 49571360 关于self的用法]]></content>
       <categories>
         <category>Learning</category>
