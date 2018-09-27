@@ -296,6 +296,690 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/27/ctf-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="cEngF13h">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/blog.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="cEngF13h's b1og">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/09/27/ctf-1/" itemprop="url">Untitled</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-27T23:06:44+08:00">
+                2018-09-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="strip-tags-函数剥去字符串中的-HTML、XML-以及-PHP-的标签。"><a href="#strip-tags-函数剥去字符串中的-HTML、XML-以及-PHP-的标签。" class="headerlink" title="strip_tags() 函数剥去字符串中的 HTML、XML 以及 PHP 的标签。"></a>strip_tags() 函数剥去字符串中的 HTML、XML 以及 PHP 的标签。</h4><h4 id="php弱类型-已了解初步-还需要深入了解"><a href="#php弱类型-已了解初步-还需要深入了解" class="headerlink" title="php弱类型(已了解初步 还需要深入了解)"></a>php弱类型(已了解初步 还需要深入了解)</h4><h4 id="基于约束的SQL攻击（利用字符串后的空格限制）"><a href="#基于约束的SQL攻击（利用字符串后的空格限制）" class="headerlink" title="基于约束的SQL攻击（利用字符串后的空格限制）"></a>基于约束的SQL攻击（利用字符串后的空格限制）</h4><p>select查询语句，sql不会将字符串缩短为限制位数的字符串，而是完整输出。</p>
+<pre><code>如admin         1
+</code></pre><p>所以系统查询的时候攻击对象admin与伪装对象admin1不重合，因此系统不会检测出重复用户名，于是就可以插入新用户insert，但是insert插入的时候又会限制字符位数，导致admin1的1被限制，这样就能攻击进入admin的账户登陆。</p>
+<p>防御手段：设置id为主键进行跟踪或者手动调整输入参数的限制长度</p>
+<h4 id="is-numeric-检测是否为数字或者数字字符串-返回bool"><a href="#is-numeric-检测是否为数字或者数字字符串-返回bool" class="headerlink" title="is_numeric 检测是否为数字或者数字字符串 返回bool"></a>is_numeric 检测是否为数字或者数字字符串 返回bool</h4><h4 id="域名解析题目就是修改hosts"><a href="#域名解析题目就是修改hosts" class="headerlink" title="域名解析题目就是修改hosts"></a>域名解析题目就是修改hosts</h4><h4 id="文件包含-通过引用木马或者其他文件自行编辑符号进行绕过-当括号引号被过滤时，可以通过查全局变量数组-GLOBALS"><a href="#文件包含-通过引用木马或者其他文件自行编辑符号进行绕过-当括号引号被过滤时，可以通过查全局变量数组-GLOBALS" class="headerlink" title="文件包含 通过引用木马或者其他文件自行编辑符号进行绕过 当括号引号被过滤时，可以通过查全局变量数组 $GLOBALS"></a>文件包含 通过引用木马或者其他文件自行编辑符号进行绕过 当括号引号被过滤时，可以通过查全局变量数组 $GLOBALS</h4><h4 id="php中的可变变量"><a href="#php中的可变变量" class="headerlink" title="php中的可变变量"></a>php中的可变变量</h4><p><img src="https://i.imgur.com/wqQEiR5.png" alt=""></p>
+<h4 id="X-Forwarded-For"><a href="#X-Forwarded-For" class="headerlink" title="X-Forwarded-For"></a>X-Forwarded-For</h4><p>  X-Forwarded-For:简称XFF头，它代表客户端，也就是HTTP的请求端真实的IP，</p>
+<h4 id="stristr-函数-对大小写不敏感"><a href="#stristr-函数-对大小写不敏感" class="headerlink" title="stristr() 函数 对大小写不敏感"></a>stristr() 函数 对大小写不敏感</h4><pre><code>&lt;?php echo stristr(&quot;Hello world!&quot;,&quot;WORLD&quot;);?&gt;
+</code></pre><p>在指定字符串中搜索需要查找的字符串，默认返回字符串之后的剩余字符串包括其本身，第三个参数默认为false，如果为true，则返回字符串之前的字符串不包括其本身。stristr() 函数对大小写敏感。</p>
+<h4 id="php封装协议掌握-多次考到"><a href="#php封装协议掌握-多次考到" class="headerlink" title="php封装协议掌握 多次考到"></a>php封装协议掌握 多次考到</h4><pre><code>file=php://filter/read=convert.base64-encode/resource=index.php
+</code></pre><p>学会filter 其余的拓展</p>
+<h4 id="parse-str-str-array-函数把查询字符串解析到变量中。"><a href="#parse-str-str-array-函数把查询字符串解析到变量中。" class="headerlink" title="parse_str(str,array) 函数把查询字符串解析到变量中。"></a>parse_str(str,array) 函数把查询字符串解析到变量中。</h4><p>如果未设置 array 参数，则由该函数设置的变量将覆盖已存在的同名变量。</p>
+<p>一款源码泄露工具，可以自动访问常见的CTF线索文件，如果返回正常说明文件存在。</p>
+<h4 id="快速反弹-POST-请求"><a href="#快速反弹-POST-请求" class="headerlink" title="快速反弹 POST 请求"></a>快速反弹 POST 请求</h4><p>base64.b64decode后操作的对象是byte类型的字符串<br>再使用decode()可使byte变为字符串类型</p>
+<h4 id="intval-用法"><a href="#intval-用法" class="headerlink" title="intval()用法"></a><a href="https://blog.csdn.net/zhanghao143lina/article/details/73159428" target="_blank" rel="noopener">intval()用法</a></h4><h3 id="短期目标："><a href="#短期目标：" class="headerlink" title="短期目标："></a>短期目标：</h3><h4 id="1-熟悉如何用脚本进行get-post等http操作"><a href="#1-熟悉如何用脚本进行get-post等http操作" class="headerlink" title="1.熟悉如何用脚本进行get post等http操作"></a>1.熟悉如何用脚本进行get post等http操作</h4><h4 id="2-学习正则"><a href="#2-学习正则" class="headerlink" title="2.学习正则"></a>2.学习正则</h4><h4 id="3-初步了解php封装协议"><a href="#3-初步了解php封装协议" class="headerlink" title="3.初步了解php封装协议"></a>3.初步了解php封装协议</h4>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/21/python-gui-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="cEngF13h">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/blog.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="cEngF13h's b1og">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/21/python-gui-1/" itemprop="url">python gui 1</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-21T09:35:15+08:00">
+                2018-08-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/18/python-top-5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="cEngF13h">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/blog.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="cEngF13h's b1og">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/18/python-top-5/" itemprop="url">python top 5</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-18T14:27:37+08:00">
+                2018-08-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Learning/" itemprop="url" rel="index">
+                    <span itemprop="name">Learning</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Learning/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h2><p>可迭代：直接作用于for循环的变量</p>
+<p>迭代器：不但可以用于for循环，还可以被next调用</p>
+<p>list是典型的可迭代对象，但不是迭代器</p>
+<p>如何判断迭代器与可迭代实例<br><img src="https://i.imgur.com/2fvB0eG.png" alt=""></p>
+<p>iter()函数能让可迭代变量转换为迭代器</p>
+<p>—next函数使用</p>
+<h2 id="生成器"><a href="#生成器" class="headerlink" title="生成器"></a>生成器</h2><h2 id="XML"><a href="#XML" class="headerlink" title="XML"></a>XML</h2><h4 id="XML标签命名规则"><a href="#XML标签命名规则" class="headerlink" title="XML标签命名规则"></a>XML标签命名规则</h4><p>用单词表示，第一个字母大写</p>
+<p>大小写严格区分</p>
+<p>配对标签必须一致</p>
+<p>命名空间</p>
+<h4 id="XML访问"><a href="#XML访问" class="headerlink" title="XML访问"></a>XML访问</h4><h5 id="读取"><a href="#读取" class="headerlink" title="读取"></a>读取</h5><p>两个技术:SAX,DOM</p>
+<p>SAX(Simple API for XML):基于事件驱动</p>
+<p>特点:快、流式读取</p>
+<p>DOM</p>
+<h4 id="JSON"><a href="#JSON" class="headerlink" title="JSON"></a>JSON</h4><p>json使用大括号包括</p>
+<p>student={“name”:””,”age”:,…}</p>
+<p><img src="https://i.imgur.com/xdTsf0Y.png" alt=""><br><img src="https://i.imgur.com/0KyhbYK.png" alt=""></p>
+<h4 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h4><h4 id="XPATH"><a href="#XPATH" class="headerlink" title="XPATH"></a>XPATH</h4><h4 id="TCP-UDP"><a href="#TCP-UDP" class="headerlink" title="TCP/UDP"></a>TCP/UDP</h4><h4 id="SOCKET编程"><a href="#SOCKET编程" class="headerlink" title="SOCKET编程"></a>SOCKET编程</h4><h4 id="Mail编程"><a href="#Mail编程" class="headerlink" title="Mail编程"></a>Mail编程</h4><p><img src="https://i.imgur.com/mkuX5q9.png" alt=""></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/17/python-top-4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="cEngF13h">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/blog.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="cEngF13h's b1og">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/17/python-top-4/" itemprop="url">Untitled</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-17T10:42:37+08:00">
+                2018-08-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<p>title: python top 4<br>date: 2018-08-17 10:42:36<br>tags: “python”<br>categories:</p>
+<ul>
+<li>“Learning”</li>
+<li>“python”</li>
+</ul>
+<p>– </p>
+<h2 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h2><p><img src="https://i.imgur.com/MxMqH74.png" alt=""><br><img src="https://i.imgur.com/6wwlq7W.png" alt=""><br><img src="https://i.imgur.com/qbXEoMC.png" alt=""><br><img src="https://i.imgur.com/ceyHuJS.png" alt=""><br><img src="https://i.imgur.com/j7eYUlM.png" alt=""><br><img src="https://i.imgur.com/fr5iwg6.png" alt=""><br><img src="https://i.imgur.com/5JFmNMw.png" alt=""><br><img src="https://i.imgur.com/T9xKbD4.png" alt=""><br><img src="https://i.imgur.com/FjrlTco.png" alt=""><br><img src="https://i.imgur.com/RKJQCXN.png" alt=""><br><img src="https://i.imgur.com/kfJoT2g.png" alt=""></p>
+<h2 id="Log"><a href="#Log" class="headerlink" title="Log"></a>Log</h2><p><img src="https://i.imgur.com/cZtfm1W.png" alt=""></p>
+<p>配置logger 修改默认值</p>
+<p><img src="https://i.imgur.com/jeEtXX4.png" alt=""><br><img src="https://i.imgur.com/Ztyq6w3.png" alt=""></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/12/python-top-3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="cEngF13h">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/blog.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="cEngF13h's b1og">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/12/python-top-3/" itemprop="url">python top 3</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-12T15:37:08+08:00">
+                2018-08-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="函数式编程"><a href="#函数式编程" class="headerlink" title="函数式编程"></a>函数式编程</h4><p>lambda表达式的用法<br><img src="https://i.imgur.com/BM4dDpe.png" alt=""></p>
+<h4 id="高阶函数"><a href="#高阶函数" class="headerlink" title="高阶函数"></a>高阶函数</h4><p>把函数作为参数使用的函数，叫高阶函数<br><img src="https://i.imgur.com/jgzZgVJ.png" alt=""></p>
+<h5 id="系统高阶函数"><a href="#系统高阶函数" class="headerlink" title="系统高阶函数"></a>系统高阶函数</h5><h6 id="1-map"><a href="#1-map" class="headerlink" title="1.map"></a>1.map</h6><p><img src="https://i.imgur.com/3CMwaE6.png" alt=""></p>
+<h6 id="2-reduce"><a href="#2-reduce" class="headerlink" title="2.reduce"></a>2.reduce</h6><p><img src="https://i.imgur.com/1Fi8ncm.png" alt=""></p>
+<h6 id="3-filter"><a href="#3-filter" class="headerlink" title="3.filter"></a>3.filter</h6><p><img src="https://i.imgur.com/06mqBil.png" alt=""></p>
+<h6 id="4-排序"><a href="#4-排序" class="headerlink" title="4.排序"></a>4.排序</h6><p>1.reverse</p>
+<p><img src="https://i.imgur.com/dgUrYdy.png" alt=""></p>
+<p>2.abs</p>
+<p><img src="https://i.imgur.com/0xbpIho.png" alt=""></p>
+<p>3.str</p>
+<p><img src="https://i.imgur.com/uUEN6AW.png" alt=""></p>
+<h6 id="5-返回函数"><a href="#5-返回函数" class="headerlink" title="5.返回函数"></a>5.返回函数</h6><p><img src="https://i.imgur.com/aej2qYH.png" alt=""></p>
+<h6 id="6-闭包-查阅资料"><a href="#6-闭包-查阅资料" class="headerlink" title="6.闭包(*查阅资料)"></a>6.闭包(*查阅资料)</h6><p><img src="https://i.imgur.com/yB9WYNL.png" alt=""></p>
+<h6 id="7-装饰器-查阅资料"><a href="#7-装饰器-查阅资料" class="headerlink" title="7.装饰器(*查阅资料)"></a>7.装饰器(*查阅资料)</h6><h4 id="偏函数"><a href="#偏函数" class="headerlink" title="偏函数"></a>偏函数</h4><p><img src="https://i.imgur.com/K2ZYx8E.png" alt=""></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/10/python-top-2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -636,7 +1320,7 @@ module_name.class_name
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/08/05/python-opp-2/" itemprop="url">python opp 2</a></h1>
+                <a class="post-title-link" href="/2018/08/05/python-opp-2/" itemprop="url">python opp 2j</a></h1>
         
 
         <div class="post-meta">
@@ -2099,7 +2783,7 @@ module_name.class_name
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
