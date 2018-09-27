@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[ctf-1]]></title>
+    <url>%2F2018%2F09%2F27%2Fctf-1%2F</url>
+    <content type="text"><![CDATA[strip_tags() 函数剥去字符串中的 HTML、XML 以及 PHP 的标签。php弱类型(已了解初步 还需要深入了解)基于约束的SQL攻击（利用字符串后的空格限制）select查询语句，sql不会将字符串缩短为限制位数的字符串，而是完整输出。 如admin 1 所以系统查询的时候攻击对象admin与伪装对象admin1不重合，因此系统不会检测出重复用户名，于是就可以插入新用户insert，但是insert插入的时候又会限制字符位数，导致admin1的1被限制，这样就能攻击进入admin的账户登陆。 防御手段：设置id为主键进行跟踪或者手动调整输入参数的限制长度 is_numeric 检测是否为数字或者数字字符串 返回bool域名解析题目就是修改hosts文件包含 通过引用木马或者其他文件自行编辑符号进行绕过 当括号引号被过滤时，可以通过查全局变量数组 $GLOBALSphp中的可变变量 X-Forwarded-For X-Forwarded-For:简称XFF头，它代表客户端，也就是HTTP的请求端真实的IP， stristr() 函数 对大小写不敏感&lt;?php echo stristr(&quot;Hello world!&quot;,&quot;WORLD&quot;);?&gt; 在指定字符串中搜索需要查找的字符串，默认返回字符串之后的剩余字符串包括其本身，第三个参数默认为false，如果为true，则返回字符串之前的字符串不包括其本身。stristr() 函数对大小写敏感。 php封装协议掌握 多次考到file=php://filter/read=convert.base64-encode/resource=index.php 学会filter 其余的拓展 parse_str(str,array) 函数把查询字符串解析到变量中。如果未设置 array 参数，则由该函数设置的变量将覆盖已存在的同名变量。 一款源码泄露工具，可以自动访问常见的CTF线索文件，如果返回正常说明文件存在。 快速反弹 POST 请求base64.b64decode后操作的对象是byte类型的字符串再使用decode()可使byte变为字符串类型 intval()用法短期目标：1.熟悉如何用脚本进行get post等http操作2.学习正则3.初步了解php封装协议]]></content>
+      <categories>
+        <category>Learning</category>
+        <category>ctf</category>
+      </categories>
+      <tags>
+        <tag>ctf</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[python top 5]]></title>
     <url>%2F2018%2F08%2F18%2Fpython-top-5%2F</url>
     <content type="text"><![CDATA[迭代器可迭代：直接作用于for循环的变量 迭代器：不但可以用于for循环，还可以被next调用 list是典型的可迭代对象，但不是迭代器 如何判断迭代器与可迭代实例 iter()函数能让可迭代变量转换为迭代器 —next函数使用 生成器XMLXML标签命名规则用单词表示，第一个字母大写 大小写严格区分 配对标签必须一致 命名空间 XML访问读取两个技术:SAX,DOM SAX(Simple API for XML):基于事件驱动 特点:快、流式读取 DOM JSONjson使用大括号包括 student={“name”:””,”age”:,…} 正则表达式XPATHTCP/UDPSOCKET编程Mail编程]]></content>
@@ -13,9 +25,16 @@
       </tags>
   </entry>
   <entry>
-    <title></title>
+    <title><![CDATA[python top 4]]></title>
     <url>%2F2018%2F08%2F17%2Fpython-top-4%2F</url>
-    <content type="text"><![CDATA[title: python top 4date: 2018-08-17 10:42:36tags: “python”categories: “Learning” “python” – 文件 Log 配置logger 修改默认值]]></content>
+    <content type="text"><![CDATA[文件 Log 配置logger 修改默认值]]></content>
+      <categories>
+        <category>Learning</category>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[python top 3]]></title>
@@ -27,18 +46,6 @@
       </categories>
       <tags>
         <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[ctf-1]]></title>
-    <url>%2F2018%2F08%2F12%2Fctf-1%2F</url>
-    <content type="text"><![CDATA[strip_tags() 函数剥去字符串中的 HTML、XML 以及 PHP 的标签。php弱类型(已了解初步 还需要深入了解)基于约束的SQL攻击（利用字符串后的空格限制）select查询语句，sql不会将字符串缩短为限制位数的字符串，而是完整输出。 如admin 1 所以系统查询的时候攻击对象admin与伪装对象admin1不重合，因此系统不会检测出重复用户名，于是就可以插入新用户insert，但是insert插入的时候又会限制字符位数，导致admin1的1被限制，这样就能攻击进入admin的账户登陆。 防御手段：设置id为主键进行跟踪或者手动调整输入参数的限制长度 is_numeric 检测是否为数字或者数字字符串 返回bool域名解析题目就是修改hosts文件包含 通过引用木马或者其他文件自行编辑符号进行绕过 当括号引号被过滤时，可以通过查全局变量数组 $GLOBALSphp中的可变变量 X-Forwarded-For X-Forwarded-For:简称XFF头，它代表客户端，也就是HTTP的请求端真实的IP， stristr() 函数 对大小写不敏感&lt;?php echo stristr(&quot;Hello world!&quot;,&quot;WORLD&quot;);?&gt; 在指定字符串中搜索需要查找的字符串，默认返回字符串之后的剩余字符串包括其本身，第三个参数默认为false，如果为true，则返回字符串之前的字符串不包括其本身。stristr() 函数对大小写敏感。 php封装协议掌握 多次考到file=php://filter/read=convert.base64-encode/resource=index.php 学会filter 其余的拓展 parse_str(str,array) 函数把查询字符串解析到变量中。如果未设置 array 参数，则由该函数设置的变量将覆盖已存在的同名变量。 一款源码泄露工具，可以自动访问常见的CTF线索文件，如果返回正常说明文件存在。 快速反弹 POST 请求base64.b64decode后操作的对象是byte类型的字符串再使用decode()可使byte变为字符串类型 intval()用法短期目标：1.熟悉如何用脚本进行get post等http操作2.学习正则3.初步了解php封装协议]]></content>
-      <categories>
-        <category>Learning</category>
-        <category>ctf</category>
-      </categories>
-      <tags>
-        <tag>ctf</tag>
       </tags>
   </entry>
   <entry>
@@ -66,7 +73,7 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[python opp 2j]]></title>
+    <title><![CDATA[python opp 2]]></title>
     <url>%2F2018%2F08%2F05%2Fpython-opp-2%2F</url>
     <content type="text"><![CDATA[封装私有成员在前面加两下划线 如__a 只能在当前类或对象中访问。，外部不行 私有在类外如何访问？对象._类名__成员名 保护成员在前面加一下划线 如_a 只能在类中或子类中访问，外部不行 公有成员任何地方都可以访问 继承被继承的类叫父类，基类，超类 用于继承的类，叫子类，派生类 继承与被继承一定存在一个is-a关系 所有的类都继承来自object类，即所有的类都是object类的子类子类一旦继承父类，可以使用父类除私有成员所有的成员 子类继承父类是引用关系 子类中定义的成员和父类成员如果相同，则优先使用子类成员 子类如果想扩充父类的方法，顾名思义就是当子类与父类都有这个方法的时候，子类默认调用子类的方法，但是如果要扩充父类的方法，可以在定义新方法的同时访问父类成员来进行代码重用，可以使用父类名.父类成员或者使用super().父类成员 进行调用 继承变量函数的查找顺序问题 1.优先查找自己的变量，没有则查找父类 2.构造函数如果本类没定义，则自动查找调用父类构造函数 3.如果本类有定义，则不继续向上查找 构造函数 def__init__(self) supersuper不是关键字，而是一个类 super的作用是获取MRO(MethodResolutionOrder)列表中的第一个类，与父类无关，但可以用super调用到父类 单继承与多继承单继承：每个类只能继承一个类语法简单隐患少但功能无法无限扩展，只能唯一继承 多继承：每个类允许继承多个类，类的功能扩展方便，继承关系混乱 问题：如果一个类有多个父类，则根据继承语法中括号内的参数顺序来决定 多态在python中不是语法，是设计思想。 issubclass(A,B) A是不是B的子类 isinstance(a,A) a是不是A的对象 hasattr（a,”name”）a里面是否有name成员 如果忘记具体用法，可以用help(hasattr) dir：获取对象的成员列表 dict 字典 doc 文档 name 类名 bases 父类 用元组返回 魔法函数操作类： init 构造函数 call 对象当成函数使用时触发 str 对象当做字符串使用时触发 如print str与repr区别 str出来的值是给人看的字符串，repr出来的值是给机器看的，括号中的任何内容出来后都是在它之上再加上一层引号。 属性操作相关 getattr 当没找到成员属性时，自动调用 关于setattr 运算类 gt 函数名可以当变量使用 title: postxdate: 2018-08-05 10:07:02tags: “python”categories: “Learning” “python” 封装私有成员在前面加两下划线 如__a 只能在当前类或对象中访问。，外部不行 私有在类外如何访问？对象._类名__成员名 保护成员在前面加一下划线 如_a 只能在类中或子类中访问，外部不行 公有成员任何地方都可以访问 继承被继承的类叫父类，基类，超类 用于继承的类，叫子类，派生类 继承与被继承一定存在一个is-a关系 所有的类都继承来自object类，即所有的类都是object类的子类子类一旦继承父类，可以使用父类除私有成员所有的成员 子类继承父类是引用关系 子类中定义的成员和父类成员如果相同，则优先使用子类成员 子类如果想扩充父类的方法，顾名思义就是当子类与父类都有这个方法的时候，子类默认调用子类的方法，但是如果要扩充父类的方法，可以在定义新方法的同时访问父类成员来进行代码重用，可以使用父类名.父类成员或者使用super().父类成员 进行调用 继承变量函数的查找顺序问题 1.优先查找自己的变量，没有则查找父类 2.构造函数如果本类没定义，则自动查找调用父类构造函数 3.如果本类有定义，则不继续向上查找 构造函数 def__init__(self) supersuper不是关键字，而是一个类 super的作用是获取MRO(MethodResolutionOrder)列表中的第一个类，与父类无关，但可以用super调用到父类 单继承与多继承单继承：每个类只能继承一个类语法简单隐患少但功能无法无限扩展，只能唯一继承 多继承：每个类允许继承多个类，类的功能扩展方便，继承关系混乱 问题：如果一个类有多个父类，则根据继承语法中括号内的参数顺序来决定 多态在python中不是语法，是设计思想。 issubclass(A,B) A是不是B的子类 isinstance(a,A) a是不是A的对象 hasattr（a,”name”）a里面是否有name成员 如果忘记具体用法，可以用help(hasattr) dir：获取对象的成员列表 dict 字典 doc 文档 name 类名 bases 父类 用元组返回 魔法函数操作类： init 构造函数 call 对象当成函数使用时触发 str 对象当做字符串使用时触发 如print str与repr区别 str出来的值是给人看的字符串，repr出来的值是给机器看的，括号中的任何内容出来后都是在它之上再加上一层引号。 属性操作相关 getattr 当没找到成员属性时，自动调用 关于setattr 运算类 gt 函数名可以当变量使用]]></content>
       <categories>
