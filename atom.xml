@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-08-21T01:34:00.761Z</updated>
+  <updated>2018-09-27T15:19:10.368Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,18 +21,15 @@
     <link href="http://yoursite.com/2018/08/18/python-top-5/"/>
     <id>http://yoursite.com/2018/08/18/python-top-5/</id>
     <published>2018-08-18T06:27:37.000Z</published>
-    <updated>2018-08-21T01:34:00.761Z</updated>
+    <updated>2018-09-27T15:19:10.368Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h2><p>可迭代：直接作用于for循环的变量</p><p>迭代器：不但可以用于for循环，还可以被next调用</p><p>list是典型的可迭代对象，但不是迭代器</p><p>如何判断迭代器与可迭代实例<br><img src="https://i.imgur.com/2fvB0eG.png" alt=""></p><p>iter()函数能让可迭代变量转换为迭代器</p><p>—next函数使用</p><h2 id="生成器"><a href="#生成器" class="headerlink" title="生成器"></a>生成器</h2><h2 id="XML"><a href="#XML" class="headerlink" title="XML"></a>XML</h2><h4 id="XML标签命名规则"><a href="#XML标签命名规则" class="headerlink" title="XML标签命名规则"></a>XML标签命名规则</h4><p>用单词表示，第一个字母大写</p><p>大小写严格区分</p><p>配对标签必须一致</p><p>命名空间</p><h4 id="XML访问"><a href="#XML访问" class="headerlink" title="XML访问"></a>XML访问</h4><h5 id="读取"><a href="#读取" class="headerlink" title="读取"></a>读取</h5><p>两个技术:SAX,DOM</p><p>SAX(Simple API for XML):基于事件驱动</p><p>特点:快、流式读取</p><p>DOM</p><h4 id="JSON"><a href="#JSON" class="headerlink" title="JSON"></a>JSON</h4><p>json使用大括号包括</p><p>student={“name”:””,”age”:,…}</p><p><img src="https://i.imgur.com/xdTsf0Y.png" alt=""><br><img src="https://i.imgur.com/0KyhbYK.png" alt=""></p><h4 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h4><h4 id="XPATH"><a href="#XPATH" class="headerlink" title="XPATH"></a>XPATH</h4><h4 id="TCP-UDP"><a href="#TCP-UDP" class="headerlink" title="TCP/UDP"></a>TCP/UDP</h4><h4 id="SOCKET编程"><a href="#SOCKET编程" class="headerlink" title="SOCKET编程"></a>SOCKET编程</h4><h4 id="Mail编程"><a href="#Mail编程" class="headerlink" title="Mail编程"></a>Mail编程</h4><p><img src="https://i.imgur.com/mkuX5q9.png" alt=""></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h2><p>可迭代：直接作用于for循环的变量</p><p>迭代器：不但可以用于for循环，还可以被next调用</p><p>list是典型的可迭代对象，但不是迭代器<br><a id="more"></a></p><p>如何判断迭代器与可迭代实例<br><img src="https://i.imgur.com/2fvB0eG.png" alt=""></p><p>iter()函数能让可迭代变量转换为迭代器</p><p>—next函数使用</p><h2 id="生成器"><a href="#生成器" class="headerlink" title="生成器"></a>生成器</h2><h2 id="XML"><a href="#XML" class="headerlink" title="XML"></a>XML</h2><h4 id="XML标签命名规则"><a href="#XML标签命名规则" class="headerlink" title="XML标签命名规则"></a>XML标签命名规则</h4><p>用单词表示，第一个字母大写</p><p>大小写严格区分</p><p>配对标签必须一致</p><p>命名空间</p><h4 id="XML访问"><a href="#XML访问" class="headerlink" title="XML访问"></a>XML访问</h4><h5 id="读取"><a href="#读取" class="headerlink" title="读取"></a>读取</h5><p>两个技术:SAX,DOM</p><p>SAX(Simple API for XML):基于事件驱动</p><p>特点:快、流式读取</p><p>DOM</p><h4 id="JSON"><a href="#JSON" class="headerlink" title="JSON"></a>JSON</h4><p>json使用大括号包括</p><p>student={“name”:””,”age”:,…}</p><p><img src="https://i.imgur.com/xdTsf0Y.png" alt=""><br><img src="https://i.imgur.com/0KyhbYK.png" alt=""></p><h4 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h4><h4 id="XPATH"><a href="#XPATH" class="headerlink" title="XPATH"></a>XPATH</h4><h4 id="TCP-UDP"><a href="#TCP-UDP" class="headerlink" title="TCP/UDP"></a>TCP/UDP</h4><h4 id="SOCKET编程"><a href="#SOCKET编程" class="headerlink" title="SOCKET编程"></a>SOCKET编程</h4><h4 id="Mail编程"><a href="#Mail编程" class="headerlink" title="Mail编程"></a>Mail编程</h4><p><img src="https://i.imgur.com/mkuX5q9.png" alt=""></p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h2 id=&quot;迭代器&quot;&gt;&lt;a href=&quot;#迭代器&quot; class=&quot;headerlink&quot; title=&quot;迭代器&quot;&gt;&lt;/a&gt;迭代器&lt;/h2&gt;&lt;p&gt;可迭代：直接作用于for循环的变量&lt;/p&gt;
+      &lt;h2 id=&quot;迭代器&quot;&gt;&lt;a href=&quot;#迭代器&quot; class=&quot;headerlink&quot; title=&quot;迭代器&quot;&gt;&lt;/a&gt;迭代器&lt;/h2&gt;&lt;p&gt;可迭代：直接作用于for循环的变量&lt;/p&gt;
 &lt;p&gt;迭代器：不但可以用于for循环，还可以被next调用&lt;/p&gt;
-&lt;p&gt;list是典型
-      
+&lt;p&gt;list是典型的可迭代对象，但不是迭代器&lt;br&gt;
     
     </summary>
     
@@ -50,21 +47,20 @@
     <link href="http://yoursite.com/2018/08/17/python-top-4/"/>
     <id>http://yoursite.com/2018/08/17/python-top-4/</id>
     <published>2018-08-17T02:42:37.028Z</published>
-    <updated>2018-08-18T06:26:43.821Z</updated>
+    <updated>2018-09-27T15:18:56.104Z</updated>
     
-    <content type="html"><![CDATA[<hr><p>title: python top 4<br>date: 2018-08-17 10:42:36<br>tags: “python”<br>categories:</p><ul><li>“Learning”</li><li>“python”</li></ul><p>– </p><h2 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h2><p><img src="https://i.imgur.com/MxMqH74.png" alt=""><br><img src="https://i.imgur.com/6wwlq7W.png" alt=""><br><img src="https://i.imgur.com/qbXEoMC.png" alt=""><br><img src="https://i.imgur.com/ceyHuJS.png" alt=""><br><img src="https://i.imgur.com/j7eYUlM.png" alt=""><br><img src="https://i.imgur.com/fr5iwg6.png" alt=""><br><img src="https://i.imgur.com/5JFmNMw.png" alt=""><br><img src="https://i.imgur.com/T9xKbD4.png" alt=""><br><img src="https://i.imgur.com/FjrlTco.png" alt=""><br><img src="https://i.imgur.com/RKJQCXN.png" alt=""><br><img src="https://i.imgur.com/kfJoT2g.png" alt=""></p><h2 id="Log"><a href="#Log" class="headerlink" title="Log"></a>Log</h2><p><img src="https://i.imgur.com/cZtfm1W.png" alt=""></p><p>配置logger 修改默认值</p><p><img src="https://i.imgur.com/jeEtXX4.png" alt=""><br><img src="https://i.imgur.com/Ztyq6w3.png" alt=""></p>]]></content>
+    <content type="html"><![CDATA[<hr><p>title: python top 4<br>date: 2018-08-17 10:42:36<br>tags: “python”<br>categories:</p><ul><li>“Learning”</li><li>“python”</li></ul><p>– </p><h2 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h2><p><img src="https://i.imgur.com/MxMqH74.png" alt=""><br><a id="more"></a><br><img src="https://i.imgur.com/6wwlq7W.png" alt=""><br><img src="https://i.imgur.com/qbXEoMC.png" alt=""><br><img src="https://i.imgur.com/ceyHuJS.png" alt=""><br><img src="https://i.imgur.com/j7eYUlM.png" alt=""><br><img src="https://i.imgur.com/fr5iwg6.png" alt=""><br><img src="https://i.imgur.com/5JFmNMw.png" alt=""><br><img src="https://i.imgur.com/T9xKbD4.png" alt=""><br><img src="https://i.imgur.com/FjrlTco.png" alt=""><br><img src="https://i.imgur.com/RKJQCXN.png" alt=""><br><img src="https://i.imgur.com/kfJoT2g.png" alt=""></p><h2 id="Log"><a href="#Log" class="headerlink" title="Log"></a>Log</h2><p><img src="https://i.imgur.com/cZtfm1W.png" alt=""></p><p>配置logger 修改默认值</p><p><img src="https://i.imgur.com/jeEtXX4.png" alt=""><br><img src="https://i.imgur.com/Ztyq6w3.png" alt=""></p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;hr&gt;
+      &lt;hr&gt;
 &lt;p&gt;title: python top 4&lt;br&gt;date: 2018-08-17 10:42:36&lt;br&gt;tags: “python”&lt;br&gt;categories:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;“Learning”&lt;/li&gt;
 &lt;li&gt;“python”&lt;/li&gt;
-&lt;/u
-      
+&lt;/ul&gt;
+&lt;p&gt;– &lt;/p&gt;
+&lt;h2 id=&quot;文件&quot;&gt;&lt;a href=&quot;#文件&quot; class=&quot;headerlink&quot; title=&quot;文件&quot;&gt;&lt;/a&gt;文件&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/MxMqH74.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;
     
     </summary>
     
@@ -76,19 +72,22 @@
     <link href="http://yoursite.com/2018/08/12/python-top-3/"/>
     <id>http://yoursite.com/2018/08/12/python-top-3/</id>
     <published>2018-08-12T07:37:08.000Z</published>
-    <updated>2018-08-12T09:12:19.875Z</updated>
+    <updated>2018-09-27T15:18:40.858Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="函数式编程"><a href="#函数式编程" class="headerlink" title="函数式编程"></a>函数式编程</h4><p>lambda表达式的用法<br><img src="https://i.imgur.com/BM4dDpe.png" alt=""></p><h4 id="高阶函数"><a href="#高阶函数" class="headerlink" title="高阶函数"></a>高阶函数</h4><p>把函数作为参数使用的函数，叫高阶函数<br><img src="https://i.imgur.com/jgzZgVJ.png" alt=""></p><h5 id="系统高阶函数"><a href="#系统高阶函数" class="headerlink" title="系统高阶函数"></a>系统高阶函数</h5><h6 id="1-map"><a href="#1-map" class="headerlink" title="1.map"></a>1.map</h6><p><img src="https://i.imgur.com/3CMwaE6.png" alt=""></p><h6 id="2-reduce"><a href="#2-reduce" class="headerlink" title="2.reduce"></a>2.reduce</h6><p><img src="https://i.imgur.com/1Fi8ncm.png" alt=""></p><h6 id="3-filter"><a href="#3-filter" class="headerlink" title="3.filter"></a>3.filter</h6><p><img src="https://i.imgur.com/06mqBil.png" alt=""></p><h6 id="4-排序"><a href="#4-排序" class="headerlink" title="4.排序"></a>4.排序</h6><p>1.reverse</p><p><img src="https://i.imgur.com/dgUrYdy.png" alt=""></p><p>2.abs</p><p><img src="https://i.imgur.com/0xbpIho.png" alt=""></p><p>3.str</p><p><img src="https://i.imgur.com/uUEN6AW.png" alt=""></p><h6 id="5-返回函数"><a href="#5-返回函数" class="headerlink" title="5.返回函数"></a>5.返回函数</h6><p><img src="https://i.imgur.com/aej2qYH.png" alt=""></p><h6 id="6-闭包-查阅资料"><a href="#6-闭包-查阅资料" class="headerlink" title="6.闭包(*查阅资料)"></a>6.闭包(*查阅资料)</h6><p><img src="https://i.imgur.com/yB9WYNL.png" alt=""></p><h6 id="7-装饰器-查阅资料"><a href="#7-装饰器-查阅资料" class="headerlink" title="7.装饰器(*查阅资料)"></a>7.装饰器(*查阅资料)</h6><h4 id="偏函数"><a href="#偏函数" class="headerlink" title="偏函数"></a>偏函数</h4><p><img src="https://i.imgur.com/K2ZYx8E.png" alt=""></p>]]></content>
+    <content type="html"><![CDATA[<h4 id="函数式编程"><a href="#函数式编程" class="headerlink" title="函数式编程"></a>函数式编程</h4><p>lambda表达式的用法<br><img src="https://i.imgur.com/BM4dDpe.png" alt=""><br><a id="more"></a></p><h4 id="高阶函数"><a href="#高阶函数" class="headerlink" title="高阶函数"></a>高阶函数</h4><p>把函数作为参数使用的函数，叫高阶函数<br><img src="https://i.imgur.com/jgzZgVJ.png" alt=""></p><h5 id="系统高阶函数"><a href="#系统高阶函数" class="headerlink" title="系统高阶函数"></a>系统高阶函数</h5><h6 id="1-map"><a href="#1-map" class="headerlink" title="1.map"></a>1.map</h6><p><img src="https://i.imgur.com/3CMwaE6.png" alt=""></p><h6 id="2-reduce"><a href="#2-reduce" class="headerlink" title="2.reduce"></a>2.reduce</h6><p><img src="https://i.imgur.com/1Fi8ncm.png" alt=""></p><h6 id="3-filter"><a href="#3-filter" class="headerlink" title="3.filter"></a>3.filter</h6><p><img src="https://i.imgur.com/06mqBil.png" alt=""></p><h6 id="4-排序"><a href="#4-排序" class="headerlink" title="4.排序"></a>4.排序</h6><p>1.reverse</p><p><img src="https://i.imgur.com/dgUrYdy.png" alt=""></p><p>2.abs</p><p><img src="https://i.imgur.com/0xbpIho.png" alt=""></p><p>3.str</p><p><img src="https://i.imgur.com/uUEN6AW.png" alt=""></p><h6 id="5-返回函数"><a href="#5-返回函数" class="headerlink" title="5.返回函数"></a>5.返回函数</h6><p><img src="https://i.imgur.com/aej2qYH.png" alt=""></p><h6 id="6-闭包-查阅资料"><a href="#6-闭包-查阅资料" class="headerlink" title="6.闭包(*查阅资料)"></a>6.闭包(*查阅资料)</h6><p><img src="https://i.imgur.com/yB9WYNL.png" alt=""></p><h6 id="7-装饰器-查阅资料"><a href="#7-装饰器-查阅资料" class="headerlink" title="7.装饰器(*查阅资料)"></a>7.装饰器(*查阅资料)</h6><h4 id="偏函数"><a href="#偏函数" class="headerlink" title="偏函数"></a>偏函数</h4><p><img src="https://i.imgur.com/K2ZYx8E.png" alt=""></p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h4 id=&quot;函数式编程&quot;&gt;&lt;a href=&quot;#函数式编程&quot; class=&quot;headerlink&quot; title=&quot;函数式编程&quot;&gt;&lt;/a&gt;函数式编程&lt;/h4&gt;&lt;p&gt;lambda表达式的用法&lt;br&gt;&lt;img src=&quot;https://i.imgur.com/BM4dDpe.png&quot;
-      
+      &lt;h4 id=&quot;函数式编程&quot;&gt;&lt;a href=&quot;#函数式编程&quot; class=&quot;headerlink&quot; title=&quot;函数式编程&quot;&gt;&lt;/a&gt;函数式编程&lt;/h4&gt;&lt;p&gt;lambda表达式的用法&lt;br&gt;&lt;img src=&quot;https://i.imgur.com/BM4dDpe.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;
     
     </summary>
     
+      <category term="Learning" scheme="http://yoursite.com/categories/Learning/"/>
+    
+      <category term="python" scheme="http://yoursite.com/categories/Learning/python/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
     
   </entry>
   

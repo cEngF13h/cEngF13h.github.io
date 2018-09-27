@@ -21,6 +21,13 @@
     <title><![CDATA[python top 3]]></title>
     <url>%2F2018%2F08%2F12%2Fpython-top-3%2F</url>
     <content type="text"><![CDATA[函数式编程lambda表达式的用法 高阶函数把函数作为参数使用的函数，叫高阶函数 系统高阶函数1.map 2.reduce 3.filter 4.排序1.reverse 2.abs 3.str 5.返回函数 6.闭包(*查阅资料) 7.装饰器(*查阅资料)偏函数]]></content>
+      <categories>
+        <category>Learning</category>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[ctf-1]]></title>
