@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-27T15:06:44.935Z</updated>
+  <updated>2018-08-21T01:35:15.574Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,27 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="http://yoursite.com/2018/09/27/ctf-1/"/>
-    <id>http://yoursite.com/2018/09/27/ctf-1/</id>
-    <published>2018-09-27T15:06:44.892Z</published>
-    <updated>2018-09-27T15:06:44.935Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="strip-tags-函数剥去字符串中的-HTML、XML-以及-PHP-的标签。"><a href="#strip-tags-函数剥去字符串中的-HTML、XML-以及-PHP-的标签。" class="headerlink" title="strip_tags() 函数剥去字符串中的 HTML、XML 以及 PHP 的标签。"></a>strip_tags() 函数剥去字符串中的 HTML、XML 以及 PHP 的标签。</h4><h4 id="php弱类型-已了解初步-还需要深入了解"><a href="#php弱类型-已了解初步-还需要深入了解" class="headerlink" title="php弱类型(已了解初步 还需要深入了解)"></a>php弱类型(已了解初步 还需要深入了解)</h4><h4 id="基于约束的SQL攻击（利用字符串后的空格限制）"><a href="#基于约束的SQL攻击（利用字符串后的空格限制）" class="headerlink" title="基于约束的SQL攻击（利用字符串后的空格限制）"></a>基于约束的SQL攻击（利用字符串后的空格限制）</h4><p>select查询语句，sql不会将字符串缩短为限制位数的字符串，而是完整输出。</p><pre><code>如admin         1</code></pre><p>所以系统查询的时候攻击对象admin与伪装对象admin1不重合，因此系统不会检测出重复用户名，于是就可以插入新用户insert，但是insert插入的时候又会限制字符位数，导致admin1的1被限制，这样就能攻击进入admin的账户登陆。</p><p>防御手段：设置id为主键进行跟踪或者手动调整输入参数的限制长度</p><h4 id="is-numeric-检测是否为数字或者数字字符串-返回bool"><a href="#is-numeric-检测是否为数字或者数字字符串-返回bool" class="headerlink" title="is_numeric 检测是否为数字或者数字字符串 返回bool"></a>is_numeric 检测是否为数字或者数字字符串 返回bool</h4><h4 id="域名解析题目就是修改hosts"><a href="#域名解析题目就是修改hosts" class="headerlink" title="域名解析题目就是修改hosts"></a>域名解析题目就是修改hosts</h4><h4 id="文件包含-通过引用木马或者其他文件自行编辑符号进行绕过-当括号引号被过滤时，可以通过查全局变量数组-GLOBALS"><a href="#文件包含-通过引用木马或者其他文件自行编辑符号进行绕过-当括号引号被过滤时，可以通过查全局变量数组-GLOBALS" class="headerlink" title="文件包含 通过引用木马或者其他文件自行编辑符号进行绕过 当括号引号被过滤时，可以通过查全局变量数组 $GLOBALS"></a>文件包含 通过引用木马或者其他文件自行编辑符号进行绕过 当括号引号被过滤时，可以通过查全局变量数组 $GLOBALS</h4><h4 id="php中的可变变量"><a href="#php中的可变变量" class="headerlink" title="php中的可变变量"></a>php中的可变变量</h4><p><img src="https://i.imgur.com/wqQEiR5.png" alt=""></p><h4 id="X-Forwarded-For"><a href="#X-Forwarded-For" class="headerlink" title="X-Forwarded-For"></a>X-Forwarded-For</h4><p>  X-Forwarded-For:简称XFF头，它代表客户端，也就是HTTP的请求端真实的IP，</p><h4 id="stristr-函数-对大小写不敏感"><a href="#stristr-函数-对大小写不敏感" class="headerlink" title="stristr() 函数 对大小写不敏感"></a>stristr() 函数 对大小写不敏感</h4><pre><code>&lt;?php echo stristr(&quot;Hello world!&quot;,&quot;WORLD&quot;);?&gt;</code></pre><p>在指定字符串中搜索需要查找的字符串，默认返回字符串之后的剩余字符串包括其本身，第三个参数默认为false，如果为true，则返回字符串之前的字符串不包括其本身。stristr() 函数对大小写敏感。</p><h4 id="php封装协议掌握-多次考到"><a href="#php封装协议掌握-多次考到" class="headerlink" title="php封装协议掌握 多次考到"></a>php封装协议掌握 多次考到</h4><pre><code>file=php://filter/read=convert.base64-encode/resource=index.php</code></pre><p>学会filter 其余的拓展</p><h4 id="parse-str-str-array-函数把查询字符串解析到变量中。"><a href="#parse-str-str-array-函数把查询字符串解析到变量中。" class="headerlink" title="parse_str(str,array) 函数把查询字符串解析到变量中。"></a>parse_str(str,array) 函数把查询字符串解析到变量中。</h4><p>如果未设置 array 参数，则由该函数设置的变量将覆盖已存在的同名变量。</p><p>一款源码泄露工具，可以自动访问常见的CTF线索文件，如果返回正常说明文件存在。</p><h4 id="快速反弹-POST-请求"><a href="#快速反弹-POST-请求" class="headerlink" title="快速反弹 POST 请求"></a>快速反弹 POST 请求</h4><p>base64.b64decode后操作的对象是byte类型的字符串<br>再使用decode()可使byte变为字符串类型</p><h4 id="intval-用法"><a href="#intval-用法" class="headerlink" title="intval()用法"></a><a href="https://blog.csdn.net/zhanghao143lina/article/details/73159428" target="_blank" rel="noopener">intval()用法</a></h4><h3 id="短期目标："><a href="#短期目标：" class="headerlink" title="短期目标："></a>短期目标：</h3><h4 id="1-熟悉如何用脚本进行get-post等http操作"><a href="#1-熟悉如何用脚本进行get-post等http操作" class="headerlink" title="1.熟悉如何用脚本进行get post等http操作"></a>1.熟悉如何用脚本进行get post等http操作</h4><h4 id="2-学习正则"><a href="#2-学习正则" class="headerlink" title="2.学习正则"></a>2.学习正则</h4><h4 id="3-初步了解php封装协议"><a href="#3-初步了解php封装协议" class="headerlink" title="3.初步了解php封装协议"></a>3.初步了解php封装协议</h4>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h4 id=&quot;strip-tags-函数剥去字符串中的-HTML、XML-以及-PHP-的标签。&quot;&gt;&lt;a href=&quot;#strip-tags-函数剥去字符串中的-HTML、XML-以及-PHP-的标签。&quot; class=&quot;headerlink&quot; title=&quot;strip_tags
-      
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>python gui 1</title>
@@ -103,6 +82,32 @@
     
     </summary>
     
+    
+  </entry>
+  
+  <entry>
+    <title>ctf-1</title>
+    <link href="http://yoursite.com/2018/08/12/ctf-1/"/>
+    <id>http://yoursite.com/2018/08/12/ctf-1/</id>
+    <published>2018-08-12T07:37:08.000Z</published>
+    <updated>2018-09-27T15:12:49.591Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="strip-tags-函数剥去字符串中的-HTML、XML-以及-PHP-的标签。"><a href="#strip-tags-函数剥去字符串中的-HTML、XML-以及-PHP-的标签。" class="headerlink" title="strip_tags() 函数剥去字符串中的 HTML、XML 以及 PHP 的标签。"></a>strip_tags() 函数剥去字符串中的 HTML、XML 以及 PHP 的标签。</h4><h4 id="php弱类型-已了解初步-还需要深入了解"><a href="#php弱类型-已了解初步-还需要深入了解" class="headerlink" title="php弱类型(已了解初步 还需要深入了解)"></a>php弱类型(已了解初步 还需要深入了解)</h4><h4 id="基于约束的SQL攻击（利用字符串后的空格限制）"><a href="#基于约束的SQL攻击（利用字符串后的空格限制）" class="headerlink" title="基于约束的SQL攻击（利用字符串后的空格限制）"></a>基于约束的SQL攻击（利用字符串后的空格限制）</h4><p>select查询语句，sql不会将字符串缩短为限制位数的字符串，而是完整输出。</p><pre><code>如admin         1</code></pre><a id="more"></a><p>所以系统查询的时候攻击对象admin与伪装对象admin1不重合，因此系统不会检测出重复用户名，于是就可以插入新用户insert，但是insert插入的时候又会限制字符位数，导致admin1的1被限制，这样就能攻击进入admin的账户登陆。</p><p>防御手段：设置id为主键进行跟踪或者手动调整输入参数的限制长度</p><h4 id="is-numeric-检测是否为数字或者数字字符串-返回bool"><a href="#is-numeric-检测是否为数字或者数字字符串-返回bool" class="headerlink" title="is_numeric 检测是否为数字或者数字字符串 返回bool"></a>is_numeric 检测是否为数字或者数字字符串 返回bool</h4><h4 id="域名解析题目就是修改hosts"><a href="#域名解析题目就是修改hosts" class="headerlink" title="域名解析题目就是修改hosts"></a>域名解析题目就是修改hosts</h4><h4 id="文件包含-通过引用木马或者其他文件自行编辑符号进行绕过-当括号引号被过滤时，可以通过查全局变量数组-GLOBALS"><a href="#文件包含-通过引用木马或者其他文件自行编辑符号进行绕过-当括号引号被过滤时，可以通过查全局变量数组-GLOBALS" class="headerlink" title="文件包含 通过引用木马或者其他文件自行编辑符号进行绕过 当括号引号被过滤时，可以通过查全局变量数组 $GLOBALS"></a>文件包含 通过引用木马或者其他文件自行编辑符号进行绕过 当括号引号被过滤时，可以通过查全局变量数组 $GLOBALS</h4><h4 id="php中的可变变量"><a href="#php中的可变变量" class="headerlink" title="php中的可变变量"></a>php中的可变变量</h4><p><img src="https://i.imgur.com/wqQEiR5.png" alt=""></p><h4 id="X-Forwarded-For"><a href="#X-Forwarded-For" class="headerlink" title="X-Forwarded-For"></a>X-Forwarded-For</h4><p>  X-Forwarded-For:简称XFF头，它代表客户端，也就是HTTP的请求端真实的IP，</p><h4 id="stristr-函数-对大小写不敏感"><a href="#stristr-函数-对大小写不敏感" class="headerlink" title="stristr() 函数 对大小写不敏感"></a>stristr() 函数 对大小写不敏感</h4><pre><code>&lt;?php echo stristr(&quot;Hello world!&quot;,&quot;WORLD&quot;);?&gt;</code></pre><p>在指定字符串中搜索需要查找的字符串，默认返回字符串之后的剩余字符串包括其本身，第三个参数默认为false，如果为true，则返回字符串之前的字符串不包括其本身。stristr() 函数对大小写敏感。</p><h4 id="php封装协议掌握-多次考到"><a href="#php封装协议掌握-多次考到" class="headerlink" title="php封装协议掌握 多次考到"></a>php封装协议掌握 多次考到</h4><pre><code>file=php://filter/read=convert.base64-encode/resource=index.php</code></pre><p>学会filter 其余的拓展</p><h4 id="parse-str-str-array-函数把查询字符串解析到变量中。"><a href="#parse-str-str-array-函数把查询字符串解析到变量中。" class="headerlink" title="parse_str(str,array) 函数把查询字符串解析到变量中。"></a>parse_str(str,array) 函数把查询字符串解析到变量中。</h4><p>如果未设置 array 参数，则由该函数设置的变量将覆盖已存在的同名变量。</p><p>一款源码泄露工具，可以自动访问常见的CTF线索文件，如果返回正常说明文件存在。</p><h4 id="快速反弹-POST-请求"><a href="#快速反弹-POST-请求" class="headerlink" title="快速反弹 POST 请求"></a>快速反弹 POST 请求</h4><p>base64.b64decode后操作的对象是byte类型的字符串<br>再使用decode()可使byte变为字符串类型</p><h4 id="intval-用法"><a href="#intval-用法" class="headerlink" title="intval()用法"></a><a href="https://blog.csdn.net/zhanghao143lina/article/details/73159428" target="_blank" rel="noopener">intval()用法</a></h4><h3 id="短期目标："><a href="#短期目标：" class="headerlink" title="短期目标："></a>短期目标：</h3><h4 id="1-熟悉如何用脚本进行get-post等http操作"><a href="#1-熟悉如何用脚本进行get-post等http操作" class="headerlink" title="1.熟悉如何用脚本进行get post等http操作"></a>1.熟悉如何用脚本进行get post等http操作</h4><h4 id="2-学习正则"><a href="#2-学习正则" class="headerlink" title="2.学习正则"></a>2.学习正则</h4><h4 id="3-初步了解php封装协议"><a href="#3-初步了解php封装协议" class="headerlink" title="3.初步了解php封装协议"></a>3.初步了解php封装协议</h4>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;strip-tags-函数剥去字符串中的-HTML、XML-以及-PHP-的标签。&quot;&gt;&lt;a href=&quot;#strip-tags-函数剥去字符串中的-HTML、XML-以及-PHP-的标签。&quot; class=&quot;headerlink&quot; title=&quot;strip_tags() 函数剥去字符串中的 HTML、XML 以及 PHP 的标签。&quot;&gt;&lt;/a&gt;strip_tags() 函数剥去字符串中的 HTML、XML 以及 PHP 的标签。&lt;/h4&gt;&lt;h4 id=&quot;php弱类型-已了解初步-还需要深入了解&quot;&gt;&lt;a href=&quot;#php弱类型-已了解初步-还需要深入了解&quot; class=&quot;headerlink&quot; title=&quot;php弱类型(已了解初步 还需要深入了解)&quot;&gt;&lt;/a&gt;php弱类型(已了解初步 还需要深入了解)&lt;/h4&gt;&lt;h4 id=&quot;基于约束的SQL攻击（利用字符串后的空格限制）&quot;&gt;&lt;a href=&quot;#基于约束的SQL攻击（利用字符串后的空格限制）&quot; class=&quot;headerlink&quot; title=&quot;基于约束的SQL攻击（利用字符串后的空格限制）&quot;&gt;&lt;/a&gt;基于约束的SQL攻击（利用字符串后的空格限制）&lt;/h4&gt;&lt;p&gt;select查询语句，sql不会将字符串缩短为限制位数的字符串，而是完整输出。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;如admin         1
+&lt;/code&gt;&lt;/pre&gt;
+    
+    </summary>
+    
+      <category term="Learning" scheme="http://yoursite.com/categories/Learning/"/>
+    
+      <category term="ctf" scheme="http://yoursite.com/categories/Learning/ctf/"/>
+    
+    
+      <category term="ctf" scheme="http://yoursite.com/tags/ctf/"/>
     
   </entry>
   
