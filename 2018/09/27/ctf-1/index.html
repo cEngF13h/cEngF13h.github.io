@@ -88,7 +88,7 @@
 <meta property="og:description" content="strip_tags() 函数剥去字符串中的 HTML、XML 以及 PHP 的标签。php弱类型(已了解初步 还需要深入了解)基于约束的SQL攻击（利用字符串后的空格限制）select查询语句，sql不会将字符串缩短为限制位数的字符串，而是完整输出。 如admin         1">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://i.imgur.com/wqQEiR5.png">
-<meta property="og:updated_time" content="2018-09-27T15:22:34.094Z">
+<meta property="og:updated_time" content="2018-10-17T07:21:45.244Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ctf-1">
 <meta name="twitter:description" content="strip_tags() 函数剥去字符串中的 HTML、XML 以及 PHP 的标签。php弱类型(已了解初步 还需要深入了解)基于约束的SQL攻击（利用字符串后的空格限制）select查询语句，sql不会将字符串缩短为限制位数的字符串，而是完整输出。 如admin         1">
@@ -402,7 +402,7 @@
         <h4 id="strip-tags-函数剥去字符串中的-HTML、XML-以及-PHP-的标签。"><a href="#strip-tags-函数剥去字符串中的-HTML、XML-以及-PHP-的标签。" class="headerlink" title="strip_tags() 函数剥去字符串中的 HTML、XML 以及 PHP 的标签。"></a>strip_tags() 函数剥去字符串中的 HTML、XML 以及 PHP 的标签。</h4><h4 id="php弱类型-已了解初步-还需要深入了解"><a href="#php弱类型-已了解初步-还需要深入了解" class="headerlink" title="php弱类型(已了解初步 还需要深入了解)"></a>php弱类型(已了解初步 还需要深入了解)</h4><h4 id="基于约束的SQL攻击（利用字符串后的空格限制）"><a href="#基于约束的SQL攻击（利用字符串后的空格限制）" class="headerlink" title="基于约束的SQL攻击（利用字符串后的空格限制）"></a>基于约束的SQL攻击（利用字符串后的空格限制）</h4><p>select查询语句，sql不会将字符串缩短为限制位数的字符串，而是完整输出。</p>
 <pre><code>如admin         1
 </code></pre><a id="more"></a>
-<p>所以系统查询的时候攻击对象admin与伪装对象admin1不重合，因此系统不会检测出重复用户名，于是就可以插入新用户insert，但是insert插入的时候又会限制字符位数，导致admin1的1被限制，这样就能攻击进入admin的账户登陆。</p>
+<p>注册的时候系统查询到用户名admin与伪装对象admin1不重合，因此系统不会检测出重复用户名，于是就可以注册新用户insert，但是insert插入的时候又会限制字符位数，导致admin1的1被限制，这样就能攻击进入admin的账户登陆。</p>
 <p>防御手段：设置id为主键进行跟踪或者手动调整输入参数的限制长度</p>
 <h4 id="is-numeric-检测是否为数字或者数字字符串-返回bool"><a href="#is-numeric-检测是否为数字或者数字字符串-返回bool" class="headerlink" title="is_numeric 检测是否为数字或者数字字符串 返回bool"></a>is_numeric 检测是否为数字或者数字字符串 返回bool</h4><h4 id="域名解析题目就是修改hosts"><a href="#域名解析题目就是修改hosts" class="headerlink" title="域名解析题目就是修改hosts"></a>域名解析题目就是修改hosts</h4><h4 id="文件包含-通过引用木马或者其他文件自行编辑符号进行绕过-当括号引号被过滤时，可以通过查全局变量数组-GLOBALS"><a href="#文件包含-通过引用木马或者其他文件自行编辑符号进行绕过-当括号引号被过滤时，可以通过查全局变量数组-GLOBALS" class="headerlink" title="文件包含 通过引用木马或者其他文件自行编辑符号进行绕过 当括号引号被过滤时，可以通过查全局变量数组 $GLOBALS"></a>文件包含 通过引用木马或者其他文件自行编辑符号进行绕过 当括号引号被过滤时，可以通过查全局变量数组 $GLOBALS</h4><h4 id="php中的可变变量"><a href="#php中的可变变量" class="headerlink" title="php中的可变变量"></a>php中的可变变量</h4><p><img src="https://i.imgur.com/wqQEiR5.png" alt=""></p>
 <h4 id="X-Forwarded-For"><a href="#X-Forwarded-For" class="headerlink" title="X-Forwarded-For"></a>X-Forwarded-For</h4><p>  X-Forwarded-For:简称XFF头，它代表客户端，也就是HTTP的请求端真实的IP，</p>
@@ -452,6 +452,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/09/28/ctf-2/" rel="prev" title="ctf-2">
+                ctf-2 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -532,7 +536,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
