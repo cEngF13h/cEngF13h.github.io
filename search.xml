@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[ctf-3]]></title>
-    <url>%2F2018%2F11%2F14%2Fctf-3%2F</url>
-    <content type="text"><![CDATA[####文件上传校验姿势 客户端javascript校验（一般只校验后缀名） 服务端校验 文件头content-type字段校验（image/gif） 文件内容头校验（GIF89a） 后缀名黑名单校验 后缀名白名单校验 自定义正则校验 WAF设备校验（根据不同的WAF产品而定） WAF攻防研究之四个层次Bypass WAF相关文章: WAF攻防研究之四个层次Bypass WAF]]></content>
+    <title><![CDATA[imback]]></title>
+    <url>%2F2019%2F10%2F23%2Fimback%2F</url>
+    <content type="text"><![CDATA[#我回来了，好久不见。 ###：) 楽楽爱霖霖]]></content>
       <categories>
-        <category>Learning</category>
-        <category>ctf</category>
+        <category>imback</category>
       </categories>
       <tags>
-        <tag>ctf</tag>
+        <tag>imback</tag>
       </tags>
   </entry>
   <entry>
@@ -22,6 +21,18 @@
       </categories>
       <tags>
         <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ctf-3]]></title>
+    <url>%2F2018%2F11%2F14%2Fctf-3%2F</url>
+    <content type="text"><![CDATA[####文件上传校验姿势 客户端javascript校验（一般只校验后缀名） 服务端校验 文件头content-type字段校验（image/gif） 文件内容头校验（GIF89a） 后缀名黑名单校验 后缀名白名单校验 自定义正则校验 WAF设备校验（根据不同的WAF产品而定） WAF攻防研究之四个层次Bypass WAF相关文章: WAF攻防研究之四个层次Bypass WAF]]></content>
+      <categories>
+        <category>Learning</category>
+        <category>ctf</category>
+      </categories>
+      <tags>
+        <tag>ctf</tag>
       </tags>
   </entry>
   <entry>
